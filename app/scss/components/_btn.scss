@@ -1,0 +1,60 @@
+.btn {
+  color: $color-white;
+  
+  display: inline;
+}
+
+.btn--signup {
+  border-radius: 25px !important;
+  padding-top: 9px;
+  font-size: 12px;
+  padding-bottom: 9px;
+  font-weight: 400;
+  background: $color-white;
+  border: 1px solid $color-white;
+  color: $color-black;
+  padding-right: 22px;
+  padding-left: 22px;
+  
+  margin-right: 20px;
+
+  &:hover {
+    background: transparent;
+    color: $color-white;
+  }
+
+}
+
+.btn--select {
+  border-radius: 25px !important;
+  padding-top: 9px;
+  font-size: 12px;
+  padding-bottom: 9px;
+  font-weight: 400;
+  font-size: 12px;
+  border: 1px solid $color-white;
+  color: $color-white;
+  padding-right: 22px;
+  padding-left: 22px;
+  &:hover {
+    background: $color-white;
+    color: $color-black;
+  }
+}
+.btn--enroll{
+  border-radius: 25px !important;
+  padding-top: 9px;
+  font-size: 12px;
+  padding-bottom: 9px;
+  font-weight: 400;
+  font-size: 12px;
+ 
+  color: $color-white;
+  padding-right: 22px;
+  padding-left: 22px;
+  background: $primary-color;
+  &:hover {
+    background: $color-white;
+    color: $color-black;
+  }
+}
