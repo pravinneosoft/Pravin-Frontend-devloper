@@ -1,52 +1,29 @@
 header {
     position: fixed;
     width: 100%;
-    
+
 }
 .header {
     background: $primary-color;
     padding-top: 17px;
     padding-bottom: 17px;
 }
-
 .header__top {
     display: flex;
     justify-content: space-between;
 }
-.header__info-1 {
-    color: $light-white;
+.header__info-hotline {
+    color: $color-light-white;
     font-size: 12px;
     font-weight: $primary-font;
 }
-.header__info-2{
-    color: $light-white;
+.header__info-gmail {
+    color: $color-light-white;
     font-size: 12px;
     font-weight: $primary-font;
     padding-left: 40px;
 }
-.navbar{
-background:$color-whitesmoke;
+select 
+{
+    -webkit-appearance: none;
 }
-.navbar-nav {
-    margin-left: auto ;
-}
-
-.navbar-brand {
-    font-size: 12px;
-    font-family: $primary-font;
-    font-weight: 400;
-}
-.nav-link {
-    font-size: 14px;
-    font-weight: 400;
-    font-family: $primary-font;
-}
-.navbar-content {
-    padding-top: 12px;
-    padding-bottom: 12px;
-}.nav-search{
-border: 1px solid #00000070;
-    border-radius: 16px;
-    padding-left: 13px;
-    background: #fff;
-    padding-right: 13px;}

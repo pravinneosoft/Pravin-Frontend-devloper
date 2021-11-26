@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?o3587v');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?o3587v#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?o3587v') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?o3587v') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?o3587v##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?73hi3h');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?73hi3h#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?73hi3h') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?73hi3h') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?73hi3h##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,69 +27,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-Icon-ionic-ios-arrow-down {
-  font-size: 12px;
+.icon-arrow-down {
+  font-size: 9px;
   &:before {
-    content: $icon-Icon-ionic-ios-arrow-down; 
+    content: $icon-arrow-down; 
   }
 }
-.icon-Icon-metro-arrow-left {
+.icon-arrow-left {
   &:before {
-    content: $icon-Icon-metro-arrow-left; 
+    content: $icon-arrow-left; 
   }
 }
-
-@font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?o1yfyy');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?o1yfyy#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?o1yfyy') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?o1yfyy') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?o1yfyy##{$icomoon-font-family}') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-Component-10--2 {
-  font-size: 12px;
+.icon-arrow-right {
   &:before {
-    content: $icon-Component-10--2; 
+    content: $icon-arrow-right; 
   }
 }
-.icon-Icon-ionic-ios-arrow-down {
+.icon-facebook {
   &:before {
-    content: $icon-Icon-ionic-ios-arrow-down; 
+    content: $icon-facebook; 
   }
 }
-.icon-Icon-ionic-ios-call {
+.icon-gmail {
+  margin-right: 10px;
   &:before {
-    content: $icon-Icon-ionic-ios-call; 
+    content: $icon-gmail; 
   }
 }
-.icon-letter {
+.icon-phone {
+  margin-right: 10px;
   &:before {
-    content: $icon-letter; 
+    content: $icon-phone; 
   }
 }
-.icon-Path-11603 {
+.icon-search {
   &:before {
-    content: $icon-Path-11603; 
+    content: $icon-search; 
   }
 }
 

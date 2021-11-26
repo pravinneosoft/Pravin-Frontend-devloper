@@ -1,40 +1,43 @@
 @font-face {
     font-family: $primary-font;
-    src: url('CircularStd-Black.woff2') format('woff2'),
-        url('CircularStd-Black.woff') format('woff');
+    src: url('/fonts/circular-std/CircularStd-Black.woff') format('woff2'),
+        url('/fonts/circular-std/CircularStd-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: $circular-bold;
-    src: url('CircularStd-Bold.woff2') format('woff2'),
-        url('CircularStd-Bold.woff') format('woff');
+    font-family: $primary-font;
+    src: url('/fonts/circular-std/CircularStd-Bold.woff2') format('woff2'),
+        url('/fonts/circular-std/CircularStd-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: $circular-book;
-    src: url('CircularStd-Book.woff2') format('woff2'),
-        url('CircularStd-Book.woff') format('woff');
+    font-family: $primary-font;
+    src: url('/fonts/circular-std/CircularStd-Book.woff2') format('woff2'),
+        url('/fonts/circular-std/CircularStd-Book.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family:$circular-medium;
-    src: url('CircularStd-Medium.woff2') format('woff2'),
-        url('CircularStd-Medium.woff') format('woff');
+    font-family:$primary-font;
+    src: url('/fonts/circular-std/CircularStd-Medium.woff2') format('woff2'),
+        url('/fonts/circular-std/CircularStd-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
-    font-family:$secondary-font;
-    src: url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap');
+    font-family: $secondary-font;
+    src: url('/fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+        url('/fonts/Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }

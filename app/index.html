@@ -10,24 +10,30 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <header>
     <div class="header">
       <div class="container">
         <div class="header__top">
           <div class="header__top-left">
-            <a class="header__info-1"><span class="icon-Icon-ionic-ios-call"></span> Support Hotline : 586-217-2163</a>
-            <a class="header__info-2"><span class="icon-letter"></span>vctung@outlook.com</a></div>
+            <a class="header__info-hotline"><span class="icon-phone"></span> Support Hotline : 586-217-2163</a>
+            <a class="header__info-gmail"><span class="icon-gmail"></span>vctung@outlook.com</a></div>
           <div class="header__top-right">
             <a href="" class="btn btn--signup">Sign Up</a>
-            <a href="" class="btn btn--select">Select Langauge <span class="icon-Icon-ionic-ios-arrow-down"></span></a>
+            <select class="btn btn--select" id="framework">
+              <span class="icon-arrow-down"></span>
+              <option value="1">Select Languages</option>
+              <option value="2">React</option>
+              <option value="3">Vue.js</option>
+              <option value="4">Ember.js</option>
+            </select>
           </div>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+    <nav class="navbar navbar-expand-lg navbar-light  p-0">
       <div class="container navbar-content">
+        <img src="images/hwlogo.png" alt="">
         <a class="navbar-brand" href="#">HW SCHOOL DISTRICT</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,63 +59,48 @@
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Education Services <span class="icon-Icon-ionic-ios-arrow-down"></span>
+                Education Services <span class="icon-arrow-down"></span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">study</a></li>
+                <li><a class="dropdown-item" href="#">asignment</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Athletics <span class="icon-Icon-ionic-ios-arrow-down"></span>
+                Athletics <span class="icon-arrow-down"></span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">other</a></li>
+                <li><a class="dropdown-item" href="#">etc</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                More <span class="icon-Icon-ionic-ios-arrow-down"></span>
+                More <span class="icon-arrow-down"></span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-
+                <li><a class="dropdown-item" href="#">swiming pool</a></li>
+                <li><a class="dropdown-item" href="#">playground</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-search" href="#"><span class="icon-Component-10--2"></span></a>
+              <a class="nav-link nav-search" href="#">
+                <span class="icon-search"></span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    </div>
-
   </header>
   <main>
     <div class="herobanner ll">
 
       <img class="herobanner__banner-img" src="images/grey-marble-column-details-building.png" alt="bimage"></div>
-
     <div class="herobanner__content container">
-     
       <h1 class="herobanner__headings">
         We are determined to
         achieve the highest
@@ -118,28 +109,48 @@
       <p class="herobanner__paragraph">
         We are always availed to consult on taking your higher education to the next level so you can stay competitive
         in the global world. </p>
-      <a href="" class="btn btn--enroll">Enroll Now</a>
+      <a href="" class="btn btn--enroll">Enroll Now <span class="icon-arrow-right"></span></a>
     </div>
-
     </div>
-    <section class="whyhw"style="width: 100%;height: 1000px;">
+    <!-- <section class="whyhw">
 <h1 class="whyhw__heading">Why HW Schools</h1>
 <p class="whyhw__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
   <br>  labore et dolore magna aliqua!</p>
     </section>
 
 
-    <section class="education" style="width: 100%;height: 1000px;">
-      <div class="card" style="width: 18rem;">
+    <section class="education">
+      <h1 class="whyhw__heading">Why HW Schools</h1>
+<p class="whyhw__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+  <br>  labore et dolore magna aliqua!</p>
+  <div class="education__row container">
+      <div class="education__card" style="width: 18rem;">
         <img src="images/two-girls-looking-picture.png" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">Tyrone Elementary</p>
         </div>
       </div>
+      <div class="education__card" style="width: 18rem;">
+        <img src="images/two-girls-looking-picture.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Tyrone Elementary</p>
+        </div>
+      </div>
+      <div class="education__card" style="width: 18rem;">
+        <img src="images/two-girls-looking-picture.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Tyrone Elementary</p>
+        </div>
+      </div>
+      <div class="education__card" style="width: 18rem;">
+        <img src="images/two-girls-looking-picture.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Tyrone Elementary</p>
+        </div>
+      </div>
+    </div>
     </section>
-
-
-    <section>
+   <section style="position: relative;">
       <div class="circle-wrap">
         <div class="circle">
           <div class="mask full">
@@ -153,9 +164,9 @@
       </div>
     </section>
 
-  </main>
+  </main> -->
 
-  <footer>
+    <!-- <footer>
     <div class="row footer__content">
       <div class="col-md-3">
         <h4 style="font-weight: 400;">HW SCHOOL DISTRICT</h4>
@@ -216,14 +227,14 @@
     <div class="footer__copyright">
       <p>© COPYRIGHT 2021. ​ALL RIGHTS RESERVED.</p>
     </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-  </script>
-  <script src="js/main.js"></script>
+  </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
