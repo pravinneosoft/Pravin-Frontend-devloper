@@ -6,10 +6,12 @@
 
 body {
     width: 100%;
-
     font-family: $primary-font;
-    
+    font-size: 14px;
+    color: $color-light-dark;
+    font-weight: 400;
 }
-a{
+
+a {
     text-decoration: none;
 }

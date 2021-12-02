@@ -1,44 +1,59 @@
 .navbar {
     background: $color-whitesmoke;
 
+    &-nav {
+        margin-left: auto;
+        align-items: center;
+    }
+
+    &-light &-nav .nav-link {
+        font-size: 14px;
+        color: $color-light-blue;
+        padding-right: 18px;
+    }
+
+    &-light &-brand {
+        font-size: 17px;
+        color: $color-light-blue;
+        font-weight: 900;
+        @include breakpoint (mobile-max) {
+            font-size: 14px;
+            margin-left: 4px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            
+            font-size:15px;
+        }
+        
+        @include breakpoint(custom-small-mobile-max) {
+            font-size: 11px !important;
+        }
+        @include breakpoint (desktop-max) {
+            font-size: 15px;
+        }
+    }
+&-logoimg{
+    @include breakpoint(custom-small-mobile-max) {
+    height: 33px;
+    width: 35px;
+    }
 }
-
-.navbar-nav {
-    margin-left: auto;
-}
-
-.navbar-brand {
-    font-size: 12px;
-    font-family: $primary-font;
-    font-weight: 400;
-    margin-left: 8px;
-    margin-right: 0;
-
-}
-
-.navbar-light .navbar-nav .nav-link {
-    font-size: 14px;
-    font-weight: 400;
-    font-family: $primary-font;
-    color: #002147;
-}
-
-.navbar-light .navbar-brand {
-    font-size: 17spx;
-    font-weight: 400;
-    font-family: $primary-font;
-    color: #002147;
-}
-
-.navbar-content {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    &-content {
+        padding: 2px 12px 2px 12px;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .nav-search {
-    border: 1px solid #00000070;
+    border: 1px solid $color-light-black;
     border-radius: 16px;
-    padding-left: 13px;
-    background: #fff;
-    padding-right: 13px;
+    background: $color-white;
+    padding: 6px 13px !important;
+    width: 43px;
+    text-align: center;
+    margin-top: 4px;
+    margin-left: 22px;
+    margin-bottom: auto;
 }

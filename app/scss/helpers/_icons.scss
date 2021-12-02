@@ -1,18 +1,17 @@
-
-
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?73hi3h');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?73hi3h#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?73hi3h') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?73hi3h') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?73hi3h##{$icomoon-font-family}') format('svg');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?73hi3h');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?73hi3h#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?73hi3h') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?73hi3h') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?73hi3h##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
   speak: never;
@@ -28,41 +27,60 @@
 }
 
 .icon-arrow-down {
-  font-size: 9px;
+  font-size: 7px;
+
+
   &:before {
-    content: $icon-arrow-down; 
-  }
-}
-.icon-arrow-left {
-  &:before {
-    content: $icon-arrow-left; 
-  }
-}
-.icon-arrow-right {
-  &:before {
-    content: $icon-arrow-right; 
-  }
-}
-.icon-facebook {
-  &:before {
-    content: $icon-facebook; 
-  }
-}
-.icon-gmail {
-  margin-right: 10px;
-  &:before {
-    content: $icon-gmail; 
-  }
-}
-.icon-phone {
-  margin-right: 10px;
-  &:before {
-    content: $icon-phone; 
-  }
-}
-.icon-search {
-  &:before {
-    content: $icon-search; 
+    content: $icon-arrow-down;
   }
 }
 
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left;
+  }
+}
+
+.icon-arrow-right {
+  font-size: 13px;
+  padding-left: 11px;
+  @include breakpoint (mobile-max) {
+    font-size: 11px;padding-left: 08px;
+  }
+  @include breakpoint (portrait-mobile-max) { font-size: 8px;padding-left: 6px;}
+
+  &:before {
+    content: $icon-arrow-right;
+  }
+}
+
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+
+.icon-gmail {
+  margin-right: 10px;
+
+  &:before {
+    content: $icon-gmail;
+  }
+}
+
+.icon-phone {
+  margin-right: 10px;
+
+  &:before {
+    content: $icon-phone;
+  }
+}
+
+.icon-search {
+  font-size: 17px;
+  color: #212529;
+
+  &:before {
+    content: $icon-search;
+  }
+}

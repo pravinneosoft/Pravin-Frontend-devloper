@@ -2,6 +2,9 @@
 $primary-font:'Circular';
 $secondary-font:'Roboto';
 
+// font path 
+$fonts-path: "../fonts" !default;
+
 //primary colors
 $primary-color:#841e25;
 $color-white: #fff;
@@ -19,6 +22,7 @@ $color-light-green:#70c217;
 $color-charcoal:#373737;
 $cool-grey:#34474f;
 $color-whitesmoke:#fbf9f9;
+$color-light-black:#00000070;
 
 // icomoon icon
 $icomoon-font-family: "icomoon" !default;
@@ -31,4 +35,3 @@ $icon-facebook: "\e903";
 $icon-gmail: "\e904";
 $icon-phone: "\e905";
 $icon-search: "\e906";
-

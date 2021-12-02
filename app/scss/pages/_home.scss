@@ -1,138 +1,319 @@
-.herobanner{
-  &__banner-img {
-  width: 100%;
-  background: linear-gradient(0deg, #fff, #000 50%);
-}
+.herobanner {
+    position: relative;
 
-&__content {
-    position: absolute;
-    top: 40%;
-    left: 0;
-    right: 0;
-    @include breakpoint ( ipad-max){
+    &__image {
+        position: relative;
+
+        &::after {
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 637px;
+            position: absolute;
+            background: linear-gradient(90deg, $color-black, $color-black 70%);
+            opacity: 0.7;
+        }
+    }
+
+    &__herobannerimg {
+        width: 100%;
+        height: 637px;
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 39px;
+            width: 100%;
+            height: 345px;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    &__studentimg {
         position: absolute;
-        top: 30%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        height: 637px;
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 39px;
+            width: 100%;
+            height: 345px;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 26%;
         left: 0;
         right: 0;
+
+        @include breakpoint (ipad-max) {
+            position: absolute;
+            top: 30%;
+            left: 0;
+            right: 0;
+        }
+
+        @include breakpoint (mobile-max) {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            right: 0;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            right: 0;
+        }
+
+        @include breakpoint(desktop-max) {
+            position: absolute;
+            top: 23%;
+            left: 0;
+            right: 0;
+        }
     }
-    @include breakpoint ( mobile-max){
-        position: absolute;
-        top: 20%;
-        left: 0;
-        right: 0;
+
+    &__headings {
+        color: $color-white;
+        font-size: 49px;
+        font-weight: 700;
+        font-family: $primary-font;
+        width: 49%;
+
+        @include breakpoint (mobile-max) {
+            font-size: 39px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 25px;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            font-size: 18px;
+            width: 61%;
+        }
     }
-    @include breakpoint ( portrait-mobile-max){
-        position: absolute;
-        top: 10%;
-        left: 0;
-        right: 0;
+
+    &__paragraph {
+        font-size: 15px;
+        font-weight: 400;
+        color: $color-light-black;
+        width: 394px;
+        margin-top: 18px;
+        margin-bottom: 29px;
+
+        @include breakpoint (mobile-max) {
+            font-size: 8px;
+            width: 294px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 39px;
+            font-size: 6px;
+            width: 196px;
+        }
     }
-    @include breakpoint(desktop-max){
+
+    @include breakpoint(custom-small-mobile-max) {
+        font-size: 5px;
+    }
+
+}
+
+// supritendent 
+.supritendent {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 87px;
+    position: relative;
+    &__round-shape {
         position: absolute;
-        top: 23%;
-        left: 0;
+        bottom: 225px;
+        right: 318px;
+        height: 115px;
+        width: 115px;
+        display: inline-block;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 24px solid $primary-color;
+    }
+    &__image {
+        width: 385px;
+        height: 287px;
+        margin-right: 15px;
+        position: relative;
+    }
+    &__image-businessman {
+        height: auto;
+        width: 100%;
+    }
+    &__content {
+        width: 381px;
+        margin-left: 15px;
+        position: relative;
+    }
+    &__dotted-circle {
+        position: absolute;
+        top: -36px;
         right: 0;
+        left: 248px;
+        width: 236px;
+    }
+    &__dot {
+        width: 5px;
+        margin: 5px;
+        height: 5px;
+        display: inline-block;
+        background: $primary-color;
+        border-radius: 50%;
+    }
+    &__heading {
+        font-size: 34px;
+        font-weight: 700;
+        color: $color-light-blue;
+    }
+    &__paragraph {
+        font-size: 17px;
+        font-weight: 500;
+        color: $color-light-dark;
     }
 }
 
-&__headings {
-    color: $color-white;
-    font-size: 32px;
-    font-weight: 700;
-    width: 400px;
+
+// mission and vision page
+
+.harperwood{ 
+    background: $primary-color;
+    margin-top: 150px;
+&__mission{
+    display: flex;
+    flex-wrap: nowrap;
+    &-heading{
+        font-weight: 700;
+        font-size: 34px;
+        color: $color-white;
+    }
+    &-paragraph{
+        font-size: 15px;
+        font-family: $secondary-font;
+        font-weight: 400;
+        color: $color-white;
+        width: 390px;
+    }
 }
+&__vision{
+    display: flex;
+    flex-wrap: nowrap;
+    &-heading{
+        font-weight: 700;
+        font-size: 34px;
+        color: $color-white;
+      
 
-&__paragraph {
-    font-size: 16px;
-    font-weight: 400;
-    color: #7d7d7d;
-    width: 369px;
+    }
+    &-paragraph{
+        font-size: 15px;
+        font-family: $secondary-font;
+        font-weight: 400;
+        color: $color-white;
+        width: 390px;
+    }
+}     
 }
-
- }
-
-
-
 // // card css
 
-.circle-wrap {
-    
-  }
-  
-  .circle-wrap .circle .mask,
-  .circle-wrap .circle .fill {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    border-radius: 50%;
-  }
-  
-  .circle-wrap .circle .mask {
-    clip: rect(0px, 150px, 150px, 75px);
-  }
-  
-  .circle-wrap .circle .mask .fill {
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #9e00b1;
-  }
-  
-  .circle-wrap .circle .mask.full,
-  .circle-wrap .circle .fill {
-    animation: fill ease-in-out 3s;
-    transform: rotate(126deg);
-  }
-  
-  @keyframes fill {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(126deg);
-    }
-  }
-  
-  .circle-wrap .inside-circle {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    background: #fff;
-    line-height: 130px;
-    text-align: center;
-    margin-top: 10px;
-    margin-left: 10px;
-    position: absolute;
-  
-    font-weight: 700;
-    font-size: 2em;
-  }
+// .circle-wrap {}
+
+// .circle-wrap .circle .mask,
+// .circle-wrap .circle .fill {
+//     width: 150px;
+//     height: 150px;
+//     position: absolute;
+//     border-radius: 50%;
+// }
+
+// .circle-wrap .circle .mask {
+//     clip: rect(0px, 150px, 150px, 75px);
+// }
+
+// .circle-wrap .circle .mask .fill {
+//     clip: rect(0px, 75px, 150px, 0px);
+//     background-color: #9e00b1;
+// }
+
+// .circle-wrap .circle .mask.full,
+// .circle-wrap .circle .fill {
+//     animation: fill ease-in-out 3s;
+//     transform: rotate(126deg);
+// }
+
+// @keyframes fill {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+
+//     100% {
+//         transform: rotate(126deg);
+//     }
+// }
+
+// .circle-wrap .inside-circle {
+//     width: 130px;
+//     height: 130px;
+//     border-radius: 50%;
+//     background: #fff;
+//     line-height: 130px;
+//     text-align: center;
+//     margin-top: 10px;
+//     margin-left: 10px;
+//     position: absolute;
+//     font-weight: 700;
+//     font-size: 2em;
+// }
 
 
-  // why hw school
-  .whyhw__heading{
-    font-family: $primary-font;
-    font-size: 34px;
-    font-weight: 400;
-    text-align: center;
-  }
-  .whyhw__paragraph{
-    font-family: $secondary-font;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-  
-  }
+// why hw school
+// .whyhw__heading {
+//     font-family: $primary-font;
+//     font-size: 34px;
+//     font-weight: 400;
+//     text-align: center;
+// }
+
+// .whyhw__paragraph {
+//     font-family: $secondary-font;
+//     font-size: 16px;
+//     font-weight: 400;
+//     text-align: center;
+
+// }
 
 
-  // Educational cards
-.education{
-  
- 
-}
-  .card-body{
-    font-family: $primary-font;
-    font-weight: 400;
-    font-size: 17px;
-    background: $primary-color;
-    color: $color-white;
-    text-align: center;
-  }
+// Educational cards
+// .education {}
+
+// .card-body {
+//     font-family: $primary-font;
+//     font-weight: 400;
+//     font-size: 17px;
+//     background: $primary-color;
+//     color: $color-white;
+//     text-align: center;
+// }
