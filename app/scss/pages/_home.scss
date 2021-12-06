@@ -1,6 +1,6 @@
 .herobanner {
     position: relative;
-
+    width: 100%;
     &__image {
         position: relative;
 
@@ -13,13 +13,17 @@
             position: absolute;
             background: linear-gradient(90deg, $color-black, $color-black 70%);
             opacity: 0.7;
-
+            @include breakpoint (mobile-max) {
+                
+                width: 100%;
+                height: 551px;
+            }
             @include breakpoint (portrait-mobile-max) {
                 height: 343px;
             }
 
             @include breakpoint(custom-small-mobile-max) {
-                height: 310px;
+                height: 240px;
             }
         }
     }
@@ -27,16 +31,20 @@
     &__herobannerimg {
         width: 100%;
         height: 637px;
-
+        @include breakpoint (mobile-max) {
+            font-size: 39px;
+            width: 100%;
+            height: 551px;
+        }
         @include breakpoint (portrait-mobile-max) {
             font-size: 39px;
             width: 100%;
-            height: 345px;
+            height: 343px;
         }
 
         @include breakpoint(custom-small-mobile-max) {
             width: 100%;
-            height: 300px;
+            height: 240px;
         }
     }
 
@@ -49,7 +57,11 @@
         padding: 0;
         width: 100%;
         height: 637px;
-
+        @include breakpoint (mobile-max) {
+            font-size: 39px;
+            width: 100%;
+            height: 491px;
+        }
         @include breakpoint (portrait-mobile-max) {
             font-size: 39px;
             width: 100%;
@@ -58,7 +70,8 @@
 
         @include breakpoint(custom-small-mobile-max) {
             width: 100%;
-            height: 300px;
+            
+            height: 240px;
         }
     }
 
@@ -95,6 +108,12 @@
             left: 0;
             right: 0;
         }
+        @include breakpoint(custom-small-mobile-max) {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            right: 0;
+        }
     }
 
     &__headings {
@@ -105,7 +124,8 @@
         width: 49%;
 
         @include breakpoint (mobile-max) {
-            font-size: 39px;
+            font-size: 37px;
+           
         }
 
         @include breakpoint (portrait-mobile-max) {
@@ -121,19 +141,17 @@
     &__paragraph {
         font-size: 15px;
         font-weight: 400;
-        color: $color-light-black;
         width: 394px;
         margin-top: 18px;
         margin-bottom: 29px;
-
+color: #7d7d7d;
         @include breakpoint (mobile-max) {
-            font-size: 8px;
+            font-size: 12px;
             width: 294px;
         }
 
         @include breakpoint (portrait-mobile-max) {
-            font-size: 39px;
-            font-size: 6px;
+            font-size: 9px;
             width: 196px;
         }
     }
@@ -155,7 +173,7 @@
         display: flex;
         flex-wrap: wrap;
     }
-
+   
     &__round-shape {
         position: absolute;
         bottom: 225px;
@@ -533,6 +551,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        margin-bottom: 10px;
     }
     &__card {
         max-width: 365px;
@@ -562,55 +581,60 @@
     }
 }
 
+// info section
+.info{
+    margin-top: 92px;
+    padding-top: 95px;
+    padding-bottom: 70px;
+    position: relative;
+background: #fdabab;
+    &::before {
+        content: "";
+        position: absolute;
+        background: $color-white;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 25px;
+        border-radius: 0 0 50% 50%/0 0 100% 100%;
+    }
 
-
+    &::after {
+        content: "";
+        position: absolute;
+        background: $color-white;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 25px;
+        border-radius: 0 0 50% 50%/0 0 100% 100%;
+        transform: rotateX(135deg);
+    }   
+}
+.info__heading{
+    font-size: 34px;
+    font-weight: 700;
+    color: $primary-color;
+    text-align: center;
+}
+.info__content{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+padding-top: 44px;
+}
+.info__img{
+    width: 110px;
+    height: 110px;
+    margin-right: 30px;
+}
+.info__list{
+    font-size: 20px;
+    color: $color-charcoal;
+    font-weight: 500;
+    text-decoration: underline;
+}
 // // card css
 
 // .circle-wrap {}
 
-// .circle-wrap .circle .mask,
-// .circle-wrap .circle .fill {
-//     width: 150px;
-//     height: 150px;
-//     position: absolute;
-//     border-radius: 50%;
-// }
-
-// .circle-wrap .circle .mask {
-//     clip: rect(0px, 150px, 150px, 75px);
-// }
-
-// .circle-wrap .circle .mask .fill {
-//     clip: rect(0px, 75px, 150px, 0px);
-//     background-color: #9e00b1;
-// }
-
-// .circle-wrap .circle .mask.full,
-// .circle-wrap .circle .fill {
-//     animation: fill ease-in-out 3s;
-//     transform: rotate(126deg);
-// }
-
-// @keyframes fill {
-//     0% {
-//         transform: rotate(0deg);
-//     }
-
-//     100% {
-//         transform: rotate(126deg);
-//     }
-// }
-
-// .circle-wrap .inside-circle {
-//     width: 130px;
-//     height: 130px;
-//     border-radius: 50%;
-//     background: #fff;
-//     line-height: 130px;
-//     text-align: center;
-//     margin-top: 10px;
-//     margin-left: 10px;
-//     position: absolute;
-//     font-weight: 700;
-//     font-size: 2em;
-// }
