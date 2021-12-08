@@ -29,3 +29,23 @@
       });
     }); 
   })(jQuery); 
+
+
+  let options = {
+    startAngle: -1.55,
+    size: 127,
+    value: 0.85,
+    fill: {
+      gradient: ['red', 'red']
+    }
+  }
+  $(".progres__circle .progres__bar").circleProgress(options).on('circle-animation-progress',
+    function (event, progress, stepValue) {
+      $(this).parent().find(".progres__percent").text(String(stepValue.toFixed(2).substr(2)) + "%");
+    });
+  $(".js .progres__bar").circleProgress({
+    value: 0.70   
+  });
+  $(".react .progres__bar").circleProgress({
+    value: 0.60
+  });

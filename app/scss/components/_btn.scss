@@ -20,7 +20,7 @@
 
   @include breakpoint (portrait-mobile-max) {
     padding: 4px 15px 3px 15px;
-    font-size: 8px;
+    font-size:10px;
   }
 
   @include breakpoint(custom-small-mobile-max) {
@@ -46,6 +46,7 @@
   left: 45px;
 
   @include breakpoint(custom-small-mobile-max) {
+    margin-bottom: 28px;
     margin-left: 20px;
     padding: 9px 66px 9px 66px;
   }
