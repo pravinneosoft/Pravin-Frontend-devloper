@@ -21,16 +21,19 @@
         }
 
     }
-    &__right{
+
+    &__right {
 
         @include breakpoint (portrait-mobile-max) {
             display: flex;
             align-items: center;
         }
+
         @include breakpoint (custom-small-mobile-max) {
             display: flex;
             flex-flow: column-reverse;
         }
+
         @include breakpoint (mobile-max) {
             margin-top: 6px;
         }
@@ -43,6 +46,7 @@
 
         &:nth-child(2) {
             padding-left: 35px;
+
             @include breakpoint (mobile-max) {
                 padding-left: 0;
                 padding-top: 2px;
@@ -54,8 +58,9 @@
             margin-top: 3px;
         }
     }
+
     &__select-lang {
-        border-radius: 25px ;
+        border-radius: 25px;
         font-weight: 400;
         font-size: 12px;
         border: 1px solid $color-white;

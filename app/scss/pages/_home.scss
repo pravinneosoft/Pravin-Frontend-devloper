@@ -212,6 +212,7 @@
         @include breakpoint (portrait-mobile-max) {
             margin: 0;
         }
+
         @include breakpoint(custom-small-mobile-max) {
             margin: 0;
         }
@@ -300,15 +301,19 @@
         flex-wrap: nowrap;
         position: relative;
         margin-left: 85px;
+
         @include breakpoint (mobile-max) {
             display: block;
             margin-left: 0;
         }
+
         &-image {
             position: relative;
+
             @include breakpoint (mobile-max) {
                 text-align: center;
             }
+
             &-small-round {
                 position: absolute;
                 top: 50px;
@@ -342,6 +347,7 @@
 
         &-content {
             padding-top: 70px;
+
             @include breakpoint (mobile-max) {
                 text-align: -webkit-center;
             }
@@ -384,19 +390,24 @@
         flex-wrap: nowrap;
         position: relative;
         justify-content: center;
+
         @include breakpoint (mobile-max) {
             display: block;
         }
-        &-content{
+
+        &-content {
             @include breakpoint (mobile-max) {
                 text-align: -webkit-center;
             }
         }
+
         &-image {
             position: relative;
+
             @include breakpoint (mobile-max) {
                 text-align: center;
             }
+
             &-small-round {
                 position: absolute;
                 left: 40px;
@@ -480,11 +491,13 @@
             width: 25%;
             margin: 19px;
             border-radius: 50%;
+
             @include breakpoint(custom-small-mobile-max) {
                 width: 31%;
                 display: flex;
                 justify-content: center;
             }
+
             &-image {
                 height: 18px;
                 width: 18px;
@@ -498,11 +511,13 @@
             width: 25%;
             margin: 19px;
             border-radius: 50%;
+
             @include breakpoint(custom-small-mobile-max) {
                 width: 31%;
                 display: flex;
                 justify-content: center;
             }
+
             &-image {
                 height: 19px;
                 width: 18px;
@@ -516,6 +531,7 @@
             width: 25%;
             margin: 19px;
             border-radius: 50%;
+
             @include breakpoint(custom-small-mobile-max) {
                 width: 31%;
                 display: flex;
@@ -530,6 +546,7 @@
             width: 25%;
             margin: 19px;
             border-radius: 50%;
+
             @include breakpoint(custom-small-mobile-max) {
                 width: 31%;
                 display: flex;
@@ -544,6 +561,7 @@
             width: 25%;
             margin: 19px;
             border-radius: 50%;
+
             @include breakpoint(custom-small-mobile-max) {
                 width: 31%;
                 display: flex;
@@ -585,7 +603,7 @@
     padding-top: 78PX;
     padding-bottom: 78px;
     background: #f9f4fc;
-    
+
     &__row {
         padding-top: 105px;
         display: flex;
@@ -707,28 +725,31 @@
 }
 
 // progress section
-.progres__card{
+.progres__card {
     max-width: 333px;
 
 }
-.progres__title{
+
+.progres__title {
     font-size: 17px;
     font-weight: 500;
     color: $clolor-light-blue;
 }
-.progres__text{
+
+.progres__text {
     font-size: 14px;
     font-weight: 500;
-    color:#7d7d7d;
+    color: #7d7d7d;
 }
+
 .progres__row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .progres__row .progres__card {
+.progres__row .progres__card {
     background: #fff;
     max-width: 333px;
     border-radius: 5px;
@@ -738,59 +759,61 @@
     flex-direction: column;
     border: 1px solid black;
     padding-top: 24px;
-  padding-bottom: 66px;
-  }
+    padding-bottom: 66px;
+}
 
-  .progres__row .progres__card .progres__circle {
+.progres__row .progres__card .progres__circle {
     position: relative;
     height: 127px;
-  width: 127px;
+    width: 127px;
     border-radius: 50%;
     cursor: default;
-  }
+}
 
-  .progres__card .progres__circle .progres__box,
-  .progres__card .progres__circle .progres__box .progres__percent {
+.progres__card .progres__circle .progres__box,
+.progres__card .progres__circle .progres__box .progres__percent {
     position: absolute;
     top: 50%;
     left: 50%;
-  }
+}
 
-  .progres__card .progres__circle .progres__box {
+.progres__card .progres__circle .progres__box {
     height: 108%;
     width: 108%;
     background: rgba(19, 15, 15, 0.205);
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0.8);
     transition: all 0.2s;
-  }
+}
 
-.progres__heading{
-  font-size: 17px;
-  color: #4b647e;
-  font-weight: 500;
-  margin-top: 29px;
+.progres__heading {
+    font-size: 17px;
+    color: #4b647e;
+    font-weight: 500;
+    margin-top: 29px;
 }
-.progres__paragraph{
-  font-size: 14px;
-  font-weight: 500;
-  color: #7d7d7d;
-  padding-left: 50px;
-  text-align: center;
-  padding-right: 50px;
-  margin-top: 27px;
+
+.progres__paragraph {
+    font-size: 14px;
+    font-weight: 500;
+    color: #7d7d7d;
+    padding-left: 50px;
+    text-align: center;
+    padding-right: 50px;
+    margin-top: 27px;
 }
-  .circle .progres__box .progres__percent {
+
+.circle .progres__box .progres__percent {
     font-size: 38px;
     font-family: sans-serif;
     font-weight: 600;
     transform: translate(-45%, -45%);
     transition: all 0.1s;
-  }
+}
 
 
 
-  .progres__card .progres__text {
+.progres__card .progres__text {
     font-size: 20px;
     font-weight: 600;
-  }
+}

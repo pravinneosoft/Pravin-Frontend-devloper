@@ -20,7 +20,7 @@
 
   @include breakpoint (portrait-mobile-max) {
     padding: 4px 15px 3px 15px;
-    font-size:10px;
+    font-size: 10px;
   }
 
   @include breakpoint(custom-small-mobile-max) {
@@ -54,9 +54,7 @@
 
 .btn--enroll {
   border-radius: 25px !important;
-
   font-size: 12px;
-
   font-weight: 400;
   font-size: 15px;
   color: $color-white;
@@ -81,7 +79,7 @@
   }
 
   @include breakpoint (portrait-mobile-max) {
-    font-size: 9px;   
+    font-size: 9px;
   }
 }
 
