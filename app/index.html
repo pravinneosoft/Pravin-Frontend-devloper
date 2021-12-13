@@ -8,10 +8,10 @@
   <!-- link tags -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -19,9 +19,10 @@
     <div class="header-top">
       <div class="header-top__content container">
         <div class="header-top__left">
-          <a class="header-top-info-hotline"><span class="icon-phone"></span> Support Hotline :
+          <a class="header-top-info-hotline"><span class="icon-phone header-top-info-icon"></span> Support Hotline :
             586-217-2163</a>
-          <a class="header-top-info-hotline"><span class="icon-gmail"></span>vctung@outlook.com</a></div>
+          <a class="header-top-info-hotline"><span class="icon-gmail header-top-info-icon"></span>vctung@outlook.com</a>
+        </div>
         <div class="header-top__right">
           <a href="" class="btn btn--white">Sign Up</a>
           <select name="language" class="header-top__select-lang" id="framework">
@@ -251,16 +252,6 @@
             <span class="goal__mission-dot"></span>
             <span class="goal__mission-dot"></span>
             <span class="goal__mission-dot"></span>
-            <span class="goal__mission-dot"></span>
-            <span class="goal__mission-dot"></span>
-            <span class="goal__mission-dot"></span>
-            <span class="goal__mission-dot"></span>
-            <span class="goal__mission-dot"></span>
-            <span class="goal__mission-dot"></span>
-            <span class="goal__mission-dot"></span>
-            <span class="goal__mission-dot"></span>
-            <span class="goal__mission-dot"></span>
-            <span class="goal__mission-dot"></span>
           </div>
         </div>
 
@@ -281,6 +272,11 @@
             nurturing educational experience with a challenging academic curriculum aligned to every
             classroom that will challenge and prepare students for career, college and entrepreneurship
             readiness.</p>
+          <ul class="goal__vision-list">
+            <li>Ignite the potential in every student</li>
+            <li>Inspire a passion for life-long learning</li>
+            <li> Prepare students to compete in a global society</li>
+          </ul>
           <a class="btn btn--wheat" href="#">Read more</a>
         </div>
         <div class="goal__vision-image">
@@ -288,34 +284,6 @@
           <div class="goal__vision-image-big-round"></div>
           <img class="goal__vision-image-student" src="images/sofa-card.png" alt="">
           <div class="goal__vision-dotted-circle">
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
-            <span class="goal__vision-dot"></span>
             <span class="goal__vision-dot"></span>
             <span class="goal__vision-dot"></span>
             <span class="goal__vision-dot"></span>
@@ -425,190 +393,159 @@
         </div>
       </div>
     </section>
-    <section class="testimonial">
+    <section class="testimonial container">
       <h1 class="main-heading">Testimonial </h1>
       <p class="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut
         <br> labore et dolore magna aliqua!</p>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+      <div class="testimonial__row">
+        <div class="testimonial__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="images/testimonial-student-girl.png" alt="">
+            </div>
+            <div class="col-9">
+              <h2 class="testimonial__card-heading">Harrison Phillips</h2>
+              <p class="testimonial__card-subtitle">Lorem ipsum</p>
+            </div>
+          </div>
+          <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
+            eaque excepturi ab. Laboriosam ipsam
+            voluptatem voluptatibus labore quam nihil.
+            Quasi occaecati quos ratione quia aut
+            molestiae velit et. Voluptatem id ea dicta </p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="testimonial__row">
-              <div class="testimonial__card">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="images/testimonial-student-girl.png" alt="">
-                  </div>
-                  <div class="col-9">
-                    <h2 class="testimonial__card-heading">Harrison Phillips</h2>
-                    <p class="testimonial__card-subtitle">Lorem ipsum</p>
-                  </div>
-                </div>
-                <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
-                  eaque excepturi ab. Laboriosam ipsam
-                  voluptatem voluptatibus labore quam nihil.
-                  Quasi occaecati quos ratione quia aut
-                  molestiae velit et. Voluptatem id ea dicta </p>
-              </div>
-              <div class="testimonial__card">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="images/testimonial-student-girl.png" alt="">
-                  </div>
-                  <div class="col-9">
-                    <h2 class="testimonial__card-heading">Harrison Phillips</h2>
-                    <p class="testimonial__card-subtitle">Lorem ipsum</p>
-                  </div>
-                </div>
-                <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
-                  eaque excepturi ab. Laboriosam ipsam
-                  voluptatem voluptatibus labore quam nihil.
-                  Quasi occaecati quos ratione quia aut
-                  molestiae velit et. Voluptatem id ea dicta </p>
-              </div>
-              <div class="testimonial__card">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="images/testimonial-student-girl.png" alt="">
-                  </div>
-                  <div class="col-9">
-                    <h2 class="testimonial__card-heading">Harrison Phillips</h2>
-                    <p class="testimonial__card-subtitle">Lorem ipsum</p>
-                  </div>
-                </div>
-                <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
-                  eaque excepturi ab. Laboriosam ipsam
-                  voluptatem voluptatibus labore quam nihil.
-                  Quasi occaecati quos ratione quia aut
-                  molestiae velit et. Voluptatem id ea dicta </p>
-              </div>
+        <div class="testimonial__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="images/testimonial-student-girl.png" alt="">
+            </div>
+            <div class="col-9">
+              <h2 class="testimonial__card-heading">Harrison Phillips</h2>
+              <p class="testimonial__card-subtitle">Lorem ipsum</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="testimonial__row">
-              <div class="testimonial__card">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="images/testimonial-student-girl.png" alt="">
-                  </div>
-                  <div class="col-9">
-                    <h2 class="testimonial__card-heading">Harrison Phillips</h2>
-                    <p class="testimonial__card-subtitle">Lorem ipsum</p>
-                  </div>
-                </div>
-                <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
-                  eaque excepturi ab. Laboriosam ipsam
-                  voluptatem voluptatibus labore quam nihil.
-                  Quasi occaecati quos ratione quia aut
-                  molestiae velit et. Voluptatem id ea dicta </p>
-              </div>
-              <div class="testimonial__card">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="images/testimonial-student-girl.png" alt="">
-                  </div>
-                  <div class="col-9">
-                    <h2 class="testimonial__card-heading">Harrison Phillips</h2>
-                    <p class="testimonial__card-subtitle">Lorem ipsum</p>
-                  </div>
-                </div>
-                <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
-                  eaque excepturi ab. Laboriosam ipsam
-                  voluptatem voluptatibus labore quam nihil.
-                  Quasi occaecati quos ratione quia aut
-                  molestiae velit et. Voluptatem id ea dicta </p>
-              </div>
-              <div class="testimonial__card">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="images/testimonial-student-girl.png" alt="">
-                  </div>
-                  <div class="col-9">
-                    <h2 class="testimonial__card-heading">Harrison Phillips</h2>
-                    <p class="testimonial__card-subtitle">Lorem ipsum</p>
-                  </div>
-                </div>
-                <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
-                  eaque excepturi ab. Laboriosam ipsam
-                  voluptatem voluptatibus labore quam nihil.
-                  Quasi occaecati quos ratione quia aut
-                  molestiae velit et. Voluptatem id ea dicta </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="testimonial__row">
-              <div class="testimonial__card">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="images/testimonial-student-girl.png" alt="">
-                  </div>
-                  <div class="col-9">
-                    <h2 class="testimonial__card-heading">Harrison Phillips</h2>
-                    <p class="testimonial__card-subtitle">Lorem ipsum</p>
-                  </div>
-                </div>
-                <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
-                  eaque excepturi ab. Laboriosam ipsam
-                  voluptatem voluptatibus labore quam nihil.
-                  Quasi occaecati quos ratione quia aut
-                  molestiae velit et. Voluptatem id ea dicta </p>
-              </div>
-              <div class="testimonial__card">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="images/testimonial-student-girl.png" alt="">
-                  </div>
-                  <div class="col-9">
-                    <h2 class="testimonial__card-heading">Harrison Phillips</h2>
-                    <p class="testimonial__card-subtitle">Lorem ipsum</p>
-                  </div>
-                </div>
-                <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
-                  eaque excepturi ab. Laboriosam ipsam
-                  voluptatem voluptatibus labore quam nihil.
-                  Quasi occaecati quos ratione quia aut
-                  molestiae velit et. Voluptatem id ea dicta </p>
-              </div>
-              <div class="testimonial__card">
-                <div class="row">
-                  <div class="col-3">
-                    <img src="images/testimonial-student-girl.png" alt="">
-                  </div>
-                  <div class="col-9">
-                    <h2 class="testimonial__card-heading">Harrison Phillips</h2>
-                    <p class="testimonial__card-subtitle">Lorem ipsum</p>
-                  </div>
-                </div>
-                <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
-                  eaque excepturi ab. Laboriosam ipsam
-                  voluptatem voluptatibus labore quam nihil.
-                  Quasi occaecati quos ratione quia aut
-                  molestiae velit et. Voluptatem id ea dicta </p>
-              </div>
-            </div>
-          </div>
+          <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
+            eaque excepturi ab. Laboriosam ipsam
+            voluptatem voluptatibus labore quam nihil.
+            Quasi occaecati quos ratione quia aut
+            molestiae velit et. Voluptatem id ea dicta </p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="testimonial__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="images/testimonial-student-girl.png" alt="">
+            </div>
+            <div class="col-9">
+              <h2 class="testimonial__card-heading">Harrison Phillips</h2>
+              <p class="testimonial__card-subtitle">Lorem ipsum</p>
+            </div>
+          </div>
+          <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
+            eaque excepturi ab. Laboriosam ipsam
+            voluptatem voluptatibus labore quam nihil.
+            Quasi occaecati quos ratione quia aut
+            molestiae velit et. Voluptatem id ea dicta </p>
+        </div>
+        <div class="testimonial__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="images/testimonial-student-girl.png" alt="">
+            </div>
+            <div class="col-9">
+              <h2 class="te stimonial__card-heading">Harrison Phillips</h2>
+              <p class="testimonial__card-subtitle">Lorem ipsum</p>
+            </div>
+          </div>
+          <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
+            eaque excepturi ab. Laboriosam ipsam
+            voluptatem voluptatibus labore quam nihil.
+            Quasi occaecati quos ratione quia aut
+            molestiae velit et. Voluptatem id ea dicta </p>
+        </div>
+        <div class="testimonial__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="images/testimonial-student-girl.png" alt="">
+            </div>
+            <div class="col-9">
+              <h2 class="testimonial__card-heading">Harrison Phillips</h2>
+              <p class="testimonial__card-subtitle">Lorem ipsum</p>
+            </div>
+          </div>
+          <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
+            eaque excepturi ab. Laboriosam ipsam
+            voluptatem voluptatibus labore quam nihil.
+            Quasi occaecati quos ratione quia aut
+            molestiae velit et. Voluptatem id ea dicta </p>
+        </div>
+        <div class="testimonial__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="images/testimonial-student-girl.png" alt="">
+            </div>
+            <div class="col-9">
+              <h2 class="testimonial__card-heading">Harrison Phillips</h2>
+              <p class="testimonial__card-subtitle">Lorem ipsum</p>
+            </div>
+          </div>
+          <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
+            eaque excepturi ab. Laboriosam ipsam
+            voluptatem voluptatibus labore quam nihil.
+            Quasi occaecati quos ratione quia aut
+            molestiae velit et. Voluptatem id ea dicta </p>
+        </div>
+
+        <div class="testimonial__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="images/testimonial-student-girl.png" alt="">
+            </div>
+            <div class="col-9">
+              <h2 class="testimonial__card-heading">Harrison Phillips</h2>
+              <p class="testimonial__card-subtitle">Lorem ipsum</p>
+            </div>
+          </div>
+          <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
+            eaque excepturi ab. Laboriosam ipsam
+            voluptatem voluptatibus labore quam nihil.
+            Quasi occaecati quos ratione quia aut
+            molestiae velit et. Voluptatem id ea dicta </p>
+        </div>
+        <div class="testimonial__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="images/testimonial-student-girl.png" alt="">
+            </div>
+            <div class="col-9">
+              <h2 class="testimonial__card-heading">Harrison Phillips</h2>
+              <p class="testimonial__card-subtitle">Lorem ipsum</p>
+            </div>
+          </div>
+          <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
+            eaque excepturi ab. Laboriosam ipsam
+            voluptatem voluptatibus labore quam nihil.
+            Quasi occaecati quos ratione quia aut
+            molestiae velit et. Voluptatem id ea dicta </p>
+        </div>
+        <div class="testimonial__card">
+          <div class="row">
+            <div class="col-3">
+              <img src="images/testimonial-student-girl.png" alt="">
+            </div>
+            <div class="col-9">
+              <h2 class="testimonial__card-heading">Harrison Phillips</h2>
+              <p class="testimonial__card-subtitle">Lorem ipsum</p>
+            </div>
+          </div>
+          <p class="testimonial__card-paragraph">Nisi cumque in necessitatibus molestiae
+            eaque excepturi ab. Laboriosam ipsam
+            voluptatem voluptatibus labore quam nihil.
+            Quasi occaecati quos ratione quia aut
+            molestiae velit et. Voluptatem id ea dicta </p>
+        </div>
       </div>
-    </section>
+</section>
     <section class="info">
       <h2 class="info__heading">
         For more information click the following links below
@@ -665,65 +602,76 @@
   </main>
 
   <footer>
-    <div class="row footer__content">
-      <div class="col-md-3">
-        <h4 style="font-weight: 400;">HW SCHOOL DISTRICT</h4>
-        <ol class="footer__orderlist">
-          <li>
-            1500 Treat Ave, Suite 200
-            San Francisco, CA 94110
-          </li>
-          <li>
-            demo@hwschool.com
-          </li>
-          <li>
-            586-217-2163 (Support)
-          </li>
-        </ol>
-        <h4>Follow us</h4>
-      </div>
-      <div class="col-md-2">
-        <h4>Schools</h4>
-        <ol class="footer__orderlist">
-          <li>Beacon Elementary
-          </li>
-          <li>Tyrone Elementary</li>
-          <li>HW Middle School</li>
-          <li>HW High School</li>
-          <li>Harper Academy</li>
-        </ol>
-      </div>
-      <div class="col-md-2">
-        <h4>District Info</h4>
-        <ol class="footer__orderlist">
-          <li>Home</li>
-          <li>Board of Education</li>
-        </ol>
-      </div>
-      <div class="col-md-2">
-        <h4>More</h4>
-        <ol class="footer__orderlist">
-          <li>Menu</li>
-          <li>Illuminate Education</li>
-          <li>MI Star Parents</li>
-          <li>MI Star Students</li>
-          <li>MI Star Teachers</li>
-          <li>KB Compass</li>
-          <li>Atlas Rubicon Parents</li>
-          <li>Atlas Rubicon Teachers</li>
-        </ol>
-      </div>
-      <div class="col-md-3">
-        <h4>Listen Now</h4>
-        <img src="images/u184.png" alt="">
-        <h4>Transparency Reporting</h4>
-        <img src="images/u178.png" alt="">
-        <h5>MI School Data</h5>
+    <div class="container">
+      <div class="row footer">
+        <div class="col-md-3 col-sm-3 footer__logo">
+          <img class="footer__logo-image" src="images/hwlogo.png" alt="">
+          <h4 class="footer__heading"> HW SCHOOL DISTRICT</h4>
+          <ol class="footer__orderlist">
+            <li><span class="icon-location"></span>
+              1500 Treat Ave, Suite 200
+              San Francisco, CA 94110
+            </li>
+            <li><span class="icon-gmail"></span>
+              demo@hwschool.com
+            </li>
+            <li><span class="icon-phone"></span>
+              586-217-2163 (Support)
+            </li>
+          </ol>
+          <h4 class="footer__heading">Follow us</h4>
+          <ul class="footer__social">
+            <li class="footer__social-icon"><span class="icon-facebook"></span></li>
+            <li class="footer__social-icon"><span class="icon-youtube"></span></li>
+            <li class="footer__social-icon"><span class="icon-twitter"></span></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-2">
+          <h4 class="footer__heading">Schools</h4>
+          <ol class="footer__orderlist">
+            <li>Beacon Elementary
+            </li>
+            <li>Tyrone Elementary</li>
+            <li>HW Middle School</li>
+            <li>HW High School</li>
+            <li>Harper Academy</li>
+          </ol>
+        </div>
+        <div class="col-md-2 col-sm-2">
+          <h4 class="footer__heading">District Info</h4>
+          <ol class="footer__orderlist">
+            <li>Home</li>
+            <li>Board of Education</li>
+          </ol>
+        </div>
+        <div class="col-md-2 col-sm-2">
+          <h4 class="footer__heading">More</h4>
+          <ol class="footer__orderlist">
+            <li>Menu</li>
+            <li>Illuminate Education</li>
+            <li>MI Star Parents</li>
+            <li>MI Star Students</li>
+            <li>MI Star Teachers</li>
+            <li>KB Compass</li>
+            <li>Atlas Rubicon Parents</li>
+            <li>Atlas Rubicon Teachers</li>
+          </ol>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <h4 class="footer__heading">Listen Now</h4>
+
+          <img class="footer__wood-img" src="images/footer-woods.png" alt="">
+          <h4 class="footer__heading">Transparency Reporting</h4>
+          <img class="footer__map-img" src="images/footer-map.png" alt="">
+          <ol class="footer__orderlist">
+            <li>MI School Data</li>
+          </ol>
+        </div>
       </div>
     </div>
     <hr>
     <div class="footer__copyright">
-      <p>© COPYRIGHT 2021. ​ALL RIGHTS RESERVED.</p>
+      <p class="footer__copyright-paragraph">© COPYRIGHT 2021. ​ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -732,7 +680,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
   </script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
