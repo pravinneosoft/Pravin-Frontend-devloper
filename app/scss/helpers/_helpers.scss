@@ -12,5 +12,17 @@ h2{
     font-family: $secondary-font;
     font-weight: 400;
     text-align: center;
-    
+    padding-left: 315px;
+    padding-right: 315px;
+    @include breakpoint (desktop-max) {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+    @include breakpoint (mobile-max) {
+        padding-left: 51px;
+        padding-right: 51px;
+    }
+    @include breakpoint(custom-small-mobile-max) {
+        margin: 0;
+    }
 }

@@ -638,7 +638,7 @@
         max-width: 258px;
         color: $cool-grey;
         border-radius: 15px;
-        box-shadow: -1px 2px 5px 3px #00000024;
+        box-shadow: 0 0 77px rgb(0 0 0 / 13%);
         padding: 19px 19px 35px 19px;
         margin-right: 35px;
         margin-top: 35px;
@@ -672,21 +672,54 @@
     background: #fff4e5;
     -webkit-clip-path: ellipse(54% 43% at 50% 49%);
     clip-path: ellipse(54% 49% at 50% 49%);
-
+    position: relative;
     @include breakpoint (desktop-max) {
         clip-path: none;
         padding-bottom: 100px;
     }
-
+    &__heading{
+        font-size: 34px;
+        font-weight: 700;
+        color: $color-charcoal;
+        text-align: center;
+    }
+    &__paragraph{
+        font-size: 16px;
+        font-family: $secondary-font;
+        font-weight: 400;
+        color: $color-light-black;
+        text-align: center;
+        padding-bottom: 0;
+    padding-right: 325px;
+    padding-left: 325px;
+    @include breakpoint (mobile-max) {
+    padding-right: 100px;
+    padding-left: 100px;}
+    }
     &__row {
-        padding-top: 105px;
+        padding-top: 83px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        position: relative;
     }
 
     &__card {
-        width: 266px;
+        width: 266px !important;
+        margin-left: 44px;
+        @include breakpoint (desktop-max) {
+            margin-left: 52px;
+        }
+        @include breakpoint (mobile-max) {
+            margin-left: 60px;
+        }
+        @include breakpoint (portrait-mobile-max) {
+            margin-left: 60px;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            margin-left: 60px;
+        }
     }
 }
 
@@ -701,8 +734,65 @@
     text-align: center;
     background: $color-white;
 }
-
+.prev{
+    color: $primary-color;
+    position: absolute;
+    bottom: -40px;
+    left: 50px;
+}
+.next{
+    color: $primary-color;
+    position: absolute;
+    bottom: -40px;
+    left: 80px;
+}
+.education__dotted-circle{
+    position: absolute;
+    right: 47px;
+    bottom: 255px;
+    width: 173px;
+    z-index: -1;
+}
+.education__dot{
+    width: 3px;
+    margin: 5px;
+    height: 3px;
+    display: inline-block;
+    background: $primary-color;
+    border-radius: 50%;
+}
+//testimonial
 .testimonial {
+    margin-top: 60px;
+
+    &__heading {
+        font-size: 34px;
+        font-weight: 700;
+        color: $color-charcoal;
+        text-align: center;
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        font-family: $secondary-font;
+        font-weight: 400;
+        color: $color-light-black;
+        text-align: center;
+        padding-left: 315px;
+        padding-right: 315px;
+        margin-bottom: 75px;
+
+        @include breakpoint (desktop-max) {
+            padding-left: 110px;
+            padding-right: 110px;
+        }
+
+        @include breakpoint (mobile-max) {
+            padding-left: 51px;
+            padding-right: 51px;
+        }
+    }
+
     &__row {
         display: flex;
         flex-wrap: wrap;
@@ -717,40 +807,69 @@
         border-radius: 15px;
         height: auto;
         margin-bottom: 53px;
-        box-shadow: -1px -1px 20px 5px #00000024;
+        box-shadow: 0 0 46px rgb(0 0 0 / 6%);
         padding: 17px 19px 30px 19px;
         margin-top: 35px;
 
+        @include breakpoint (desktop-max) {
+            margin-left: 32px;
+            width: 285px !important;
+        }
+        @include breakpoint (mobile-max) {
+            margin-left: 43px;
+            
+        }
+        @include breakpoint (portrait-mobile-max) {
+            margin-left: 112px;
+            margin-right: 120px;
+        }
+        @include breakpoint (custom-small-mobile-max) {
+            margin-left: 21px;
+            margin-right:21px;
+        }
         &-heading {
             font-size: 20px;
             font-weight: 500;
-            color: #212121;
+            color: $color-light-charcoal;
             margin-bottom: 0;
+
+            @include breakpoint (desktop-max) {
+                text-align: center;
+            }
         }
 
         &-subtitle {
             font-size: 12px;
             font-family: $secondary-font;
             font-weight: 400;
-            color: #37474f;
+            color: $cool-grey;
+
+            @include breakpoint (desktop-max) {
+                padding-left: 15px;
+            }
         }
 
         &-paragraph {
             font-size: 15px;
             font-weight: 400;
             font-family: $secondary-font;
-            color: #37474f;
+            color: $cool-grey;
             margin-top: 21px;
             margin-bottom: 0;
         }
     }
 }
+.slick-track{
+    width: 6900px !important;
+}
+.slick-dots li button:before {
+    font-size: 10px !important;
+}
 
 .slick-dots li.slick-active button:before {
     opacity: .75;
-    width: 10px !important;
-    height: 10px !important;
     color: $primary-color !important;
+    font-size: 10px !important;
 }
 
 // info section
@@ -813,41 +932,51 @@
 }
 
 // progress section
-.progres__card {
-    max-width: 333px;
+.progres {
+    margin-top: 55px;
 
-}
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 72px;
 
-.progres__title {
-    font-size: 17px;
-    font-weight: 500;
-    color: $clolor-light-blue;
-}
-
-.progres__text {
-    font-size: 14px;
-    font-weight: 500;
-    color: #7d7d7d;
-}
-
-.progres__row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+        @include breakpoint (mobile-max) {
+            display: grid;
+        }
+    }
 }
 
 .progres__row .progres__card {
-    background: #fff;
-    max-width: 333px;
+    max-width: 355px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    border: 1px solid black;
-    padding-top: 24px;
+    padding-top: 25px;
     padding-bottom: 66px;
+
+    @include breakpoint (desktop-max) {
+        max-width: 311px;
+        padding-top: 23px;
+        padding-bottom: 38px;
+    }
+
+    @include breakpoint(custom-small-mobile-max) {
+        max-width: 300px;
+        padding-top: 18px;
+        padding-bottom: 30px;
+    }
+
+    &:hover {
+        border-bottom-right-radius: 25%;
+        border-top-left-radius: 25%;
+        background: #f9f9ff;
+        box-shadow: 0 50px 76px 0 rgba(132, 30, 37, 0.23);
+
+    }
 }
 
 .progres__row .progres__card .progres__circle {
@@ -861,34 +990,54 @@
 .progres__card .progres__circle .progres__box,
 .progres__card .progres__circle .progres__box .progres__percent {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 49%;
+    transform: translate(-12px, -10px);
+    left: 49%;
+    font-size: 21px;
 }
 
 .progres__card .progres__circle .progres__box {
     height: 108%;
     width: 108%;
-    background: rgba(19, 15, 15, 0.205);
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0.8);
     transition: all 0.2s;
 }
 
-.progres__heading {
+.progres__card-heading {
     font-size: 17px;
-    color: #4b647e;
+    color: $clolor-light-blue;
     font-weight: 500;
     margin-top: 29px;
 }
 
-.progres__paragraph {
+.progres__card-paragraph {
     font-size: 14px;
     font-weight: 500;
-    color: #7d7d7d;
-    padding-left: 50px;
+    color: $color-light-black;
+    padding-left: 37px;
     text-align: center;
     padding-right: 50px;
-    margin-top: 27px;
+    margin-top: 37px;
+
+    @include breakpoint (desktop-max) {
+        margin-top: 28px;
+    }
+}
+
+.progres__circle-primary {
+    color: $primary-color;
+    background-color: #84251e52;
+}
+
+.progres__circle-secondary {
+    background-color: #70ce883f;
+    color: $color-green;
+}
+
+.progres__circle-tertiary {
+    background-color: #ffb9493d;
+    color: $color-yellow;
 }
 
 .circle .progres__box .progres__percent {
