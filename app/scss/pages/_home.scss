@@ -152,7 +152,7 @@
         width: 394px;
         margin-top: 18px;
         margin-bottom: 29px;
-        color: #7d7d7d;
+        color: $color-light-black;
 
         @include breakpoint (mobile-max) {
             font-size: 12px;
@@ -579,7 +579,7 @@
         &-book {
             border: 1px solid $color-white;
             padding: 17px;
-            background: #ff5959;
+            background: $color-orange;
             width: 25%;
             margin: 19px;
             border-radius: 50%;
@@ -669,33 +669,39 @@
 .education {
     padding-top: 76PX;
     padding-bottom: 298px;
-    background: #fff4e5;
+    background: $color-light-wheat;
     -webkit-clip-path: ellipse(54% 43% at 50% 49%);
     clip-path: ellipse(54% 49% at 50% 49%);
     position: relative;
+
     @include breakpoint (desktop-max) {
         clip-path: none;
         padding-bottom: 100px;
     }
-    &__heading{
+
+    &__heading {
         font-size: 34px;
         font-weight: 700;
         color: $color-charcoal;
         text-align: center;
     }
-    &__paragraph{
+
+    &__paragraph {
         font-size: 16px;
         font-family: $secondary-font;
         font-weight: 400;
         color: $color-light-black;
         text-align: center;
         padding-bottom: 0;
-    padding-right: 325px;
-    padding-left: 325px;
-    @include breakpoint (mobile-max) {
-    padding-right: 100px;
-    padding-left: 100px;}
+        padding-right: 325px;
+        padding-left: 325px;
+
+        @include breakpoint (mobile-max) {
+            padding-right: 100px;
+            padding-left: 100px;
+        }
     }
+
     &__row {
         padding-top: 83px;
         display: flex;
@@ -707,12 +713,15 @@
     &__card {
         width: 266px !important;
         margin-left: 44px;
+
         @include breakpoint (desktop-max) {
             margin-left: 52px;
         }
+
         @include breakpoint (mobile-max) {
             margin-left: 60px;
         }
+
         @include breakpoint (portrait-mobile-max) {
             margin-left: 60px;
         }
@@ -734,26 +743,30 @@
     text-align: center;
     background: $color-white;
 }
-.prev{
+
+.prev {
     color: $primary-color;
     position: absolute;
     bottom: -40px;
     left: 50px;
 }
-.next{
+
+.next {
     color: $primary-color;
     position: absolute;
     bottom: -40px;
     left: 80px;
 }
-.education__dotted-circle{
+
+.education__dotted-circle {
     position: absolute;
     right: 47px;
     bottom: 255px;
     width: 173px;
     z-index: -1;
 }
-.education__dot{
+
+.education__dot {
     width: 3px;
     margin: 5px;
     height: 3px;
@@ -761,6 +774,7 @@
     background: $primary-color;
     border-radius: 50%;
 }
+
 //testimonial
 .testimonial {
     margin-top: 60px;
@@ -803,7 +817,7 @@
     &__card {
         max-width: 365px;
         margin-left: 44px;
-        color: #34474f;
+        color: $cool-grey;
         border-radius: 15px;
         height: auto;
         margin-bottom: 53px;
@@ -815,18 +829,22 @@
             margin-left: 32px;
             width: 285px !important;
         }
+
         @include breakpoint (mobile-max) {
             margin-left: 43px;
-            
+
         }
+
         @include breakpoint (portrait-mobile-max) {
             margin-left: 112px;
             margin-right: 120px;
         }
+
         @include breakpoint (custom-small-mobile-max) {
             margin-left: 21px;
-            margin-right:21px;
+            margin-right: 21px;
         }
+
         &-heading {
             font-size: 20px;
             font-weight: 500;
@@ -859,9 +877,11 @@
         }
     }
 }
-.slick-track{
+
+.slick-track {
     width: 6900px !important;
 }
+
 .slick-dots li button:before {
     font-size: 10px !important;
 }

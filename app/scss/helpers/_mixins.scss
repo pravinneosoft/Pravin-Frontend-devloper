@@ -1,10 +1,24 @@
 /* placeholder */
 @mixin input-placeholder {
-  &.placeholder { @content; }
-  &:-moz-placeholder { @content; }
-  &::-moz-placeholder { @content; }
-  &:-ms-input-placeholder { @content; }
-  &::-webkit-input-placeholder { @content; }
+  &.placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
 }
 
 // Start Calculate em size 
@@ -19,8 +33,7 @@
 
 // End Calculate em size
 
-$breakpoints: (
-  'custom-small-mobile-max': (max-width: 359px),
+$breakpoints: ('custom-small-mobile-max': (max-width: 359px),
   'portrait-mobile-max': (max-width: 575px),
   'mobile-min': (min-width: 576px),
   'mobile-max': (max-width: 767px),
@@ -34,22 +47,24 @@ $breakpoints: (
 );
 
 @mixin breakpoint($name) {
-    @if map-has-key($breakpoints, $name) {
-      @media #{inspect(map-get($breakpoints, $name))} {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
       @content;
     }
   }
+
   @else {
     @warn "Couldn't find a breakpoint named `#{$name}`.";
   }
-}	
+}
 
 
 // Border Radius
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   border-radius: $radius;
-  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
 }
 
 // Single side border-radius
@@ -61,6 +76,7 @@ $breakpoints: (
   border-top-left-radius: $radius;
   background-clip: padding-box;
 }
+
 @mixin border-right-radius($radius) {
   -webkit-border-bottom-right-radius: $radius;
   border-bottom-right-radius: $radius;
@@ -68,6 +84,7 @@ $breakpoints: (
   border-top-right-radius: $radius;
   background-clip: padding-box;
 }
+
 @mixin border-bottom-radius($radius) {
   -webkit-border-bottom-right-radius: $radius;
   border-bottom-right-radius: $radius;
@@ -75,6 +92,7 @@ $breakpoints: (
   border-bottom-left-radius: $radius;
   background-clip: padding-box;
 }
+
 @mixin border-left-radius($radius) {
   -webkit-border-bottom-left-radius: $radius;
   border-bottom-left-radius: $radius;
@@ -93,10 +111,10 @@ $breakpoints: (
 // Transition
 @mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
   -webkit-transition: $what $time $how;
-  -moz-transition:    $what $time $how;
-  -ms-transition:     $what $time $how;
-  -o-transition:      $what $time $how;
-  transition:         $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
 }
 
 @mixin border-left-rgba ($width, $style, $color, $opacity) {
@@ -106,18 +124,21 @@ $breakpoints: (
 @mixin border-bottom-rgba ($width, $style, $color, $opacity) {
   border-bottom: $width $style rgba(red($color), green($color), blue($color), $opacity);
 }
+
 // End rgba Border
 
 // Background Color rgba
 @mixin background-color-rgba($color, $opacity) {
   background-color: rgba($color, $opacity);
 }
+
 // End Background Color rgba
 
 // Background Color rgba
 @mixin color-rgba($color, $opacity) {
   color: rgba($color, $opacity);
 }
+
 // End Background Color rgba
 
 // Horizontal and Center Align using Transform
@@ -148,7 +169,7 @@ $breakpoints: (
 }
 
 // Pseudo class
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
   content: $content;
   display: $display;
   position: $pos;
@@ -170,24 +191,28 @@ $breakpoints: (
 
 
 // Custom Container 
-%custom-container{
+%custom-container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
   @media screen and (min-width: 576px) {
     width: 540px;
   }
+
   @media screen and (min-width: 768px) {
     width: 720px;
   }
+
   @media screen and (min-width: 992px) {
     width: 960px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 1140px;
-  }  
+  }
 }
 
 @mixin common-ptb {
@@ -207,13 +232,28 @@ $breakpoints: (
 @mixin border-rgba ($color, $opacity) {
   border: 1px solid rgba(red($color), green($color), blue($color), $opacity);
 }
+
 /* placeholder */
 @mixin input-placeholder {
-  &.placeholder { @content; }
-  &:-moz-placeholder { @content; }
-  &::-moz-placeholder { @content; }
-  &:-ms-input-placeholder { @content; }
-  &::-webkit-input-placeholder { @content; }
+  &.placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
 }
 
 // Start Calculate em size 
@@ -228,8 +268,7 @@ $breakpoints: (
 
 // End Calculate em size
 
-$breakpoints: (
-  'custom-small-mobile-max': (max-width: 359px),
+$breakpoints: ('custom-small-mobile-max': (max-width: 359px),
   'portrait-mobile-max': (max-width: 575px),
   'mobile-min': (min-width: 576px),
   'mobile-max': (max-width: 767px),
@@ -243,22 +282,24 @@ $breakpoints: (
 );
 
 @mixin breakpoint($name) {
-    @if map-has-key($breakpoints, $name) {
-      @media #{inspect(map-get($breakpoints, $name))} {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
       @content;
     }
   }
+
   @else {
     @warn "Couldn't find a breakpoint named `#{$name}`.";
   }
-}	
+}
 
 
 // Border Radius
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   border-radius: $radius;
-  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
 }
 
 // Single side border-radius
@@ -270,6 +311,7 @@ $breakpoints: (
   border-top-left-radius: $radius;
   background-clip: padding-box;
 }
+
 @mixin border-right-radius($radius) {
   -webkit-border-bottom-right-radius: $radius;
   border-bottom-right-radius: $radius;
@@ -277,6 +319,7 @@ $breakpoints: (
   border-top-right-radius: $radius;
   background-clip: padding-box;
 }
+
 @mixin border-bottom-radius($radius) {
   -webkit-border-bottom-right-radius: $radius;
   border-bottom-right-radius: $radius;
@@ -284,6 +327,7 @@ $breakpoints: (
   border-bottom-left-radius: $radius;
   background-clip: padding-box;
 }
+
 @mixin border-left-radius($radius) {
   -webkit-border-bottom-left-radius: $radius;
   border-bottom-left-radius: $radius;
@@ -302,10 +346,10 @@ $breakpoints: (
 // Transition
 @mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
   -webkit-transition: $what $time $how;
-  -moz-transition:    $what $time $how;
-  -ms-transition:     $what $time $how;
-  -o-transition:      $what $time $how;
-  transition:         $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
 }
 
 @mixin border-top-rgba ($width, $style, $color, $opacity) {
@@ -323,18 +367,21 @@ $breakpoints: (
 @mixin border-rgba ($width, $style, $color, $opacity) {
   border: $width $style rgba(red($color), green($color), blue($color), $opacity);
 }
+
 // End rgba Border
 
 // Background Color rgba
 @mixin background-color-rgba($color, $opacity) {
   background-color: rgba($color, $opacity);
 }
+
 // End Background Color rgba
 
 // Background Color rgba
 @mixin color-rgba($color, $opacity) {
   color: rgba($color, $opacity);
 }
+
 // End Background Color rgba
 
 // Horizontal and Center Align using Transform
@@ -365,7 +412,7 @@ $breakpoints: (
 }
 
 // Pseudo class
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
   content: $content;
   display: $display;
   position: $pos;
