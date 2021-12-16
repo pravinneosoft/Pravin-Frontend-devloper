@@ -597,7 +597,7 @@
         &-doc {
             border: 1px solid $color-white;
             padding: 17px;
-            background: #70ce88;
+            background: $color-green;
             width: 25%;
             margin: 19px;
             border-radius: 50%;
@@ -610,7 +610,7 @@
         &-home {
             border: 1px solid $color-white;
             padding: 17px;
-            background: #5c96ff;
+            background: $color-blue;
             width: 25%;
             margin: 19px;
             border-radius: 50%;
@@ -658,11 +658,6 @@
             font-family: $secondary-font;
         }
     }
-}
-
-.primary-card {
-    background: $primary-color !important;
-    color: $color-white !important;
 }
 
 // Educational cards
@@ -723,12 +718,31 @@
         }
 
         @include breakpoint (portrait-mobile-max) {
-            margin-left: 60px;
+            margin-right: 130px;
+            margin-left: 130px;
         }
 
         @include breakpoint(custom-small-mobile-max) {
-            margin-left: 60px;
+            margin-left: 32px;
+            margin-right: 32px;
         }
+    }
+
+    &__dotted-circle {
+        position: absolute;
+        right: 47px;
+        bottom: 255px;
+        width: 173px;
+        z-index: -1;
+    }
+
+    &__dot {
+        width: 3px;
+        margin: 5px;
+        height: 3px;
+        display: inline-block;
+        background: $primary-color;
+        border-radius: 50%;
     }
 }
 
@@ -742,37 +756,6 @@
     color: $cool-grey;
     text-align: center;
     background: $color-white;
-}
-
-.prev {
-    color: $primary-color;
-    position: absolute;
-    bottom: -40px;
-    left: 50px;
-}
-
-.next {
-    color: $primary-color;
-    position: absolute;
-    bottom: -40px;
-    left: 80px;
-}
-
-.education__dotted-circle {
-    position: absolute;
-    right: 47px;
-    bottom: 255px;
-    width: 173px;
-    z-index: -1;
-}
-
-.education__dot {
-    width: 3px;
-    margin: 5px;
-    height: 3px;
-    display: inline-block;
-    background: $primary-color;
-    border-radius: 50%;
 }
 
 //testimonial
@@ -878,8 +861,9 @@
     }
 }
 
+//slick slider css
 .slick-track {
-    width: 6900px !important;
+    width: 10000px !important;
 }
 
 .slick-dots li button:before {
@@ -890,6 +874,20 @@
     opacity: .75;
     color: $primary-color !important;
     font-size: 10px !important;
+}
+
+.prev {
+    color: $primary-color;
+    position: absolute;
+    bottom: -40px;
+    left: 50px;
+}
+
+.next {
+    color: $primary-color;
+    position: absolute;
+    bottom: -40px;
+    left: 80px;
 }
 
 // info section
@@ -922,34 +920,34 @@
         border-radius: 0 0 50% 50%/0 0 100% 100%;
         transform: rotateX(135deg);
     }
+    &__heading {
+        font-size: 34px;
+        font-weight: 700;
+        color: $primary-color;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 44px;
+    }
+
+    &__img {
+        width: 110px;
+        height: 110px;
+        margin-right: 30px;
+    }
+
+    &__list {
+        font-size: 20px;
+        color: $color-charcoal;
+        font-weight: 500;
+        text-decoration: underline;
+    }
 }
 
-.info__heading {
-    font-size: 34px;
-    font-weight: 700;
-    color: $primary-color;
-    text-align: center;
-}
-
-.info__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 44px;
-}
-
-.info__img {
-    width: 110px;
-    height: 110px;
-    margin-right: 30px;
-}
-
-.info__list {
-    font-size: 20px;
-    color: $color-charcoal;
-    font-weight: 500;
-    text-decoration: underline;
-}
 
 // progress section
 .progres {
@@ -966,111 +964,110 @@
             display: grid;
         }
     }
-}
 
-.progres__row .progres__card {
-    max-width: 355px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    padding-top: 25px;
-    padding-bottom: 66px;
 
-    @include breakpoint (desktop-max) {
-        max-width: 311px;
-        padding-top: 23px;
-        padding-bottom: 38px;
+    &__row &__card {
+        max-width: 355px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding-top: 25px;
+        padding-bottom: 66px;
+
+        @include breakpoint (desktop-max) {
+            max-width: 311px;
+            padding-top: 23px;
+            padding-bottom: 38px;
+        }
+
+        @include breakpoint(custom-small-mobile-max) {
+            max-width: 300px;
+            padding-top: 18px;
+            padding-bottom: 30px;
+        }
+
+        &:hover {
+            border-bottom-right-radius: 25%;
+            border-top-left-radius: 25%;
+            background: $color-light-whitesmoke;
+            box-shadow: 0 50px 76px 0 rgba(132, 30, 37, 0.23);
+
+        }
     }
 
-    @include breakpoint(custom-small-mobile-max) {
-        max-width: 300px;
-        padding-top: 18px;
-        padding-bottom: 30px;
+    &__row &__card &__circle {
+        position: relative;
+        height: 127px;
+        width: 127px;
+        border-radius: 50%;
+        cursor: default;
     }
 
-    &:hover {
-        border-bottom-right-radius: 25%;
-        border-top-left-radius: 25%;
-        background: #f9f9ff;
-        box-shadow: 0 50px 76px 0 rgba(132, 30, 37, 0.23);
-
+    &__card &__circle &__box,
+    &__card &__circle &__box &__percent {
+        position: absolute;
+        top: 49%;
+        transform: translate(-12px, -10px);
+        left: 49%;
+        font-size: 21px;
     }
-}
 
-.progres__row .progres__card .progres__circle {
-    position: relative;
-    height: 127px;
-    width: 127px;
-    border-radius: 50%;
-    cursor: default;
-}
-
-.progres__card .progres__circle .progres__box,
-.progres__card .progres__circle .progres__box .progres__percent {
-    position: absolute;
-    top: 49%;
-    transform: translate(-12px, -10px);
-    left: 49%;
-    font-size: 21px;
-}
-
-.progres__card .progres__circle .progres__box {
-    height: 108%;
-    width: 108%;
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
-    transition: all 0.2s;
-}
-
-.progres__card-heading {
-    font-size: 17px;
-    color: $clolor-light-blue;
-    font-weight: 500;
-    margin-top: 29px;
-}
-
-.progres__card-paragraph {
-    font-size: 14px;
-    font-weight: 500;
-    color: $color-light-black;
-    padding-left: 37px;
-    text-align: center;
-    padding-right: 50px;
-    margin-top: 37px;
-
-    @include breakpoint (desktop-max) {
-        margin-top: 28px;
+    &__card &__circle &__box {
+        height: 108%;
+        width: 108%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+        transition: all 0.2s;
     }
-}
 
-.progres__circle-primary {
-    color: $primary-color;
-    background-color: #84251e52;
-}
+    &__card-heading {
+        font-size: 17px;
+        color: $clolor-light-blue;
+        font-weight: 500;
+        margin-top: 29px;
+    }
 
-.progres__circle-secondary {
-    background-color: #70ce883f;
-    color: $color-green;
-}
+    &__card-paragraph {
+        font-size: 14px;
+        font-weight: 500;
+        color: $color-light-black;
+        padding-left: 37px;
+        text-align: center;
+        padding-right: 50px;
+        margin-top: 37px;
 
-.progres__circle-tertiary {
-    background-color: #ffb9493d;
-    color: $color-yellow;
-}
+        @include breakpoint (desktop-max) {
+            margin-top: 28px;
+        }
+    }
 
-.circle .progres__box .progres__percent {
-    font-size: 38px;
-    font-family: sans-serif;
-    font-weight: 600;
-    transform: translate(-45%, -45%);
-    transition: all 0.1s;
-}
+    &__circle-primary {
+        color: $primary-color;
+        background-color: $color-light-orange;
+    }
 
+    &__circle-secondary {
+        background-color: $color-lime;
+        color: $color-green;
+    }
 
+    &__circle-tertiary {
+        background-color: $color-lamon-yellow;
+        color: $color-yellow;
+    }
 
-.progres__card .progres__text {
-    font-size: 20px;
-    font-weight: 600;
+    .circle &__box &__percent {
+        font-size: 38px;
+        font-family: sans-serif;
+        font-weight: 600;
+        transform: translate(-45%, -45%);
+        transition: all 0.1s;
+    }
+
+    &__card &__text {
+        font-size: 20px;
+        font-weight: 600;
+    }
 }

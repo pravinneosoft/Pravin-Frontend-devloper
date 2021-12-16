@@ -16,7 +16,7 @@ h2 {
     text-align: center;
     padding-left: 315px;
     padding-right: 315px;
-
+    color: $color-light-black;
     @include breakpoint (desktop-max) {
         padding-left: 110px;
         padding-right: 110px;
@@ -30,4 +30,8 @@ h2 {
     @include breakpoint(custom-small-mobile-max) {
         margin: 0;
     }
+}
+.primary-card {
+    background: $primary-color !important;
+    color: $color-white !important;
 }

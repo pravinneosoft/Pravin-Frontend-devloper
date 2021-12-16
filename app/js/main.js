@@ -123,3 +123,4 @@
       }
     }]
 });
+// using forEach method()
