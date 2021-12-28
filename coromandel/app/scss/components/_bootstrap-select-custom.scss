@@ -2,36 +2,7 @@
 .navbar-toggler {
     border: 2px solid $color-white;
 }
-
 //card css
-.text-muted {
-    color: $color-grey !important;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.card-title {
-    font-size: 22px;
-    font-weight: 700;
-    color: $color-grey !important;
-}
-
-.card-text {
-    font-size: 18px;
-    font-weight: 400;
-    color: $color-grey !important;
-}
-
-.card-img-top {
-    &:hover {
-        box-shadow: -10px 10px $color-yellow;
-    }
-}
-
-.row {
-    margin: 0;
-}
-
 .card {
     border: none;
     background: none;
@@ -43,4 +14,27 @@
     @include breakpoint (custom-small-mobile-max) {
         margin: 0;
     }
+
+    &-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: $color-grey !important;
+    }
+    
+    &-text {
+        font-size: 18px;
+        font-weight: 400;
+        color: $color-grey !important;
+    }
+    
+    &-img-top {
+        &:hover {
+            box-shadow: -10px 10px $color-yellow;
+        }
+    }
+}
+.text-muted {
+    color: $color-grey !important;
+    font-size: 15px;
+    font-weight: 700;
 }

@@ -3,8 +3,9 @@
 
     &__banner-img {
         width: 100%;
+
         @include breakpoint (portrait-mobile-max) {
-            height: 100%;
+            height: 125%;
         }
     }
 
@@ -15,7 +16,6 @@
 
         @include breakpoint (ipad-max) {
             left: 25px;
-
         }
 
         @include breakpoint (mobile-max) {
@@ -23,8 +23,8 @@
         }
 
         @include breakpoint (custom-small-mobile-max) {
-            left: 0;
-            width: 100%;
+            left: 15px;
+            width: 90%;
         }
     }
 
@@ -41,6 +41,11 @@
             bottom: 30px;
         }
 
+        @include breakpoint (portrait-mobile-max) {
+            right: 12px;
+            bottom: 10px;
+        }
+
         @include breakpoint (custom-small-mobile-max) {
             right: 17px;
             bottom: 7;
@@ -54,12 +59,12 @@
         width: 500px;
 
         @include breakpoint (mobile-max) {
-            font-size: 48px;
+            font-size: 37px;
         }
 
         @include breakpoint (portrait-mobile-max) {
-            font-size: 39px;
-            width: 100%;
+            font-size: 33px;
+            width: 98%;
         }
 
         @include breakpoint (custom-small-mobile-max) {
@@ -96,6 +101,10 @@
     &__content-right-bottom {
         display: flex;
         justify-content: space-between;
+
+        @include breakpoint (portrait-mobile-max) {
+            justify-content: space-around;
+        }
     }
 
     &__content-right-heading {
@@ -234,6 +243,10 @@
         height: auto;
         position: absolute;
 
+        @include breakpoint (portrait-mobile-max) {
+            width: 340px;
+        }
+
         @include breakpoint (desktop-max) {
             bottom: 0;
         }
@@ -250,7 +263,6 @@
     background-size: 100% 100%;
     position: relative;
     padding-top: 135px;
-    padding-bottom: 207px;
     color: $color-grey;
 
     &__heading {
@@ -258,8 +270,12 @@
     }
 
     &__paragraph {
-        width: 100%;
+        width: 456px;
         font-size: 16px;
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 14;
+            width: 300px;
+          }
     }
 
     &__image {
@@ -267,6 +283,81 @@
     }
 }
 
+.growth__content {
+    display: flex;
+}
+.growth__tree-img{
+    height: 190px;
+}
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include breakpoint (ipad-max) {
+        justify-content: space-evenly;
+    }
+    @include breakpoint (mobile-max) {
+        justify-content: space-evenly;
+        height: 500px;
+    }
+    @include breakpoint (portrait-mobile-max) {
+      height: 500px;
+    }
+}
+
+.slick-dots {
+    position: absolute;
+    right: 0;
+    width: unset;
+    padding: 0;
+    bottom: 57%;
+    @include breakpoint (mobile-max) {
+        bottom: 67%;
+    }
+    @include breakpoint (portrait-mobile-max) {
+        bottom: 18%;
+      }
+}
+
+.slick-dots li {
+    display: block;
+
+    &:nth-child(1) {
+        margin-left: 5px;
+    }
+    &:nth-child(2) {
+        margin-left: 15px;
+    }
+    &:nth-child(3) {
+        margin-left: 25px;
+    }
+    &:nth-child(4) {
+        margin-left: 30px;
+    }
+    &:nth-child(5) {
+        margin-left: 20px;
+    }
+    &:nth-child(6) {
+        margin-left: 10px;
+    }
+    &:nth-child(7) {
+        margin-left: 0px;
+    }
+
+}
+.slick-dots li.slick-active button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-image: url("../images/slick-arrow.png");
+    height: 45px;
+    width: 45px;
+    background-repeat: no-repeat;
+}
+.slick-dots li button:before {
+    font-size: 10px;
+    color: $color-grey;
+}
 //protection
 .protection {
     position: relative;
@@ -317,6 +408,11 @@
         color: $color-grey;
         width: 254px;
 
+        @include breakpoint (mobile-max) {
+            font-size: 30px;
+            width: 200px;
+        }
+
         @include breakpoint (custom-small-mobile-max) {
             font-size: 32px;
         }
@@ -333,11 +429,6 @@
         top: 0;
         right: 0;
 
-        @include breakpoint (portrait-mobile-max) {
-            padding: 57px 10px 10px 10px;
-            top: 225px;
-        }
-
         @include breakpoint (ipad-max) {
             width: 38.5%;
 
@@ -346,14 +437,28 @@
         @include breakpoint (mobile-max) {
             width: 38.7%;
         }
+
+        @include breakpoint (portrait-mobile-max) {
+            width: 100%;
+            padding: 20px 0 20px 0;
+            justify-content: center;
+            position: absolute;
+            bottom: 108;
+            top: auto;
+        }
     }
 
     &__top-left-heading {
         font-size: 133px;
         font-weight: 700;
 
+        @include breakpoint (mobile-max) {
+            font-size: 80px;
+        }
+
         @include breakpoint (portrait-mobile-max) {
             font-size: 60px;
+            text-align: center;
         }
     }
 
@@ -367,8 +472,13 @@
         font-size: 22px;
         font-weight: 700;
 
+        @include breakpoint (mobile-max) {
+            font-size: 19px;
+        }
+
         @include breakpoint (portrait-mobile-max) {
             font-size: 19px;
+            text-align: center;
         }
     }
 
@@ -382,9 +492,16 @@
         right: 0;
         text-align: center;
 
-        @include breakpoint (portrait-mobile-max) {
+        @include breakpoint (mobile-max) {
+            width: 39%;
             padding: 0;
-            width: 225px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            width: 100%;
+            height: 110px;
+            text-align: center;
+            background-color: $color-white;
         }
 
     }
@@ -403,12 +520,15 @@
         }
 
         @include breakpoint (portrait-mobile-max) {
-            width: 385px;
+            width: 100%;
+            left: 0;
+            bottom: 310px;
+            text-align: center;
         }
 
         @include breakpoint (custom-small-mobile-max) {
-            width: 246px;
-            bottom: 230px;
+            width: 99%;
+            bottom: 318px;
         }
 
     }
@@ -417,14 +537,40 @@
         font-size: 59px;
         font-weight: 700;
 
-        @include breakpoint (custom-small-mobile-max) {
-            font-size: 37px;
+        @include breakpoint (mobile-max) {
+            width: 50%;
+            font-size: 40px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            width: 100%;
         }
     }
 
     &__bottom-left-subheading {
         font-size: 22px;
         font-weight: 700;
+
+        @include breakpoint (mobile-max) {
+            font-size: 20px;
+            width: 64%;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            width: 100%;
+        }
+    }
+}
+
+.protection__award-img {
+    @include breakpoint (mobile-max) {
+        width: 80%;
+    }
+}
+
+.protection__bottom-image {
+    @include breakpoint (portrait-mobile-max) {
+        width: 35%;
     }
 }
 
@@ -433,6 +579,10 @@
     margin-top: 150px;
 
     &__content {
+        overflow-x: scroll;
+        max-width: 1152px;
+        display: flex;
+
         @include breakpoint (mobile-max) {
             text-align: center;
         }
@@ -445,8 +595,9 @@
     &__logo {
         width: 161px;
         margin-right: 50px;
+
         @include breakpoint (portrait-mobile-max) {
-            margin-right:0;
+            margin-right: 0;
         }
     }
 }

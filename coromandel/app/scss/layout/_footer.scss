@@ -69,8 +69,7 @@ footer {
     &__form-col {
         padding-top: 15px;
         text-align: end;
-
-        @include breakpoint (portrait-mobile-max) {
+        @include breakpoint (mobile-max) {
             text-align: start;
         }
     }
