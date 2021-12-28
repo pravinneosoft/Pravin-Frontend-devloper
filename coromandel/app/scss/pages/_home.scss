@@ -1,0 +1,590 @@
+.herobanner {
+    position: relative;
+
+    &__banner-img {
+        width: 100%;
+        @include breakpoint (portrait-mobile-max) {
+            height: 100%;
+        }
+    }
+
+    &__content-center {
+        position: absolute;
+        top: 40%;
+        left: 200px;
+
+        @include breakpoint (ipad-max) {
+            left: 25px;
+
+        }
+
+        @include breakpoint (mobile-max) {
+            left: 18px;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    &__content-right {
+        width: 128px;
+        position: absolute;
+        color: $color-white;
+        right: 100px;
+        bottom: 80px;
+        text-align: end;
+
+        @include breakpoint(desktop-max) {
+            right: 60px;
+            bottom: 30px;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            right: 17px;
+            bottom: 7;
+        }
+    }
+
+    &__headings {
+        color: $color-white;
+        font-size: 57px;
+        font-weight: 700;
+        width: 500px;
+
+        @include breakpoint (mobile-max) {
+            font-size: 48px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 39px;
+            width: 100%;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            font-size: 37px;
+            width: 100%;
+        }
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-white;
+        width: 369px;
+    }
+
+
+    &__content-right-turn {
+        font-size: 15px;
+        text-align: end;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__content-right-center {
+        font-weight: 700;
+        font-size: 57px;
+        margin: 0;
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 47px;
+        }
+    }
+
+    &__content-right-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content-right-heading {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    &__bottom-image {
+        position: absolute;
+        z-index: 5;
+        bottom: -84px;
+        width: 100%;
+    }
+}
+
+//whatsnew block
+.whatsnew {
+    background: $color-whitesmoke;
+    padding-top: 57px;
+    padding-bottom: 150px;
+    position: relative;
+    margin-top: 40px;
+
+    &__content {
+        @include breakpoint (mobile-max) {
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        font-size: 44px;
+        font-weight: 400;
+        color: $color-grey;
+        width: 50%;
+        margin-top: 30px;
+
+        @include breakpoint (mobile-max) {
+            width: 100%;
+        }
+    }
+
+    &__subheading {
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+//plantnutrition block
+.plantnutrition {
+    background-image: url("../images/plantnutrition-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: -88px;
+        width: 100%;
+        height: 133px;
+        background-image: url("../images/plantnutrition-top.png");
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -88px;
+        width: 100%;
+        height: 133px;
+        background-image: url("../images/plantnutrition-bottom.png");
+    }
+
+
+    &__top-image {
+        position: absolute;
+        top: -88px;
+        width: 100%;
+
+        @include breakpoint (desktop-max) {
+            top: -50px;
+        }
+    }
+
+    &__bottom-image {
+        position: absolute;
+        bottom: -88px;
+        width: 100%;
+
+        @include breakpoint (desktop-max) {
+            bottom: -50px;
+        }
+    }
+
+    &__row {
+        padding: 60px 0 60px 0;
+        display: flex;
+        padding: 60px 0 60px 0;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    &__content {
+        width: 50%;
+        z-index: 0;
+
+        @include breakpoint (ipad-max) {
+            width: 100%;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            width: 100%;
+        }
+    }
+
+    &__heading {
+        color: $color-white;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    &__subheading {
+        color: $color-white;
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-white;
+    }
+
+    &__image {
+        width: 423px;
+        height: auto;
+        position: absolute;
+
+        @include breakpoint (desktop-max) {
+            bottom: 0;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            width: 95%;
+        }
+    }
+}
+
+.growth {
+    background-image: url("../images/growth-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 207px;
+    color: $color-grey;
+
+    &__heading {
+        font-size: 44px;
+    }
+
+    &__paragraph {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    &__image {
+        text-align: center;
+    }
+}
+
+//protection
+.protection {
+    position: relative;
+    background-image: url("../images/crop-protection-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+
+    &__top-right {
+        height: 275px;
+        position: relative;
+        width: 611px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        background: $color-white;
+
+        @include breakpoint (ipad-max) {
+            width: 60%;
+
+        }
+
+        @include breakpoint (mobile-max) {
+            width: 58%;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            width: 100%;
+            height: 225px;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__top-right-logo {
+        width: 45px;
+        height: 48px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__top-right-content-heading {
+        font-size: 44px;
+        color: $color-grey;
+        width: 254px;
+
+        @include breakpoint (custom-small-mobile-max) {
+            font-size: 32px;
+        }
+    }
+
+    &__top-left {
+        width: 368px;
+        background: $color-yellow;
+        display: flex;
+        align-items: center;
+        color: $color-white;
+        padding: 70px 30px 28px 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include breakpoint (portrait-mobile-max) {
+            padding: 57px 10px 10px 10px;
+            top: 225px;
+        }
+
+        @include breakpoint (ipad-max) {
+            width: 38.5%;
+
+        }
+
+        @include breakpoint (mobile-max) {
+            width: 38.7%;
+        }
+    }
+
+    &__top-left-heading {
+        font-size: 133px;
+        font-weight: 700;
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 60px;
+        }
+    }
+
+    &__top-left-square {
+        font-size: 40px;
+        font-weight: 700;
+        top: -1.5em;
+    }
+
+    &__top-left-paragraph {
+        font-size: 22px;
+        font-weight: 700;
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 19px;
+        }
+    }
+
+    &__bottom-right {
+        width: 297px;
+        padding-top: 59px;
+        padding-bottom: 68px;
+        background: $color-white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+
+        @include breakpoint (portrait-mobile-max) {
+            padding: 0;
+            width: 225px;
+        }
+
+    }
+
+    &__bottom-left {
+        width: 392px;
+        background: transparent;
+        color: $color-white;
+        position: absolute;
+        bottom: 75px;
+        left: 63px;
+
+        @include breakpoint (mobile-max) {
+            bottom: 30px;
+            left: 26px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            width: 385px;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            width: 246px;
+            bottom: 230px;
+        }
+
+    }
+
+    &__bottom-left-heading {
+        font-size: 59px;
+        font-weight: 700;
+
+        @include breakpoint (custom-small-mobile-max) {
+            font-size: 37px;
+        }
+    }
+
+    &__bottom-left-subheading {
+        font-size: 22px;
+        font-weight: 700;
+    }
+}
+
+//gromar
+.gromar {
+    margin-top: 150px;
+
+    &__content {
+        @include breakpoint (mobile-max) {
+            text-align: center;
+        }
+    }
+
+    &__images {
+        width: 178px;
+    }
+
+    &__logo {
+        width: 161px;
+        margin-right: 50px;
+        @include breakpoint (portrait-mobile-max) {
+            margin-right:0;
+        }
+    }
+}
+
+//murugappan
+.murugappan {
+    background-image: url("../images/murugappan-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 753px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 158px;
+        width: 100%;
+        background: $color-white;
+        border-bottom-right-radius: 158px;
+        margin-top: -1px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -86px;
+        width: 100%;
+        height: 133px;
+        background-image: url("../images/b.png");
+    }
+
+    &__radius-shape {
+        height: 158px;
+        width: 100%;
+        background: $color-white;
+    }
+
+    &__content {
+        background: rgb(7 8 8 / 39%);
+        width: 63.5%;
+        height: 470px;
+        margin-top: 129px;
+        position: absolute;
+        top: 32px;
+        color: $color-white;
+        padding-left: 65px;
+
+        @include breakpoint (ipad-max) {}
+
+        @include breakpoint (mobile-max) {
+            padding-left: 15px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {}
+
+        @include breakpoint(desktop-max) {
+            // width: 626px;
+        }
+    }
+
+    &__content-heading {
+        font-size: 44px;
+        font-weight: 700;
+        margin-top: 150px;
+
+        @include breakpoint (desktop-max) {
+            margin-top: 10px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 33px;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            font-size: 31px;
+        }
+    }
+
+    &__content-subheading {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__content-paragraph {
+        font-size: 16px;
+        width: 60%;
+
+        @include breakpoint (ipad-max) {
+            width: 73%;
+            font-size: 15px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            width: 90%;
+            font-size: 13px;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            font-size: 11px;
+        }
+    }
+
+    &__chaireman {
+        position: absolute;
+        right: -90px;
+        bottom: 0;
+
+        @include breakpoint(desktop-max) {
+            width: 48%;
+        }
+
+        @include breakpoint (ipad-max) {
+            left: 400px;
+        }
+
+        @include breakpoint (mobile-max) {
+            left: 277px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            left: 180px;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            left: 12px;
+            width: 80%;
+            bottom: -105px;
+        }
+    }
+
+    &__bottom {
+        background-image: url("../images/b.png");
+        height: 124px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+    }
+}

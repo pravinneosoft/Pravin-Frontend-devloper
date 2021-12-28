@@ -1,0 +1,50 @@
+.btn {
+    color: $color-white;
+    border: solid;
+}
+
+.btn--yellow {
+    border-radius: 25px;
+    padding: 6px 20px 7px 19px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid $color-white;
+    font-size: 16px;
+    margin-top: 10px;
+
+    &:hover {
+        background: $primary-color;
+        color: $color-white;
+    }
+}
+
+.btn--orange {
+    border-radius: 25px;
+    padding: 7px 40px 7px 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #f57629, #ffb016);
+    font-size: 20px;
+    margin-top: 10px;
+    border: none;
+    @include breakpoint (custom-small-mobile-max) {
+        padding: 7px 25px 7px 25px;
+        font-size: 12px;
+      }
+}
+
+.btn--tranceparent {
+    border-radius: 25px;
+    padding: 7px 40px 7px 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid $color-border;
+    font-size: 20px;
+    margin-top: 10px;
+    color: $color-border;
+    @include breakpoint (custom-small-mobile-max) {
+        padding: 7px 25px 7px 25px;
+        font-size: 12px;
+      }
+}
