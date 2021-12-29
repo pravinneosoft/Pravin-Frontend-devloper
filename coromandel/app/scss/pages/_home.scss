@@ -130,7 +130,12 @@
 
     &__content {
         @include breakpoint (mobile-max) {
-            text-align: center;
+            text-align: start;
+            padding-left: 35px;
+
+        }
+        @include breakpoint (custom-small-mobile-max) {
+            padding-left: 12px;
         }
     }
 
@@ -160,7 +165,15 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
-
+    @include breakpoint (mobile-max) {
+        height: 652px;
+    }
+    @include breakpoint (portrait-mobile-max) {
+        height: 670px;
+    }
+    @include breakpoint (custom-small-mobile-max) {
+        height: 685px;
+    }
     &::before {
         content: "";
         position: absolute;
@@ -301,7 +314,7 @@
         height: 500px;
     }
     @include breakpoint (portrait-mobile-max) {
-      height: 500px;
+      height: 475px;
     }
 }
 
@@ -357,6 +370,9 @@
 .slick-dots li button:before {
     font-size: 10px;
     color: $color-grey;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
 }
 //protection
 .protection {
@@ -451,7 +467,9 @@
     &__top-left-heading {
         font-size: 133px;
         font-weight: 700;
-
+        @include breakpoint (ipad-max) {
+            font-size: 85px;
+        }
         @include breakpoint (mobile-max) {
             font-size: 80px;
         }
@@ -471,7 +489,9 @@
     &__top-left-paragraph {
         font-size: 22px;
         font-weight: 700;
-
+        @include breakpoint (ipad-max) {
+            font-size: 20px;
+        }
         @include breakpoint (mobile-max) {
             font-size: 19px;
         }
@@ -491,9 +511,13 @@
         bottom: 0;
         right: 0;
         text-align: center;
-
+        @include breakpoint (ipad-max) {
+            width: 260px;
+            padding-top: 41px;
+        padding-bottom: 50px;
+        }
         @include breakpoint (mobile-max) {
-            width: 39%;
+            width: 32%;
             padding: 0;
         }
 
