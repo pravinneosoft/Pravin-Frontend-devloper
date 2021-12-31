@@ -1,44 +1,86 @@
-.container-fluid{
-    flex-direction: row-reverse;
-    align-items: baseline !important;
-    padding: 0;
-    margin-top: 25px;
-}
 header {
     width: 100%;
-    background:transparent;
+    background: transparent;
     position: absolute;
     z-index: 2;
-}
-.header__top-left{
-    color: $color-white;
-    position: absolute;
-    margin: 0;
-    top: 32px;
-    font-size: 16px;
-    font-weight: 700;
-    @include breakpoint (mobile-max) {
-        font-size: 20px;
-        top: 20;
-    }
+    background-image: linear-gradient(180deg, #052f1c, #0000);
 }
 
-.navbar-brand {
-    color: $color-white;
-    font-weight: 700;
-    display: inline-flex;
-    align-items: baseline;
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+
+
+    &-left {
+        position: relative;
+
+    }
+
+    &-left-content {
+        color: $color-white;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+
+        @include breakpoint (ipad-max) {
+            font-size: 18px;
+            position: initial;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            font-size: 15px;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            font-size: 13px;
+        }
+    }
+
+    &-right {
+        display: flex;
+
+        @include breakpoint (ipad-max) {
+            display: initial;
+        }
+    }
+
 }
-.nav-link{
-    color: $color-white;
-    padding-top: 0;
-    font-size: 16px;
-    padding-right: 35px !important;
-    &:nth-child(1){
-        padding-left: 0 !important;
+.header__description {
+    padding: 0;
+    margin-top: 25px;
+
+    @include breakpoint (ipad-max) {
+        margin-top: 5px;
     }
 }
-.fa-bars{
-    font-size: 30px;
-    color: $color-white;
+.header__triangle {
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 26px solid $color-white;
+    display: flex;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 22px solid $color-green;
+        position: absolute;
+        top: 3px;
+        left: -8px;
+
+        @include breakpoint (ipad-max) {
+            top: 4px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            top: 3px;
+        }
+    }
 }

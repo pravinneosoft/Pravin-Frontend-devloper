@@ -9,7 +9,7 @@ footer {
     padding: 0 148px 0 129px;
 
     @include breakpoint (desktop-max) {
-        padding: 0 50px 0 50px;
+        padding: 0 15px 0 15px;
     }
 
     &__logo {

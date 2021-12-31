@@ -1,40 +1,78 @@
-//navigaton css
-.navbar-toggler {
-    border: 2px solid $color-white;
-}
 //card css
 .card {
     border: none;
     background: none;
-
+    width: 31.4%;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-left: 0;
     @include breakpoint (mobile-max) {
-        margin: 10px 25px 10px 25px;
+      width: 47%;  
     }
-
+    @include breakpoint (portrait-mobile-max) {
+        width: 100%;
+        padding: 0 50px 0 50px;
+     }
     @include breakpoint (custom-small-mobile-max) {
-        margin: 0;
+        padding: 0 30px 0 30px;
     }
 
     &-title {
         font-size: 22px;
         font-weight: 700;
-        color: $color-grey !important;
+        color: $color-grey;
     }
     
     &-text {
         font-size: 18px;
         font-weight: 400;
-        color: $color-grey !important;
+        color: $color-grey;
     }
-    
+    &:hover
     &-img-top {
-        &:hover {
+        transition:all .5s ease;
             box-shadow: -10px 10px $color-yellow;
-        }
+        
+    }
+    &-body{
+        padding-left: 0;
     }
 }
 .text-muted {
-    color: $color-grey !important;
+    color:rgba(94, 96, 82, 0.4) !important;
     font-size: 15px;
     font-weight: 700;
+}
+//navigaton css
+.navbar-toggler {
+    border: 2px solid $color-white;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 35px;
+    padding-bottom: 0;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+align-items: flex-end;
+line-height: 1;
+}
+.nav-link {
+    color: $color-white;
+    padding-top: 0;
+    font-size: 16px;
+}
+.navbar {
+    padding: 0;
+
+
+    &-brand {
+        color: $color-white;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        display: flex;
+        align-items: flex-end;
+    }
 }
