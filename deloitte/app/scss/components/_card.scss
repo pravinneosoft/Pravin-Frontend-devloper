@@ -1,0 +1,77 @@
+
+  
+
+.card{
+    padding: 1.68rem 0 1.3rem 1.37rem;
+    border-radius: 0.62rem;
+    box-shadow: 0px 4px 24px rgba(196, 197, 195, 0.25);
+    border-color: transparent;
+    width: 12.25rem;
+    position: relative;
+    &__img{
+        width: max-content;
+    }
+    &__heading{
+        font-weight: 700;
+        color: $color-black;
+        font-size: 0.87rem;
+    line-height: 1.2rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.62rem;
+   
+    }
+    &__text{
+        line-height: 0.92rem;
+        font-size: 0.87rem;
+        font-weight: 400;
+        color: $color-black; 
+        max-width: 9.4rem;
+        margin-bottom: 0;
+    }
+}
+.wrapper{
+    width: 61.3% ;
+    display: flex;
+    flex-wrap: wrap;
+row-gap: 1.62rem;
+column-gap: 0.93rem;
+}
+.primarycard{
+    width: 100%;
+    height: 15rem;
+    &::after{
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 0.12rem;
+        height: 11.56rem;
+        background: $color-green;
+        border-bottom: 2px solid $color-green;
+    }
+}
+.aside.active .tab-content .tab-pane .primarycard{
+    width: 12.25rem;
+    height: 163px;
+    
+}
+.aside.active .tab-content .tab-pane .primarycard::after{
+   left: 5.93rem;
+   top:4.25rem;
+transform: rotate(90deg);
+   transition:0.1s ease-in;
+}
+.aside.active .tab-content .tab-pane .primarycard .btn--dark{
+    margin: 0;
+position: absolute;
+    top: 1.02rem;
+    right: 1rem;
+}
+.wrapper__heading{
+    line-height: 1rem;
+    color: rgba(0,0,0,0.3);
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-top: 2.44rem;
+    margin-bottom: 0.5rem;
+}
+

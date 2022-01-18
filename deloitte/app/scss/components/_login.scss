@@ -1,0 +1,163 @@
+.signup {
+    background-image: url("../images/signup-background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    @include breakpoint (mobile-max) {
+        justify-content: space-around;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__heading {
+        color: $color-white;
+        font-weight: 700;
+        font-size: 2.5rem;
+        position: relative;
+        
+        @include breakpoint (mobile-max) {
+            font-size: 1.9rem;
+        }
+
+        &::after {
+            content: '';
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: $color-green;
+            position: absolute;
+            bottom: 0.5rem;
+            right: -0.6rem;
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__form {
+        width: 25.31rem;
+        height: 24.68rem;
+        background: rgba(10, 8, 8, 0.6);
+        border: 0.063rem solid rgba(255, 255, 255, 0.35);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 114px rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        padding: 4.62rem 2.6rem 4.62rem 2.75rem;
+
+        @include breakpoint (mobile-max) {
+            width: 23.3rem;
+            height: 23.3rem;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            width: 20rem;
+        }
+
+        @include breakpoint (custom-small-mobile-max) {
+            width: 18.7rem;
+        }
+
+        &-heading {
+            padding-left: 2.12rem;
+            font-size: 1.37rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0;
+            font-family: $primary-font;
+        }
+
+        &-checkbox {
+            display: flex;
+            align-items: center;
+            margin-top: 1.62rem;
+        }
+
+        &-remember {
+            color: $color-white;
+            font-size: 0.75rem;
+            opacity: 0.6;
+            font-weight: 400;
+            margin-left: 0.95rem;
+        }
+        &-symbol {
+            color: $color-white;
+            position: absolute;
+            right: 1.56rem;
+            top: 1.56rem;
+            opacity: 50%;
+
+        }
+    }
+
+}
+
+.input__user{
+    width: 100%;
+    padding: 0.5rem 0 1.6rem 1.18rem;
+    margin-top: 0.75rem;
+    display: inline-block;
+    border: 0.063rem solid $color-grey;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.62rem;
+    @include breakpoint (portrait-mobile-max) {
+        padding: 0.56rem 0 1.1rem 1rem;
+    }
+}
+.input__user:active,.input__user:focus,.input__user:focus:active{
+    background: rgba(0, 0, 0, 0.5);
+}
+input{
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+.input__password {
+    width: 100%;
+    padding: 0.5rem 0 1.6rem 1.18rem;
+    margin-top: 0.75rem;
+    display: inline-block;
+    border: 0.063rem solid $color-grey;
+    box-sizing: border-box;
+    border-radius: 0.62rem;
+    background: rgba(0, 0, 0, 0.5);
+
+    @include breakpoint (portrait-mobile-max) {
+        padding: 0.56rem 0 1.1rem 1rem;
+    }
+}
+.input__password:active,.input__password:focus,.input__password:focus:active{
+    background: rgba(0, 0, 0, 0.5);
+}
+.input__checkbox{
+    width: 1.37rem;
+    height: 1.43rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0.063rem solid $color-grey;
+}
+
+::placeholder {
+    color: $color-white;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+.form-floating>label {
+    color: rgba(255, 255, 255,0.5);
+    top:0.5rem;
+    font-size: 0.88rem;
+  
+}
+

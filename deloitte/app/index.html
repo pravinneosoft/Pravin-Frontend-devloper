@@ -1,0 +1,556 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xd practical</title>
+  <!-- link tags -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/ba2c01d109.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body" class="dark-mode">
+  <section class="dashboard">
+    <nav id="sidebar" class="dashboard__nav">
+      <div class="dashboard__logo">
+        <h3 class="dashboard__logo-heading">Deloitte</h3>
+        <strong class="dashboard__logo-smallheading">D</strong>
+      </div>
+      <ul class="nav dashboard__unorderdlist nav-pills flex-column" id="v-pills-tab" role="tablist"
+        aria-orientation="vertical">
+        <li class="nav-item" role="presentation">
+          <a href="#" class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+            type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><img class="nav-img"
+              src="images/dashboard.png" alt="">
+            <span> Dashboard </span>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a href="#" class="nav-link"><img class="nav-img" src="images/user.png" alt="">
+            <span> user management</span>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a href="#" class="nav-link"><img class="nav-img" src="images/assest.png" alt="">
+            <span> asset management</span>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a href="#" class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+            aria-selected="false"><img class="nav-img" src="images/container.png" alt="">
+            <span> container management</span>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a href="#" class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+            type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><img class="nav-img"
+              src="images/assestment.png" alt="">
+            <span> assestment master</span>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a href="#" class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+          aria-selected="false"><img class="nav-img" src="images/status.png" alt="">
+            <span> project status report</span>
+          </a>
+        </li>
+      </ul>
+      <div class="dropdown profile">
+        <a href="#" class="profile__content" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="images/profile.png" alt="profile-image" class="rounded-circle">
+          <strong class="profile__heading">Kinjal Jain <h5 class="profile__subheading">Adminatrator</h5></strong>
+          <i class="fa fa-angle-up profile__icon" aria-hidden="true"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownUser2">
+          <li><a class="dropdown-item" href="#">My Profile</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div id="sidebarCollapse" class="dashboard__nav-round">
+        <i class="fas fa-angle-left"></i>
+      </div>
+    </nav>
+    <div class="aside">
+      <nav class="navbar navbar-expand-lg navbar-light aside__navbar">
+        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-justify"></i>
+        </button>
+        <div class="aside__collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <select name="language" class="aside__navbar-select" id="framework">
+                <span class="icon-arrow-down"></span>
+                <option value="1">Select Workplace</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+              </select>
+            </li>
+            <li class="nav-item aside__navbar-dark" onclick="toggleDarkLight()" title="Toggle dark/light mode"><i
+                class="fas fa-adjust"></i>
+              Dark
+            </li>
+            <li class="nav-item">
+              <button type="button" onclick="openForm()" class="btn btn--blue">ADD NEW ASSESMENT</button>
+            </li>
+            <li class="nav-item aside__notification">
+              <a class="nav-link" href="#"><i class="far fa-bell" id="btnPassport" onclick="ShowHideDiv(this)"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="dashboard__reminder" id="dvPassport">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <div class=" dashboard__reminder-date">16 November 2021
+              <h5 class="dashboard__reminder-subdate">Tue , 7:12 pm</h5>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class=" dashboard__reminder-content">
+              <div class="dashboard__reminder-discription">
+                <h2 class="dashboard__reminder-heading">My Reminders</h2>
+                <h5 class="dashboard__reminder-subheading">Renewal Updates</h5>
+              </div>
+              <div class="dashboard__reminder-filters">
+                <h3 class="dashboard__reminder-all">All</h3>
+                <i class="fas fa-angle-down" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false"></i>
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div class="dashboard__reminder-list">
+              <div class="dashboard__reminder-sublist">
+                <div class="dashboard__reminder-circle">SK</div>
+                <div class="dashboard__reminder-text">
+                  <h3 class="dashboard__reminder-strongtext">Compilance Name 1</h3>
+                  <p class="dashboard__reminder-paragraph">Due on 3rd Dec 2021</p>
+                </div>
+              </div>
+              <div class="dashboard__reminder-time">3 min</div>
+            </div>
+          </li>
+          <li class="list-group-item dashboard__reminder-blank">
+          </li>
+          <li class="list-group-item">
+            <div class="dashboard__reminder-list">
+              <div class="dashboard__reminder-sublist">
+                <div class="dashboard__reminder-circle">SK</div>
+                <div class="dashboard__reminder-text">
+                  <h3 class="dashboard__reminder-strongtext">interview assigned</h3>
+                  <p class="dashboard__reminder-paragraph">Hello Kinjal i m available for the meet ..</p>
+                </div>
+              </div>
+              <div class="dashboard__reminder-time">10:11 am</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="dashboard__reminder-list">
+              <div class="dashboard__reminder-sublist">
+                <div class="dashboard__reminder-circle">SK</div>
+                <div class="dashboard__reminder-text">
+                  <h3 class="dashboard__reminder-strongtext">interview assigned</h3>
+                  <p class="dashboard__reminder-paragraph">Hello Kinjal i m available for the meet ..</p>
+                </div>
+              </div>
+              <div class="dashboard__reminder-time">1d</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="dashboard__reminder-list">
+              <div class="dashboard__reminder-sublist">
+                <div class="dashboard__reminder-circle">SK</div>
+                <div class="dashboard__reminder-text">
+                  <h3 class="dashboard__reminder-strongtext">interview assigned</h3>
+                  <p class="dashboard__reminder-paragraph">Hello Kinjal i m available for the meet ..</p>
+                </div>
+              </div>
+              <div class="dashboard__reminder-time">3d</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="dashboard__reminder-list">
+              <div class="dashboard__reminder-sublist">
+                <div class="dashboard__reminder-circle">SK</div>
+                <div class="dashboard__reminder-text">
+                  <h3 class="dashboard__reminder-strongtext">interview assigned</h3>
+                  <p class="dashboard__reminder-paragraph">Hello Kinjal i m available for the meet ..</p>
+                </div>
+              </div>
+              <div class="dashboard__reminder-time">3d</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="dashboard__reminder-list">
+              <div class="dashboard__reminder-sublist">
+                <div class="dashboard__reminder-circle">SK</div>
+                <div class="dashboard__reminder-text">
+                  <h3 class="dashboard__reminder-strongtext">interview assigned</h3>
+                  <p class="dashboard__reminder-paragraph">Hello Kinjal i m available for the meet ..</p>
+                </div>
+              </div>
+              <div class="dashboard__reminder-time">4d</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="dashboard__reminder-list">
+              <div class="dashboard__reminder-sublist">
+                <div class="dashboard__reminder-circle">SK</div>
+                <div class="dashboard__reminder-text">
+                  <h3 class="dashboard__reminder-strongtext">interview assigned</h3>
+                  <p class="dashboard__reminder-paragraph">Hello Kinjal i m available for the meet ..</p>
+                </div>
+              </div>
+              <div class="dashboard__reminder-time">5d</div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="dashboard__reminder-list">
+              <div class="dashboard__reminder-sublist">
+                <div class="dashboard__reminder-circle">SK</div>
+                <div class="dashboard__reminder-text">
+                  <h3 class="dashboard__reminder-strongtext">interview assigned</h3>
+                  <p class="dashboard__reminder-paragraph">Hello Kinjal i m available for the meet ..</p>
+                </div>
+              </div>
+              <div class="dashboard__reminder-time">5d</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <header class="header">
+            <h2 class="header__heading">Hello Kinjal</h2>
+            <h5 class="header__subheading">Have a great day ahead</h5>
+          </header>
+          <p class="wrapper__heading">Discover the data</p>
+          <div class="wrapper">
+            <div class="card primarycard" id="divExample">
+              <img src="images/checkmrk.png" class="card__img" alt="checkmarkimg">
+              <h3 class="card__heading">ciso & business unit view</h3>
+              <p class="card__text">Dashboard with 360 degree view to the ciso</p>
+              <button class="btn btn--dark">compliance</button>
+            </div>
+            <div class="card">
+              <img src="images/checkmrk.png" class="card__img" alt="checkmarkimg">
+              <h3 class="card__heading">Retail Sales Audit</h3>
+              <p class="card__text">Asesment & Reconsilation of the retail sales again risk control</p>
+              <button class="btn btn--lightgrey">Risk</button>
+            </div>
+            <div class="card">
+              <img src="images/checkmrk.png" class="card__img" alt="checkmarkimg">
+              <h3 class="card__heading">Assesment Master</h3>
+              <p class="card__text">Resords Of All the Assesment in available</p>
+              <button class="btn btn--grey">topic</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+          <i class="fas fa-chevron-left header__left-arrow"></i>
+          <header class="header">
+            <h2 class="header__heading">Assesment Master</h2>
+            <h5 class="header__subheading">2 Assesment Domain in list</h5>
+          </header>
+          <div class="mastercontent">
+            <div class="master__name">
+              <h5 class="master__heading">Name</h5>
+            </div>
+            <div class="master__client">
+              <h5 class="master__heading">client</h5>
+            </div>
+            <div class="master__rating">
+              <h5 class="master__heading">is compilance & Rating Required</h5>
+            </div>
+            <div class="master__module">
+              <h5 class="master__heading">Module</h5>
+            </div>
+            <div class="master__domain">
+              <h5 class="master__heading">client</h5>
+            </div>
+            <div class="master__status">
+              <h5 class="master__heading">status</h5>
+            </div>
+            <div class="master__action">
+              <h5 class="master__heading">action</h5>
+            </div>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button accordion-heading collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  Assesment Domain - VAPT<span class="accordion-subheading">1 sub assesment</span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="master">
+                  <div class="master__name">
+                    <h5 class="master__name-heading">VAPT</h5>
+                    <p class="master__name-paragraph">Term used To describe Security testing that is design to identify
+                      and help cyber security vulnabirities</p>
+                  </div>
+                  <div class="master__client">
+                    <h5 class="master__name-heading">XYZ Company</h5>
+                    <p class="master__name-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                      vitae consectetur repellendus </p>
+                  </div>
+                  <div class="master__rating">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" placeholder="j" id="flexSwitchCheckDefault">
+                    </div>
+                  </div>
+                  <div class="master__module">
+                  </div>
+                  <div class="master__domain">
+                  </div>
+                  <div class="master__status">
+                    <button class="btn btn--active">active</button>
+                  </div>
+                  <div class="master__action">
+                    <span class="icon-more"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button accordion-heading collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  Assesment Domain - VAPT<span class="accordion-subheading">1 sub assesment</span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="master">
+                  <div class="master__name">
+                    <h5 class="master__name-heading">VAPT</h5>
+                    <p class="master__name-paragraph">Term used To describe Security testing that is design to identify
+                      and help cyber security vulnabirities</p>
+                  </div>
+                  <div class="master__client">
+                    <h5 class="master__name-heading">XYZ Company</h5>
+                    <p class="master__name-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                      vitae consectetur repellendus </p>
+                  </div>
+                  <div class="master__rating">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" placeholder="g" type="checkbox" id="flexSwitchCheckDefault">
+                    </div>
+                  </div>
+                  <div class="master__module">
+                  </div>
+                  <div class="master__domain">
+                  </div>
+                  <div class="master__status">
+                    <button class="btn btn--inactive">inactive</button>
+                  </div>
+                  <div class="master__action">
+                    <span class="icon-more"></span>
+                  </div>
+                </div>
+                <div class="master">
+                  <div class="master__name">
+                    <h5 class="master__name-heading">VAPT</h5>
+                    <p class="master__name-paragraph">Term used To describe Security testing that is design to identify
+                      and help cyber security vulnabirities</p>
+                  </div>
+                  <div class="master__client">
+                    <h5 class="master__name-heading">XYZ Company</h5>
+                    <p class="master__name-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                      vitae consectetur repellendus </p>
+                  </div>
+                  <div class="master__rating">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" placeholder="g" id="flexSwitchCheckDefault">
+                    </div>
+                  </div>
+                  <div class="master__module">
+                  </div>
+                  <div class="master__domain">
+                  </div>
+                  <div class="master__status">
+                    <button class="btn btn--active">active</button>
+                  </div>
+                  <div class="master__action">
+                    <span class="icon-more"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+          <i class="fas fa-chevron-left header__left-arrow"></i>
+          <header class="header">
+            <h2 class="header__heading">Container Management </h2>
+            <h5 class="header__subheading">Checkout the Structure</h5>
+          </header>
+          <div class="appcardwrapper">
+          <div class="appcard">
+            <h3 class="appcard__title">Application Name</h3>
+            <p class="appcard__text">Application desc</p>
+            <div class="appcard__roundshape-top"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
+            <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
+          </div>
+        </div>
+          <div class="premcardwrapper">
+            <div class="premcard">
+            <h3 class="premcard__title">On Prem Application</h3>
+            <p class="premcard__text">On Prem Application desc</p>
+            <div class="appcard__roundshape-bottom" type="button" onclick="opencard()"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
+           </div>
+           <div class="subcard">
+            <h3 class="subcard__title">Sub Application Name</h3>
+            <p class="subcard__text">Description will be here</p>
+            <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
+           </div>
+            <div class="subcard">
+              <h3 class="subcard__title">Sub Application Name</h3>
+              <p class="subcard__text">Description will be here</p>
+            <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
+           </div>
+          </div>
+          <div class="subcardwrapper">
+            <div class="subcard" id="sub-card">
+              <h3 class="subcard__title">Sub internal Application Name</h3>
+              <p class="subcard__text">Description will be here</p>
+              <i class="fas fa-times subcard__cuticon"type="button" onclick="closecard()"></i>
+            <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
+           </div>
+           <div class="subcard">
+            <h3 class="subcard__title">Sub internal Application Name</h3>
+            <p class="subcard__text">Description will be here</p>      
+          <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
+         </div>
+         <div class="subcard">
+          <h3 class="subcard__title">Sub internal Application Name</h3>
+          <p class="subcard__text">Description will be here</p>
+        <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
+       </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+          <i class="fas fa-chevron-left header__left-arrow"></i>
+          <header class="header">
+            <h2 class="header__heading">ITC Assest A - Runtime Status Update</h2>
+            <h5 class="header__subheading">Checkout the status of project</h5>
+          </header>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="assesment" id="popupForm">
+      <form action="">
+        <div class="row form">
+          <div class="col-md-11">
+            <h2 class="form__heading">Add New Assesment</h2>
+          </div>
+          <div class="col-md-1"><i type="button" onclick="closeForm()" class="fas fa-times form__deleticon"></i>
+          </div>
+          <hr class="form__hr">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="label form__input-heading" for="subject">Assesment Name</label>
+              <input type="text" class="form-control form__assestment" name="subject"
+                placeholder="Enter Assesment Name">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="label form__input-heading" for="#">Description</label>
+              <textarea name="message" class="form-control form__assestment" id="message" cols="30" rows="5"
+                placeholder="Enter Assesment Description"></textarea>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="label form__input-heading" for="subject">Client Assesment Domain Name</label>
+              <i class="fas fa-angle-down form-arrow"></i>
+              <input type="text" class="form-control form__assestment" list="Domain" autocomplete="off" spellcheck="off"
+                name="subject" id="subject" placeholder="Subject">
+              <datalist id="Domain">
+                <option value="Berlin">
+                <option value="Los Angeles">
+                <option value="Moscow">
+                <option value="Paris">
+              </datalist>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label form__input-heading" for="name">Mobule</label>
+              <input type="text" class="form-control form__assestment" name="name" placeholder="Name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label form__input-heading" for="email">Assesment Domain</label>
+              <i class="fas fa-angle-down form-arrow"></i>
+              <input type="text" class="form-control form__assestment" list="Assesment" autocomplete="off"
+                spellcheck="off" name="email" placeholder="Email">
+              <datalist id="Assesment">
+                <option value="Berlin">
+                <option value="Los Angeles">
+                <option value="Moscow">
+                <option value="Paris">
+              </datalist>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label form__input-heading" for="name">Assesment Role</label>
+              <input type="text" class="form-control form__assestment" name="name" id="name" placeholder="Name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label form__input-heading" for="email">Report Template</label>
+              <i class="fas fa-angle-down form-arrow"></i>
+              <input type="email" class="form-control form__assestment" list="airports" autocomplete="off"
+                spellcheck="off" name="email" id="email" placeholder="Email">
+              <datalist id="airports">
+                <option value="Berlin">
+                <option value="Los Angeles">
+                <option value="Moscow">
+                <option value="Paris">
+              </datalist>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-save">
+            <div class="form-group">
+              <button type="submit" class="btn btn--lightblue">Save assesment</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

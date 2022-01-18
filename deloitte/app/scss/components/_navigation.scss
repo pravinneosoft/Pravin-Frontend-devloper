@@ -1,0 +1,72 @@
+//aside navbar
+.nav {
+    &-item {
+        list-style-type: none;
+        font-size: 0.75rem;
+    }
+
+    &-link {
+        padding: 0.81rem 0 0 1.43rem;
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 400;
+        line-height: 1rem;
+    }
+    &-img {
+        padding-right: 0.688rem;
+
+    }
+}
+
+.dropdown-menu {
+    border-radius: 0.62rem;
+    border: 1px solid $color-white;
+    margin-left: 1.37rem !important;
+    padding: 1rem 0 0 1.2rem;
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -0.62rem;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 1.25rem solid transparent;
+        border-bottom: 1.25rem solid transparent;
+        border-right: 1.25rem solid $color-white;
+    }
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    font-weight: 700;
+    background: transparent;
+    color:rgba(0, 0, 0, 0.7);
+}
+//middle navbar
+.aside__navbar{
+    width: 38%;
+    float: right;
+    padding-top: 00.87rem;
+}
+.aside__collapse{
+    justify-content: end;
+}
+.aside__navbar-select{
+    width: 9.18rem;
+    height: 2.2rem;
+    background: $color-whitesmoke;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+    font-size:0.62rem;
+    border: none;
+    padding-left: 0.87rem;
+    border-radius: 0.5rem;
+}
+.aside__navbar-dark{
+    font-size: 0.81rem;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+    margin-left: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+.aside__notification{
+    margin-left: 1.56rem;
+}
