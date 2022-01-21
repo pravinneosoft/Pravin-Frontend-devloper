@@ -30,7 +30,8 @@
           </a>
         </li>
         <li class="nav-item" role="presentation">
-          <a href="#" class="nav-link"><img class="nav-img" src="images/user.png" alt="">
+          <a href="#" class="nav-link">
+            <img class="nav-img" src="images/user.png" alt="">
             <span> user management</span>
           </a>
         </li>
@@ -54,9 +55,10 @@
           </a>
         </li>
         <li class="nav-item" role="presentation">
-          <a href="#" class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-          data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-          aria-selected="false"><img class="nav-img" src="images/status.png" alt="">
+          <a href="#" class="nav-link " id="v-pills-messages-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+            aria-selected="false">
+            <img class="nav-img " src="images/status.png" alt="">
             <span> project status report</span>
           </a>
         </li>
@@ -79,15 +81,43 @@
     </nav>
     <div class="aside">
       <nav class="navbar navbar-expand-lg navbar-light aside__navbar">
-        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fas fa-align-justify"></i>
+        <div class="container-fluid">
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <select name="language"title="q" class="aside__navbar-select" id="framework">
+                  <span class="icon-arrow-down"></span>
+                  <option value="1">Select Workplace</option>
+                  <option value="2">1</option>
+                  <option value="3">2</option>
+                  <option value="4">3</option>
+                </select>
+              </li>
+              <li class="nav-item aside__navbar-dark" onclick="toggleDarkLight()" title="Toggle dark/light mode"><i
+                  class="fas fa-adjust"></i>
+                Dark
+              </li>
+              <li class="nav-item">
+                <button type="button" onclick="openForm()" class="btn btn--blue">ADD NEW ASSESMENT</button>
+              </li>
+              <li class="nav-item aside__notification">
+                <a class="nav-link"title="j" href="#"><i class="far fa-bell" id="btnPassport" onclick="ShowHideDiv(this)"></i></a>
+              </li>
+            </ul>
+          </div>
+        <!-- </div> -->
+      </nav>
+      <!-- <nav class="navbar navbar-expand-lg navbar-light aside__navbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="aside__collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav">
             <li class="nav-item">
-              <select name="language" class="aside__navbar-select" id="framework">
+              <select name="language"title="q" class="aside__navbar-select" id="framework">
                 <span class="icon-arrow-down"></span>
                 <option value="1">Select Workplace</option>
                 <option value="2">1</option>
@@ -103,11 +133,11 @@
               <button type="button" onclick="openForm()" class="btn btn--blue">ADD NEW ASSESMENT</button>
             </li>
             <li class="nav-item aside__notification">
-              <a class="nav-link" href="#"><i class="far fa-bell" id="btnPassport" onclick="ShowHideDiv(this)"></i></a>
+              <a class="nav-link"title="j" href="#"><i class="far fa-bell" id="btnPassport" onclick="ShowHideDiv(this)"></i></a>
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
       <section class="dashboard__reminder" id="dvPassport">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
@@ -391,7 +421,7 @@
               </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
           <i class="fas fa-chevron-left header__left-arrow"></i>
           <header class="header">
@@ -399,47 +429,55 @@
             <h5 class="header__subheading">Checkout the Structure</h5>
           </header>
           <div class="appcardwrapper">
-          <div class="appcard">
-            <h3 class="appcard__title">Application Name</h3>
-            <p class="appcard__text">Application desc</p>
-            <div class="appcard__roundshape-top"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
-            <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
+            <div class="appcard">
+              <h3 class="appcard__title">Application Name</h3>
+              <p class="appcard__text">Application desc</p>
+              <div class="appcard__roundshape-top"><i class="fa fa-plus appcard__roundshape-icon"
+                  aria-hidden="true"></i></div>
+              <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon"
+                  aria-hidden="true"></i></div>
+            </div>
           </div>
-        </div>
           <div class="premcardwrapper">
             <div class="premcard">
-            <h3 class="premcard__title">On Prem Application</h3>
-            <p class="premcard__text">On Prem Application desc</p>
-            <div class="appcard__roundshape-bottom" type="button" onclick="opencard()"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
-           </div>
-           <div class="subcard">
-            <h3 class="subcard__title">Sub Application Name</h3>
-            <p class="subcard__text">Description will be here</p>
-            <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
-           </div>
+              <h3 class="premcard__title">On Prem Application</h3>
+              <p class="premcard__text">On Prem Application desc</p>
+              <div class="appcard__roundshape-bottom" type="button" onclick="opencard()"><i
+                  class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
+            </div>
             <div class="subcard">
               <h3 class="subcard__title">Sub Application Name</h3>
               <p class="subcard__text">Description will be here</p>
-            <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
-           </div>
+              <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon"
+                  aria-hidden="true"></i></div>
+            </div>
+            <div class="subcard">
+              <h3 class="subcard__title">Sub Application Name</h3>
+              <p class="subcard__text">Description will be here</p>
+              <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon"
+                  aria-hidden="true"></i></div>
+            </div>
           </div>
           <div class="subcardwrapper">
             <div class="subcard" id="sub-card">
               <h3 class="subcard__title">Sub internal Application Name</h3>
               <p class="subcard__text">Description will be here</p>
-              <i class="fas fa-times subcard__cuticon"type="button" onclick="closecard()"></i>
-            <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
-           </div>
-           <div class="subcard">
-            <h3 class="subcard__title">Sub internal Application Name</h3>
-            <p class="subcard__text">Description will be here</p>      
-          <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
-         </div>
-         <div class="subcard">
-          <h3 class="subcard__title">Sub internal Application Name</h3>
-          <p class="subcard__text">Description will be here</p>
-        <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon" aria-hidden="true"></i></div>
-       </div>
+              <i class="fas fa-times subcard__cuticon" type="button" onclick="closecard()"></i>
+              <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon"
+                  aria-hidden="true"></i></div>
+            </div>
+            <div class="subcard">
+              <h3 class="subcard__title">Sub internal Application Name</h3>
+              <p class="subcard__text">Description will be here</p>
+              <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon"
+                  aria-hidden="true"></i></div>
+            </div>
+            <div class="subcard">
+              <h3 class="subcard__title">Sub internal Application Name</h3>
+              <p class="subcard__text">Description will be here</p>
+              <div class="appcard__roundshape-bottom"><i class="fa fa-plus appcard__roundshape-icon"
+                  aria-hidden="true"></i></div>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
@@ -448,7 +486,50 @@
             <h2 class="header__heading">ITC Assest A - Runtime Status Update</h2>
             <h5 class="header__subheading">Checkout the status of project</h5>
           </header>
-          
+          <div class="project">
+            <div class="project__card-primary">
+              <div class="project__card">
+                <h3 class="project__card-text">Pre Assesment</h3>
+                <label for="progress" class="project__card-assesmentlabel">40% PROGRESS</label>
+                <progress max="100" value="40"></progress>
+              </div>
+              <div class="project__card-review">
+                <div class="project__card-roundfirst"><i class="fas fa-check project__card-icon"></i></div>               
+                <h3 class="project__card-title">Assesment Review</h3>
+                <dl class="project__card-datalist">
+                  <dt class="project__card-description">Reviewer: </dt>
+                  <dd  class="project__card-time">ITC Admin</dd>
+                </dl>      
+                <dl class="project__card-datalist">
+                  <dt class="project__card-description">Completed on</dt>
+                  <dd  class="project__card-time">17 Nov 2021 11:23am</dd>
+                </dl>
+              </div>
+              <div class="project__card-response">
+                <div class="project__card-roundsecond"><i class="fas fa-check project__card-icon"></i></div>
+               <h3 class="project__card-title">Response</h3> 
+               <dl class="project__card-datalist">
+                <dt class="project__card-description">Performed by: </dt>
+                <dd  class="project__card-time">Safety User</dd>
+              </dl>      
+              <dl class="project__card-datalist">
+                <dt class="project__card-description">Completed on</dt>
+                <dd  class="project__card-time">13 Nov 2021 01:53pm</dd>
+              </dl>
+              </div>
+            </div>
+            <div class="project__card">
+              <h3 class="project__card-text">COVID-19</h3>
+              <label for="progress" class="project__card-covidlabel">80% PROGRESS</label>
+              <progress max="100" value="80"></progress>
+            </div>
+            <div class="project__card">
+              <h3 class="project__card-text">Operation Control</h3>
+            </div>
+            <div class="project__card">
+              <h3 class="project__card-text">Safety Planning</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -541,6 +622,7 @@
       </form>
     </div>
   </section>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>

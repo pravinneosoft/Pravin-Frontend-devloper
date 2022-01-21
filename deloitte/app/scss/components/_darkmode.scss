@@ -1,26 +1,27 @@
 body.light-mode {
     background-color: $color-dark;
     color: $color-white;
-    a {
+    .dashboard__nav{
+      background-color: $color-light-dark;
+    }
+    .nav-link {
       color: $color-light-grey;
     }
     button , select{
      background: rgba(245, 245, 245, 0.10);
      color: $color-whitesmoke;;
     }
-    nav {
-      background-color: $color-light-dark;
-    }
-    strong{
+    
+    .dashboard__logo-smallheading{
         color: #d0d0d0;
     }
-    header h2{
+    .header__heading{
         color: $color-light-white;
     }
-    h5{
+    .header__subheading{
        color: $color-light;
     }
-    .card,h3,p{
+    .card,.dashboard__logo-heading,.card__text{
         background:$color-darkgrey;
         color: $color-whitesmoke;
         box-shadow: none;

@@ -1,3 +1,6 @@
+.accordion{
+    
+}
 .accordion-button {
     padding: 0.62rem 0 0.5rem 3.62rem;
 }
@@ -6,11 +9,17 @@
     background-image: url("../images/triangle.png");
     position: absolute;
     left: 1.25rem;
-    top: 1.4rem;
+    top: 1.7rem;
     transform: rotate(180deg);
+    background-size: 0.625rem 0.438rem;
+    background-repeat: no-repeat;
+    width: 0.625rem;
+    height: 0.438rem;
 }
 
 .accordion-button:not(.collapsed)::after {
+    background-size: 0.625rem 0.438rem;
+    background-repeat: no-repeat;
     background-image: url("../images/triangle.png");
 }
 
@@ -28,9 +37,6 @@
     width: 60.93rem;
     margin-top: 0.56rem;
     border-radius: 0.625rem;
-    &::after{
-
-    }
 }
 
 .accordion-subheading {
@@ -64,4 +70,18 @@ box-shadow: none;
 }
 .accordion-button:not(.collapsed)::after {
 transform: rotate(0deg);
+}
+.accordion-item{
+    position: relative;
+}
+.accordion-collapse{
+    &::before{
+      content: "";
+      height: 3.063rem;
+      width: 0.006rem;
+      position: absolute;
+      top: 4rem;
+      left: 1.56rem;
+      background: $color-black;
+    }
 }

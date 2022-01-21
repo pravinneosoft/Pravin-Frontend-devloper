@@ -10,10 +10,12 @@
         color: rgba(0, 0, 0, 0.6);
         font-weight: 400;
         line-height: 1rem;
+        display: flex;
+        column-gap: 0.625rem;
     }
     &-img {
-        padding-right: 0.688rem;
-
+        width: 1rem;
+        height: 1rem;
     }
 }
 
@@ -41,8 +43,8 @@
 }
 //middle navbar
 .aside__navbar{
-    width: 38%;
     float: right;
+    width: 50%;
     padding-top: 00.87rem;
 }
 .aside__collapse{
@@ -69,4 +71,7 @@
 }
 .aside__notification{
     margin-left: 1.56rem;
+}
+.navbar-nav{
+    margin-left: auto;
 }
