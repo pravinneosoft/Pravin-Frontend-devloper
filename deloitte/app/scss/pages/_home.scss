@@ -276,6 +276,10 @@
             position: absolute;
             right: 5rem;
             top: 1.25rem;
+
+            @include breakpoint (desktop-max) {
+                right: 1.4rem;
+            }
         }
     }
 
@@ -338,6 +342,14 @@
     border-radius: 00.625rem;
     position: relative;
 
+    @include breakpoint (desktop-max) {
+        width: 48.75rem;
+    }
+
+    @include breakpoint (desktop-max) {
+        width: 45.1rem;
+    }
+
     &:before {
         content: "";
         height: 4.68rem;
@@ -365,6 +377,14 @@
         width: 58.75rem;
         margin-left: 2.25rem;
         align-items: center;
+
+        @include breakpoint (desktop-max) {
+            width: 48.75rem;
+        }
+
+        @include breakpoint (desktop-max) {
+            width: 45.1rem;
+        }
     }
 
 
@@ -428,7 +448,7 @@
     width: 9.87rem;
     background: $color-dark-green;
     color: $color-white;
-    box-shadow: 0px 0.25rem 1.5rem $color-light-grey;
+    box-shadow: 0 0.25rem 1.5rem $color-light-grey;
     border-radius: 0.62rem;
     display: flex;
     justify-content: center;
@@ -441,6 +461,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-top: 3.5rem;
     }
 
     &__title {
@@ -484,7 +505,83 @@
         background: $color-white;
         position: absolute;
         bottom: -0.5rem;
+
     }
+
+    &__roundshape-horizontal_line {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0.375rem;
+        height: 2.125rem;
+        background-color: $color-green;
+    }
+
+    &__roundshape-vline {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 0.006rem;
+        height: 3.125rem;
+        background-color: $color-green;
+        right: 0.43rem;
+    }
+
+    &__roundshape-leftline {
+        border-right: 0.006rem solid $color-green;
+        border-bottom: 0.006rem solid $color-green;
+        -webkit-border-bottom-right-radius: 1.875rem;
+        -moz-border-radius-bottomright: 1.875rem;
+        border-bottom-right-radius: 1.875rem;
+        position: absolute;
+        bottom: -0.8125rem;
+        width: 14rem;
+        height: 1.25rem;
+        right: 0.17rem;
+        bottom: 0;
+    }
+
+    &__roundshape-rightline {
+        border-left: 0.006rem solid $color-green;
+        border-bottom: 0.006rem solid $color-green;
+        -webkit-border-bottom-left-radius: 1.875rem;
+        -moz-border-radius-bottomleft: 1.875rem;
+        border-bottom-left-radius: 1.875rem;
+        position: absolute;
+        bottom: -0.8125rem;
+        width: 14rem;
+        height: 1.25rem;
+        left: 0.375rem;
+        bottom: 0;
+    }
+
+    &__roundshape-rightcurve {
+        position: absolute;
+        top: 1.2rem;
+        right: -1.625rem;
+        width: 3.125rem;
+        height: 4.5625rem;
+        border-top: 0.006rem solid $color-green;
+        border-right: 0.006rem solid $color-green;
+        -webkit-border-top-right-radius: 1.875rem;
+        -moz-border-radius-topright: 1.875rem;
+        border-top-right-radius: 1.875rem;
+    }
+
+    &__roundshape-leftcurve {
+        position: absolute;
+        top: 1.2rem;
+        left: -1.625rem;
+        width: 3.125rem;
+        height: 4.5625rem;
+        border-top: 0.006rem solid $color-green;
+        border-left: 0.006rem solid $color-green;
+        -webkit-border-top-left-radius: 1.875rem;
+        -moz-border-radius-topleft: 1.875rem;
+        border-top-left-radius: 1.875rem;
+    }
+
+
 }
 
 .premcard {
@@ -507,6 +604,14 @@
         column-gap: 5rem;
         justify-content: center;
         margin-top: 2.56rem;
+
+        @include breakpoint (desktop-max) {
+            column-gap: 3rem;
+        }
+
+        @include breakpoint (ipad-max) {
+            column-gap: 3rem;
+        }
     }
 
     &__title {
@@ -555,6 +660,11 @@
         justify-content: center;
         width: 87%;
         margin-top: 4rem;
+
+        @include breakpoint (desktop-max) {
+            justify-content: center;
+            width: 90.5%;
+        }
     }
 
     &__title {
@@ -578,6 +688,42 @@
         right: 0.62rem;
         font-weight: 500;
     }
+
+    &__roundshape-horizontal_line {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0.375rem;
+        width: 0.006rem;
+        height: 2.125rem;
+        background-color: $color-green;
+    }
+
+    &__roundshape-leftline {
+        right: -0.1rem;
+        border-right: 0.006rem solid $color-green;
+        border-bottom: 0.006rem solid $color-green;
+        -webkit-border-bottom-right-radius: 1.875rem;
+        -moz-border-radius-bottomright: 1.875rem;
+        border-bottom-right-radius: 1.875rem;
+        position: absolute;
+        bottom: -0.8125rem;
+        width: 5.25rem;
+        height: 1.25rem;
+    }
+
+    &__roundshape-rightline {
+        border-left: 0.006rem solid $color-green;
+        border-bottom: 0.006rem solid $color-green;
+        -webkit-border-bottom-left-radius: 1.875rem;
+        -moz-border-radius-bottomleft: 1.875rem;
+        border-bottom-left-radius: 1.875rem;
+        position: absolute;
+        bottom: -0.8125rem;
+        width: 5.25rem;
+        height: 1.25rem;
+    }
+
 }
 
 //project status
@@ -590,7 +736,7 @@
     margin-left: 1.87rem;
 
     &__card {
-        z-index:auto;
+        z-index: auto;
         width: 18.18rem;
         height: 10.25rem;
         background: $color-white;
@@ -598,6 +744,14 @@
         border-radius: 1.25rem;
         padding-top: 2.31rem;
         position: relative;
+
+        @include breakpoint (desktop-max) {
+            width: 14.18rem;
+        }
+
+        @include breakpoint (desktop-max) {
+            width: 11rem;
+        }
 
         &::before {
             content: "";
@@ -623,6 +777,10 @@
 
         &:first-child {
             width: 17.62rem;
+
+            @include breakpoint (desktop-max) {
+                width: 13rem;
+            }
 
             &::before {
                 top: 4.2rem;
@@ -651,6 +809,14 @@
             flex-wrap: wrap;
             position: relative;
 
+            @include breakpoint (desktop-max) {
+                width: 39.12rem;
+            }
+
+            @include breakpoint (mobile-max) {
+                width: 36rem;
+            }
+
             &::before {
                 content: "";
                 height: 14.43rem;
@@ -666,7 +832,7 @@
             position: relative;
             padding-top: 1.12rem;
             margin-top: 2.3rem;
-            border-top: 0.125rem dashed $color-green;
+            border-top: 0.006rem dashed $color-green;
             width: 13.07rem;
             padding-left: 2.7rem;
         }
@@ -779,22 +945,24 @@ progress[value] {
 
 progress::-webkit-progress-bar {
     height: 0.5rem;
-    width: 14.25rem; 
+    width: 7.25rem;
     background: rgba(208, 208, 206, 1);
     border-radius: 0.625rem;
+
+    @include breakpoint (ipad-max) {
+        width: 8rem;
+    }
 }
 
 progress::-webkit-progress-value {
     display: inline-block;
     float: left;
-    height:0.5rem;
+    height: 0.5rem;
     background: rgba(0, 171, 171, 1);
     border-radius: 0.625rem;
-    background-image: repeating-linear-gradient(
-        135deg,
-        rgba(0, 171, 171, 1),
-        rgba(0, 171, 171, 1) 8px,
-        rgba(0, 171, 171, 1) 8px,
-        rgba(255,255,255,0.5) 15px
-      );
+    background-image: repeating-linear-gradient(135deg,
+            rgba(0, 171, 171, 1),
+            rgba(0, 171, 171, 1) 8px,
+            rgba(0, 171, 171, 1) 8px,
+            rgba(255, 255, 255, 0.5) 15px);
 }

@@ -37,6 +37,12 @@
     width: 60.93rem;
     margin-top: 0.56rem;
     border-radius: 0.625rem;
+    @include breakpoint (desktop-max){
+        width: 98%; 
+    }
+    @include breakpoint (ipad-max) {
+        width: 47.3rem;
+    }
 }
 
 .accordion-subheading {
