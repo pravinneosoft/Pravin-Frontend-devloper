@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: $primary-font;
 }
 body {
     width: 100%;
@@ -10,17 +11,18 @@ body {
     color: $color-black;
 }
 a {
-    text-decoration: none;
+    text-decoration: none;font-family: $primary-font;
     &:hover{
         color: $color-black !important;
 
     }
 }
 div{
-    color: $color-black;
+    color: $color-black;font-family: $primary-font;
 }
-h1,h2,h3,h4,h5,h6,.row{
+h1,h2,h3,h4,h5,h6,.row,p,strong,header{
     margin: 0;
+    font-family: $primary-font;
 }
 textarea {
     resize: none;

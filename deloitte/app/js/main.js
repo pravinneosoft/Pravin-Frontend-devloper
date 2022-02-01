@@ -13,14 +13,20 @@
     });
 
 });
-function ShowHideDiv(btnPassport) {
-  var dvPassport = document.getElementById("dvPassport");
-  if (btnPassport.value == "Yes") {
-      dvPassport.style.display = "block";
-      btnPassport.value = "No";
+function ShowHideDiv(notification) {
+  var reminderblock = document.getElementById("reminderblock");
+  var dark = document.getElementById("dark");
+  var addform = document.getElementById("addform");
+  if (notification.value == "Yes") {
+      reminderblock.style.display = "none";
+      dark.style.marginRight = "1.1rem";
+      addform.style.display ="block"
+      notification.value = "No";
   } else {
-      dvPassport.style.display = "none";
-      btnPassport.value = "Yes";
+      reminderblock.style.display = "block";
+      dark.style.marginRight = "16.5rem";
+      addform.style.display ="none"
+      notification.value = "Yes";
   }
 }
 function toggleDarkLight() {

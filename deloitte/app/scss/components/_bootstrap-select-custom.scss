@@ -2,3 +2,12 @@
 .list-group-item{
     padding: 0;
 }
+.form-check-input:checked {
+    background-color: $color-light-marron;
+    border-color: transparent;
+}
+.form-check-input {
+    border: transparent;
+    width: 2.12rem;
+    height: 0.87rem;
+}

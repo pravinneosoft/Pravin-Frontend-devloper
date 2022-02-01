@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +22,7 @@
       <ul class="nav dashboard__unorderdlist nav-pills flex-column" id="v-pills-tab" role="tablist"
         aria-orientation="vertical">
         <li class="nav-item" role="presentation">
-          <a href="#" class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+          <a href="#" class="nav-link active" id="v-pills-home-tab notification"onclick="ShowHideDiv(this)" data-bs-toggle="pill" data-bs-target="#v-pills-home"
             type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><img class="nav-img"
               src="images/dashboard.png" alt="">
             <span> Dashboard </span>
@@ -92,21 +91,21 @@
                 <option value="4">3</option>
               </select>
             </li>
-            <li class="nav-item aside__navbar-dark" onclick="toggleDarkLight()" title="Toggle dark/light mode"><i
-                class="fas fa-adjust"></i>
+            <li class="nav-item aside__navbar-dark" onclick="toggleDarkLight()"id="dark" title="Toggle dark/light mode"><i
+                class="fas fa-adjust darkmodeicon"></i>
               Dark
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="addform">
               <button type="button" onclick="openForm()" class="btn btn--blue">ADD NEW ASSESMENT</button>
             </li>
             <li class="nav-item aside__notification">
-              <a class="nav-link" title="j" href="#"><i class="far fa-bell" id="btnPassport"
+              <a class="nav-link" title="j" href="#"><i class="far fa-bell " id="notification"
                   onclick="ShowHideDiv(this)"></i></a>
             </li>
           </ul>
         </div>
       </nav>
-      <section class="dashboard__reminder" id="dvPassport">
+      <section class="dashboard__reminder" id="reminderblock">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
             <div class=" dashboard__reminder-date">16 November 2021
@@ -251,6 +250,9 @@
               <p class="card__text">Resords Of All the Assesment in available</p>
               <button class="btn btn--grey">topic</button>
             </div>
+            <div class="card">
+              <i class="fa fa-plus card__plusicon" aria-hidden="true"></i>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -305,9 +307,8 @@
                       vitae consectetur repellendus </p>
                   </div>
                   <div class="master__rating">
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" placeholder="j" id="flexSwitchCheckDefault">
-                    </div>
+                    <input type="checkbox"class="master__rating-switch" name="switch" placeholder="k" id="switch">
+                    <label class="master__rating-switchlabel" for="switch"></label>
                   </div>
                   <div class="master__module">
                   </div>
@@ -344,9 +345,8 @@
                       vitae consectetur repellendus </p>
                   </div>
                   <div class="master__rating">
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" placeholder="g" type="checkbox" id="flexSwitchCheckDefault">
-                    </div>
+                    <input type="checkbox"class="master__rating-switch" name="switch" placeholder="k" id="switch">
+                    <label class="master__rating-switchlabel" for="switch"></label>
                   </div>
                   <div class="master__module">
                   </div>
@@ -371,9 +371,8 @@
                       vitae consectetur repellendus </p>
                   </div>
                   <div class="master__rating">
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" placeholder="g" id="flexSwitchCheckDefault">
-                    </div>
+                    <input type="checkbox"class="master__rating-switch" name="switch" placeholder="k">
+                    <label class="master__rating-switchlabel" for="switch"></label>
                   </div>
                   <div class="master__module">
                   </div>
@@ -620,5 +619,4 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
   </script>
 </body>
-
 </html>

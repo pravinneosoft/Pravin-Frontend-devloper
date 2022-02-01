@@ -1,9 +1,35 @@
+.darkmodeicon{
+  font-size: 1.2rem;
+  margin-right: 0.38rem;
+}
 body.light-mode {
   background-color: $color-dark;
   color: $color-white;
 
-  .dashboard__nav {
-    background-color: $color-light-dark;
+  .card {
+    &:nth-last-child(1) {
+      background: rgba(0, 0, 0, 0.21);
+      font-size: 30px;
+    }
+  }
+
+  .card__plusicon {
+    color: $color-light-marron;
+  }
+
+  .dashboard {
+    &__nav {
+      background-color: $color-light-dark;
+    }
+
+    &__logo-smallheading {
+      color: $color-darksky;
+    }
+
+    &__logo-heading {
+      color: $color-whitesmoke;
+      box-shadow: none;
+    }
   }
 
   .nav-link {
@@ -13,65 +39,180 @@ body.light-mode {
   button,
   select {
     background: rgba(245, 245, 245, 0.10);
-    color: #c4c4c4;
+    color: $color-light-marron;
   }
 
-  .dashboard__logo-smallheading {
-    color: #d0d0d0;
-  }
 
-  .header__heading {
-    color: $color-light-white;
-  }
+  .header {
+    &__heading {
+      color: $color-light-white;
+    }
 
-  .header__subheading {
-    color: $color-light;
+    &__subheading {
+      color: $color-light;
+      opacity: 0.7;
+    }
   }
 
   .card,
-  .dashboard__logo-heading,
   .card__text {
     background: $color-darkgrey;
     color: $color-whitesmoke;
     box-shadow: none;
+    &:nth-last-child(1) {
+      color: red;
+      background: rgba(0, 0, 0, 0.21);
+      font-size: 30px;
+    }
   }
-  .profile__heading {
-    color: rgba(208, 208, 208, 0.7);
- }
-  .profile__subheading {
-     color: rgba(208, 208, 208, 0.7);
+
+  .profile {
+    &__heading {
+      color: rgba(208, 208, 208, 0.7);
+    }
+
+    &__subheading {
+      color: rgba(208, 208, 208, 0.7);
+    }
   }
-  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color:$color-light-grey;
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {
+    color: $color-light-grey;
     font-weight: 700;
   }
-  .dashboard__logo-heading{
-    background: transparent;
+
+  .wrapper__heading {
+    color: rgba(249, 249, 249, 0.3);
   }
-  .header__subheading{
-    opacity: 0.7;
+
+  .aside__navbar-dark {
+    color: rgba(248, 248, 248, 0.4);
   }
-  .card__heading{
+
+  .card__heading {
     color: $color-whitesmoke;
   }
-  .dashboard__reminder{
+
+  .list-group-item {
     background: #1C1A1A;
   }
-  .list-group-item{
-    background: #1C1A1A;
+
+  .fa-bell {
+    color: $color-light-whitesmoke;
   }
-  .dashboard__reminder-strongtext {
-    color: $color-light-whitesmoke;}
-    .dashboard__reminder-paragraph{
+
+  .appcard {
+    box-shadow: 0 0.25rem 1.5rem $color-charcoal;
+    background-color: $color-light-dark;
+  }
+
+  .premcard {
+    background: #323232;
+    color: #f5f5f5;
+    box-shadow: none;
+  }
+
+  .subcard {
+    background: #323232;
+    color: #f5f5f5;
+    box-shadow: none;
+  }
+
+  .project {
+
+    &__card,
+    &__card-text,
+    &__card-assesmentlabel,
+    &__card-covidlabel {
+      background: $color-darkgrey;
+      color: $color-whitesmoke;
+      box-shadow: none;
+    }
+
+    &__card-primary,
+    &__card-title,
+    &__card-datalist &__card-review,
+    &__card-description,
+    &__card-time {
+      background: #1C1A1A;
+      color: $color-whitesmoke;
+      box-shadow: none;
+    }
+  }
+
+  .master {
+
+    &__heading,
+    &__name-heading,
+    &__name-paragraph {
+      background-color: $color-dark;
+      color: $color-white;
+    }
+  }
+
+  .list-group-item {
+    border-color: rgba(231, 231, 231, 0.1);
+    color: $color-light-whitesmoke;
+  }
+
+  .dashboard__reminder {
+    background: #1C1A1A;
+    color: $color-white;
+
+    &-date {
+      color: $color-white;
+    }
+
+    &-subdate {
+      color: rgba(198, 198, 198, 0.5);
+    }
+
+    &-heading {
+      color: $color-sky;
+    }
+
+    &-strongtext,
+    &-paragraph {
       color: $color-light-whitesmoke;
     }
-    .fa-bell{
+
+    &-subheading {
+      color: rgba(241, 241, 241, 0.7);
+    }
+
+    &-all {
+      background: #1C1A1A;
+      color: $color-white;
+    }
+
+    &-time {
+      border-color: rgba(231, 231, 231, 0.1);
       color: $color-light-whitesmoke;
     }
- .appcard {
-box-shadow:0 0.25rem 1.5rem $color-charcoal;
+  }
+
+  .fa-angle-down {
+    color: rgba(217, 217, 217, 0.3);
+  }
+
+  .fa-search {
+    color: rgba(241, 241, 241, 0.7);
+  }
+
+  .accordion {
+    &-subheading {
+      color: rgba(241, 241, 241, 0.7);
     }
+
+    &-item {
+      background-color: $color-dark;
+      color: $color-white;
+    }
+  }
+
   body.dark-mode {
     background-color: $color-white;
     color: $color-dark;
-  }}
+  }
+}
