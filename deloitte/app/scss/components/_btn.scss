@@ -10,38 +10,48 @@
     background: $color-green;
     box-shadow: 0px 4px 24px rgba(196, 197, 195, 0.25);
     margin-left: auto;
+
     @include breakpoint (custom-small-mobile-max) {
         padding: 0.5rem 1.48rem 0.43rem 1.48rem;
     }
 
 }
-.btn--blue{
-width: 8.93rem;
-height: 1.87rem;
-background: $color-blue;
-border-radius: 0.3rem;
-display: inline-flex;
-align-items: center;
-justify-content: center;
-font-size: 0.6rem;
-color: $color-white;
-margin-left: 1rem;
+
+.btn--blue {
+    width: 8.93rem;
+    height: 1.87rem;
+    background: $color-blue;
+    border-radius: 0.3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    color: $color-white;
+    margin-left: 1rem;
+    @include breakpoint (ipad-max){
+        margin-right: 1rem;
+    }
+    @include breakpoint (mobile-max){
+        margin-right: 0.5rem;
+    }
 }
-.btn--dark{
+
+.btn--dark {
     font-weight: 600;
-font-size: 0.5rem;
-color: $color-white;
-padding: 0.06rem 0.25rem 0.05rem 0.25rem;
-margin-top: 2.48rem;
-background: $color-grey;
-border-radius: 1.3rem;
-width: 4.15rem;
+    font-size: 0.5rem;
+    color: $color-white;
+    padding: 0.06rem 0.25rem 0.05rem 0.25rem;
+    margin-top: 2.48rem;
+    background: $color-grey;
+    border-radius: 1.3rem;
+    width: 4.15rem;
 }
-.btn--lightgrey{
+
+.btn--lightgrey {
     font-size: 0.5rem;
     font-weight: 600;
     color: $color-charcoal;
-    background:$color-light-grey;
+    background: $color-light-grey;
     border-radius: 1.25rem;
     width: 2rem;
     padding: 0;
@@ -49,10 +59,11 @@ width: 4.15rem;
     top: 1.02rem;
     right: 1rem;
 }
-.btn--grey{
+
+.btn--grey {
     font-size: 0.5rem;
     font-weight: 600;
-    background:rgba(77,77,77,0.1);
+    background: rgba(77, 77, 77, 0.1);
     border-radius: 1.25rem;
     padding: 0;
     position: absolute;
@@ -61,7 +72,8 @@ width: 4.15rem;
     color: $color-grey;
     width: 2.82rem;
 }
-.btn--lightblue{
+
+.btn--lightblue {
     font-size: 00.625rem;
     font-weight: 600;
     color: $color-white;
@@ -72,7 +84,8 @@ width: 4.15rem;
     margin-top: 1.93rem;
     margin-left: 2.19rem;
 }
-.btn--active{
+
+.btn--active {
     background: $color-green;
     border-radius: 1.25rem;
     font-weight: 600;
@@ -84,7 +97,8 @@ width: 4.15rem;
     justify-content: center;
     align-items: center;
 }
-.btn--inactive{
+
+.btn--inactive {
     background: $color-red;
     border-radius: 1.25rem;
     font-weight: 600;
@@ -95,4 +109,13 @@ width: 4.15rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.btn--lightmode{
+    background-color: $color-white;
+    border: none;
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 4.1rem;
 }

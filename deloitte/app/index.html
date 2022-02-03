@@ -22,7 +22,7 @@
       <ul class="nav dashboard__unorderdlist nav-pills flex-column" id="v-pills-tab" role="tablist"
         aria-orientation="vertical">
         <li class="nav-item" role="presentation">
-          <a href="#" class="nav-link active" id="v-pills-home-tab notification"onclick="ShowHideDiv(this)" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+          <a href="#" class="nav-link active" id="v-pills-home-tab notification"data-bs-toggle="pill" data-bs-target="#v-pills-home"
             type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><img class="nav-img"
               src="images/dashboard.png" alt="">
             <span> Dashboard </span>
@@ -81,9 +81,9 @@
     <div class="aside">
       <nav class="navbar navbar-expand-lg navbar-light aside__navbar">
         <div class="container-fluid">
-          <ul class="navbar-nav ">
-            <li class="nav-item">
-              <select name="language" title="q" class="aside__navbar-select" id="framework">
+          <ul class="navbar-nav">
+            <li class="nav-item" id="workplace">
+              <select name="language" title="q" class="aside__navbar-select" >
                 <span class="icon-arrow-down"></span>
                 <option value="1">Select Workplace</option>
                 <option value="2">1</option>
@@ -91,15 +91,15 @@
                 <option value="4">3</option>
               </select>
             </li>
-            <li class="nav-item aside__navbar-dark" onclick="toggleDarkLight()"id="dark" title="Toggle dark/light mode"><i
-                class="fas fa-adjust darkmodeicon"></i>
-              Dark
+            <li class="nav-item aside__navbar-dark" onclick="toggleDarkLight()"id="dark" title="Toggle dark/light mode">
+             <button name='button'class="btn btn--lightmode" id='1' onclick="changeText()"><i
+              class="fas fa-adjust darkmodeicon"></i><span class="aside__navbar-darkmodetext"  id="text">Dark</span></button> 
             </li>
             <li class="nav-item" id="addform">
-              <button type="button" onclick="openForm()" class="btn btn--blue">ADD NEW ASSESMENT</button>
+              <button type="button" onclick="openForm(this)"id="popupform" class="btn btn--blue">ADD NEW ASSESMENT</button>
             </li>
             <li class="nav-item aside__notification">
-              <a class="nav-link" title="j" href="#"><i class="far fa-bell " id="notification"
+              <a class="nav-link" title="j" href="#"><i class="far fa-bell aside__notification-icon " id="notification"
                   onclick="ShowHideDiv(this)"></i></a>
             </li>
           </ul>
@@ -525,7 +525,7 @@
           <div class="col-md-11">
             <h2 class="form__heading">Add New Assesment</h2>
           </div>
-          <div class="col-md-1"><i type="button" onclick="closeForm()" class="fas fa-times form__deleticon"></i>
+          <div class="col-md-1"><i type="button" onclick="closeForm(this)" class="fas fa-times form__deleticon"></i>
           </div>
           <hr class="form__hr">
           <div class="col-md-12">

@@ -3,20 +3,26 @@
     &-item {
         list-style-type: none;
         font-size: 0.75rem;
-        @include breakpoint (mobile-max){
+
+        @include breakpoint (mobile-max) {
             font-size: 0.59rem;
         }
     }
 
     &-link {
-        padding: 0.81rem 0 0 1.43rem;
+   
         color: rgba(0, 0, 0, 0.6);
         font-weight: 400;
         line-height: 1rem;
         display: flex;
         column-gap: 0.625rem;
-        @include breakpoint (mobile-max){
-        align-items: center;
+
+        @include breakpoint (ipad-max) {
+            padding: 0.5rem 1rem;
+        }
+
+        @include breakpoint (mobile-max) {
+            align-items: center;
         }
 
     }
@@ -24,7 +30,8 @@
     &-img {
         width: 1rem;
         height: 1rem;
-        @include breakpoint (mobile-max){
+
+        @include breakpoint (mobile-max) {
             width: 0.8rem;
             height: 0.8rem;
         }
@@ -47,6 +54,10 @@
         border-top: 1.25rem solid transparent;
         border-bottom: 1.25rem solid transparent;
         border-right: 1.25rem solid $color-white;
+
+        @include breakpoint (ipad-max) {
+            left: 0;
+        }
     }
 }
 
@@ -58,52 +69,76 @@
 }
 
 //middle navbar
-.aside__navbar {
-    float: right;
-    width: 50%;
-    padding: 0.8rem 0.63rem 0 0;
+.aside {
+    &__navbar {
+        float: right;
+        width: 50%;
+        padding: 0.8rem 0.63rem 0 0;
+        @include breakpoint(desktop-max){
+            width: 75%;
+        }
+        @include breakpoint (mobile-max) {
+            width: 77%;
+        }
 
-    @include breakpoint (mobile-max) {
-        width: 77%;
+        &-darkmodetext {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 0.81rem;
+            font-weight: 400;
+        }
     }
-}
 
-.aside__collapse {
-    justify-content: end;
-}
+    &__collapse {
+        justify-content: end;
+    }
 
-.aside__navbar-select {
-    width: 9.18rem;
-    height: 2.2rem;
-    background: $color-whitesmoke;
-    color: rgba(0, 0, 0, 0.4);
-    font-weight: 400;
-    font-size: 0.62rem;
-    border: none;
-    padding-left: 0.87rem;
-    border-radius: 0.5rem;
-}
+    &__navbar-select {
+        width: 9.18rem;
+        height: 2.2rem;
+        background: $color-whitesmoke;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: 400;
+        font-size: 0.62rem;
+        border: none;
+        padding-left: 0.87rem;
+        border-radius: 0.5rem;
+    }
 
-.aside__navbar-dark {
-    font-size: 0.81rem;
-    color: rgba(0, 0, 0, 0.4);
-    font-weight: 400;
-    margin-left: 0.5rem;
-    display: inline-flex;
-    align-items: center;
-}
+    &__navbar-dark {
+        font-size: 0.81rem;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: 400;
+        margin-left: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 
-.aside__notification {
-    margin-left: 1.56rem;
+        @include breakpoint (ipad-max) {
+            margin-right: 0;
+        }
+    }
 
-    @include breakpoint (desktop-max) {
+    &__notification {
         margin-left: 0.56rem;
+        @include breakpoint (desktop-max) {
+            margin-left: 0.56rem;
+        }
+
+        @include breakpoint (ipad-max) {
+            margin-left: 0;
+        }
+        &-icon{
+            font-size: 1.3rem;
+        }
     }
 }
 
 .navbar-nav {
     margin-left: auto;
-
+    align-items: center;
     @include breakpoint (ipad-max) {
         flex-direction: initial;
     }

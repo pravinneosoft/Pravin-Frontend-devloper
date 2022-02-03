@@ -4,29 +4,47 @@
     box-sizing: border-box;
     font-family: $primary-font;
 }
+
 body {
     width: 100%;
-    font-family: $primary-font;
+    // font-family: $primary-font;
     font-weight: 400;
     color: $color-black;
 }
+
 a {
-    text-decoration: none;font-family: $primary-font;
-    &:hover{
+    text-decoration: none;
+    font-family: $primary-font;
+
+    &:hover {
         color: $color-black !important;
 
     }
 }
-div{
-    color: $color-black;font-family: $primary-font;
+
+div {
+    color: $color-black;
+    // font-family: $primary-font;
 }
-h1,h2,h3,h4,h5,h6,.row,p,strong,header{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.row,
+p,
+strong,
+header {
     margin: 0;
-    font-family: $primary-font;
+    // font-family:$primary-font;
 }
+
 textarea {
     resize: none;
 }
-.container-fluid{
+
+.container-fluid {
     padding: 0;
 }

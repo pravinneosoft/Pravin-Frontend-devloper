@@ -11,3 +11,6 @@
     width: 2.12rem;
     height: 0.87rem;
 }
+.tab-content>.active {
+    transition: all 1.5s ease-in-out;
+}

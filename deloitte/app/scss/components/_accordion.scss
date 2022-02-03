@@ -40,8 +40,11 @@
     @include breakpoint (desktop-max){
         width: 98%; 
     }
-    @include breakpoint (ipad-max) {
-        width: 47.3rem;
+    @include breakpoint (ipad-max){
+        width: 47rem;
+    }
+    @include breakpoint (mobile-max) {
+        width: 36.3rem;
     }
 }
 
