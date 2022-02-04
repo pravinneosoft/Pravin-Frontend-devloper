@@ -1,0 +1,93 @@
+ul {
+    display: contents;
+
+
+    .footer__list {
+        list-style-type: none;
+
+       .footer__vmx {
+            text-decoration: none;
+            color: #bdbfc9;
+            font-size: 13px;
+        }
+    }
+}
+
+footer {
+
+    background: #000A2D;
+    padding-top: 44px;
+    position: relative;
+
+}
+
+.footer__headings{
+    font-size: 14px;
+    font-weight: 600;
+    color: #bdbfc9;
+    position: relative;
+    &::after {
+        content: "";
+        border-bottom: 2px
+     solid #F58025;
+        width: 28px;
+        position: absolute;
+        left: 0%;
+        right: 0;
+        top: 17px;
+        bottom: 0px;
+    }
+ 
+}
+
+.footer__vmx {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 14px;
+}
+
+.footer__iconmoon {
+    color: $color-white;
+    background: #2D2D2D;
+    padding-top: 10px;
+    margin-top: 26px;
+}
+
+.footer__iconmoon-child {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .footer__social-icons {
+        padding-right: 15px;
+    }
+}
+
+.footer__copyright-section {
+    font-weight: 300;
+    font-size: 11px;
+    color: $color-white;
+
+}
+.footer__vmxheading{
+    font-size: 19px;
+    font-weight: 700;
+    color:$primary-color;
+    text-decoration: none;
+}
+.footer__iconsection{
+    display: inline-flex;
+    width: 90px;
+    justify-content: inherit;
+}
+.footer__product{
+    line-height: 200%;
+}
+.footer__link{
+height: 124px;
+    line-height: 155%;
+}
+.footer__contact{
+    height: 125px;
+    line-height: 124%;
+}

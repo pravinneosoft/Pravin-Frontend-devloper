@@ -1,0 +1,43 @@
+.btn {
+    color: $color-white;
+    border: solid;  
+}
+
+.btn--learn {
+    border-radius: 25px !important;
+    padding: 5px 18px 5px 18px;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #F58025;
+    margin-top: 30px;
+    &:hover {
+        background: $primary-color;
+        color: $color-white;
+    }
+}
+
+.btn--book {
+    border-radius: 48px !important;
+    font-size: 14px;
+    font-weight: 400;
+        padding: 7px 10px 7px 10px;
+        width: 284px;
+        border: 2px solid #F58025;
+        background: #F58025;
+        justify-content: center;
+        margin-top: 42px;
+}
+
+.btn--ourproduct {
+    color: $primary-color;
+    border-radius: 25px !important;
+    padding: 5px;
+    width: 115px;
+    border: 2px solid #F58025;
+    background: transparent;
+    justify-content: center;
+    &:hover {
+        background: $primary-color;
+        color: $color-white;
+    }
+}

@@ -1,0 +1,86 @@
+.whyvmx {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.whyvmx__heading {
+    text-align: center;
+    margin-top: 105px;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+        content: "";
+
+        height: 4.2px;
+        width: 86px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: $primary-color;
+        bottom: 0px;
+        top: 45px;
+        border-radius: 48px;
+        margin: 0 auto;
+    }
+}
+
+
+
+.card-title {
+
+    font-size: 18px;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 400;
+
+
+}
+
+.card-img {
+    width: 71px;
+    height: 71px;
+
+
+}
+
+
+
+.vmx__cards {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 56px;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.whyvmx__card-icon {
+
+    min-height: 221px;
+
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    display: flex;
+    width: 48.81%;
+    margin-top: 11px;
+
+    padding-top: 30px;
+    padding-bottom: 22px;
+    padding-right: 28px;
+    padding-left: 20px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 0 0 0 18px;
+}
+
+.whyvmx__card-image {
+    display: flex;
+    justify-content: center;
+}

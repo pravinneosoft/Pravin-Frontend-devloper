@@ -1,0 +1,280 @@
+.ourproducts {
+    background: #fafbff;
+    margin-top: 65px;
+}
+
+
+.product__top-left{
+    padding-left: 41px;
+    padding-top: 59px;
+    padding-bottom: 51px;
+    padding-right: 44px;
+    width: 312px;
+}.product__top-right{
+    padding-left: 41px;
+    padding-top: 59px;
+    
+    padding-right: 44px;
+    width: 312px;
+    margin-left: auto;
+}
+.product__bottom-left{
+    padding-left: 41px;
+    padding-top: 59px;
+    padding-bottom: 51px;
+    padding-right: 44px;
+    width: 312px;
+}
+.product__bottom-right{
+    padding-left: 41px;
+    padding-top: 59px;
+    padding-bottom: 51px;
+    padding-right: 44px;
+    width: 312px;margin-left: auto;
+}
+.ourproduct__heading {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+.ourproduct__card-paragraph {
+    font-size: 14px;
+    font-weight: 400;    
+    // width: 241px;
+    margin-top: 12px;
+}
+
+.wrapper {
+    position: relative;
+    padding-bottom: 75px;
+    padding-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include breakpoint (desktop-min){
+        width: 100%;
+
+    }
+}
+
+.ourproduct__round-shape {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(9, 9, 143);
+    position: absolute;
+    top: 36%;
+    left: 328px;
+    border: 10px solid $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint (desktop-max){
+    
+
+    }
+    @include breakpoint ( mobile-max){
+        display: none;
+       
+    }
+    @include breakpoint ( ipad-max){
+        display: none;
+    }
+  
+}
+
+.product__card-top-left {
+
+    position: relative;
+    background: $color-white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #f0ebeb;
+    min-width: 450px;
+    @include breakpoint ( mobile-max){
+      max-width: 60px;
+       
+    }
+    &:before {
+        content: "";
+        background: linear-gradient(90deg, rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 200, 0.3) 100%);
+        position: absolute;
+        width: 192px;
+        height: 190px;
+        right: 0;
+        bottom: 0;
+        border-top-left-radius: 100%;
+        @include breakpoint ( mobile-max){
+            display: none;
+        }
+        @include breakpoint ( ipad-max){
+            display: none;
+        }
+    }
+
+    &:after {
+        content: "";
+        background: linear-gradient(90deg, #070774 0%, rgba(0, 0, 197, 0.9) 100%);
+        position: absolute;
+        width: 175px;
+        height: 174px;
+        right: 0;
+        bottom: 0;
+        border-top-left-radius: 100%;
+        @include breakpoint ( mobile-max){
+            display: none;
+        }
+        @include breakpoint ( ipad-max){
+            display: none;
+        }
+    }
+}
+
+.Product__card-top-right {
+    padding: 15px 20px 50px 15px;
+    position: relative;
+    background: $color-white;
+    text-align: end;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #f0ebeb;
+    min-width: 450px;
+    margin-left: 25px;
+    
+    &:before {
+        content: "";
+        background: linear-gradient(90deg, rgba(0, 0, 255, 0.296) 0%, rgba(0, 0, 197, 0.319) 100%);
+        position: absolute;
+        width: 192px;
+        height: 190px;
+        left: 0;
+        bottom: 0;
+        border-top-right-radius: 100%;
+        @include breakpoint ( mobile-max){
+            display: none;
+        }
+        @include breakpoint ( ipad-max){
+            display: none;
+        }
+    }
+
+    &:after {
+        content: "";
+        background: linear-gradient(90deg, rgba(0 0 255) 0%, rgba(0, 0, 255, 0.9) 100%);
+
+        position: absolute;
+        width: 175px;
+        height: 174px;
+        left: 0;
+        bottom: 0;
+        border-top-right-radius: 100%;
+        @include breakpoint ( mobile-max){
+            display: none;
+        }
+        @include breakpoint ( ipad-max){
+            display: none;
+        }
+    }
+}
+
+.Product__card-bottom-left {
+    background: $color-white;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #f0ebeb;
+    min-width: 450px;
+    margin-top: 25px;
+
+    &:before {
+        content: "";
+        background: linear-gradient(90deg, rgba(0, 14, 255, 0.022) 0%, rgba(0, 19, 183, 0.44) 100%);
+        position: absolute;
+        width: 192px;
+        height: 190px;
+        right: 0;
+        top: 0;
+        border-bottom-left-radius: 100%;
+        @include breakpoint ( mobile-max){
+            display: none;
+        }
+        @include breakpoint ( ipad-max){
+            display: none;
+        }
+    }
+
+    &:after {
+        content: "";
+        background: linear-gradient(90deg, rgba(0, 14, 255, 0.44) 0%, rgba(0, 19, 183, 0.44) 100%);
+        position: absolute;
+        width: 175px;
+        height: 174px;
+        right: 0;
+        top: 0;
+        border-bottom-left-radius: 100%;
+        @include breakpoint ( mobile-max){
+            display: none;
+        }
+        @include breakpoint ( ipad-max){
+            display: none;
+        }
+    }
+}
+
+.Product__card-bottom-right {
+    background: $color-white;
+    position: relative;
+    margin-top: 25px;
+    text-align: end;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #f0ebeb;
+    min-width: 450px;
+    margin-left: 25px;
+
+    &:before {
+        content: "";
+        background: linear-gradient(90deg, rgba(0, 14, 255, 0.3) 0%, rgba(0, 19, 183, 0.3) 100%);
+        position: absolute;
+        width: 192px;
+        height: 190px;
+        left: 0;
+        top: 0;
+        border-bottom-right-radius: 100%;
+        @include breakpoint ( mobile-max){
+            display: none;
+        }
+        @include breakpoint ( ipad-max){
+            display: none;
+        }
+    }
+
+    &:after {
+        content: "";
+        background: linear-gradient(90deg, rgba(0, 0, 255, 0.9) 0%, rgba(0, 19, 183, 0.7) 100%);
+
+        position: absolute;
+        width: 175px;
+        height: 174px;
+        left: 0;
+        top: 0;
+        border-bottom-right-radius: 100%;
+        @include breakpoint ( mobile-max){
+            display: none;
+        }
+        @include breakpoint ( ipad-max){
+            display: none;
+        }
+    }
+
+}
+
+.ourproduct__card-headings {
+    font-weight: 600;
+    font-size: 21px;
+    color: #2d2d2d;
+}
+
+.product__img {
+    width: 77px;
+    height: 68px;
+}

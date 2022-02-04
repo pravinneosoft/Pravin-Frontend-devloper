@@ -1,0 +1,9 @@
+@font-face {
+    //font weight is regular  if require medium then change to 600
+    font-family: $primary-font;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+}
+@font-face{
+    font-family: $secondary-font;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');;
+}

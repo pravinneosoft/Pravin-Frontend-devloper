@@ -1,0 +1,60 @@
+.biggerpic {
+    width: 100%;
+    background-image: url('../images/biggerpic.png');
+    background-size: 100% 100%;
+    padding-bottom: 75px;
+}
+.biggerpic__heading {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+
+    padding-top: 66px;
+
+    &::after {
+        content: "";
+        border-bottom: 5px solid $primary-color;
+        width: 73px;
+        position: absolute;
+        left: 47%;
+        bottom: -13px;
+    }
+}
+
+.biggerpic__card {
+    font-family: $secondary-font;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: $color-white;
+    font-size: 27px;
+    color: #001245;
+    font-weight: 600;
+    margin: 0px 0px 2px 90px;
+}
+
+.biggerpic__card-headings {
+    font-size: 102px;
+    color: $primary-color;
+}
+
+.biggerpic__container {
+    position: relative;
+}
+
+.biggerpic__paragraph {
+    position: absolute;
+    top: 40%;
+    font-size: 14px;
+    color: $color-black;
+}
+
+.biggerpic__row {
+    max-width: 100%;
+    
+}.biggerpic__heading2{
+    font-size: 29px;
+}

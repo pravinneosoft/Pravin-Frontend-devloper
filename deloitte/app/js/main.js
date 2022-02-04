@@ -17,6 +17,8 @@ function ShowHideDiv(notification) {
   var reminderblock = document.getElementById("reminderblock");
   var dark = document.getElementById("dark");
   var addform = document.getElementById("addform");
+  var mq = window.matchMedia( "(max-width: 767px)" );
+  var ipadsize = window.matchMedia( "(max-width: 991px)" );
   if (notification.value == "Yes") {
       reminderblock.style.display = "none";
       dark.style.marginRight = "0rem";
@@ -28,24 +30,47 @@ function ShowHideDiv(notification) {
       addform.style.display ="none"
       notification.value = "Yes";
   }
-}
+  if (ipadsize.matches) {
+    dark.style.marginRight = "18rem";
 
+  }
+  else {
+    dark.style.marginRight = "0rem";
+  }
+  if (mq.matches) {
+    dark.style.marginRight = "0.5rem";
 
-const container = document.getElementById("dark")
-media()
-
-function media() {
-	let small = window.matchMedia("(max-width: 767px)").matches
-  
-  if (small) {
-    dark.style.display = "flex";
-  
-  } else {
-    dark.style.display = "flex";
+  }
+  else {
+    // dark.style.marginRight = "13.5rem";
+    // dark.style.dis = "";
   }
 }
 
-window.matchMedia("(max-width: 600px)").addListener(media)
+var mq = window.matchMedia( "(max-width: 767px)" );
+if (mq.matches) {
+  dark.style.marginRight = "0.5rem";
+}
+else {
+  // dark.style.marginRight = "13.5rem";
+}
+// const container = document.getElementById("dark")
+// media()
+
+// function media() {
+// 	let small = window.matchMedia("(max-width: 767px)").matches
+  
+//   if (small) {
+//     dark.style.display = "flex";
+  
+//   } else {
+//     dark.style.display = "flex";
+//   }
+// }
+
+// window.matchMedia("(max-width: 600px)").addListener(media)
+
+
 
 // const ShowHideDiv = () => {
 //   let dark = window.matchMedia( ' ( max-width: 767px ) ' )

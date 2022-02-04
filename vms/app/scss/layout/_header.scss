@@ -1,0 +1,53 @@
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    color: $primary-color;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    padding: 0;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    font-weight: 400;
+    font-size: 14px !important;
+    display: inline-block;
+    padding: 0 16px !important;
+    color: $color-white !important;
+    text-decoration: none;
+    transition: color .15s ease-in-out, ;
+
+    &:hover,
+    &:focus {
+        color: $primary-color !important;
+    }
+
+
+}
+
+.nav-item:nth-child(5) .nav-link {
+    padding-right: 0 !important;
+}
+
+.navbar {
+    padding: 16.5px 0 13.5px 0;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/speedup.png");
+}
