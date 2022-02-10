@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@layer utilities{
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    .h-96{
+        height: 726px;
+    }
+    .input-name{
+        background: rgba(255, 255, 255, .15);
+        padding: 7px 0 7px 21px;
+        border-radius: 25px;
+    }
+    .btn-yellow{
+        padding: 6px 20px 7px 19px;
+    }
+    .duration-500:hover{
+        box-shadow: -10px 10px #ffb016; 
+    }
+    .btn--orange{
+        padding: 7px 40px 7px 40px;
+        background-image: linear-gradient(to right, #f57629, #ffb016);
+      
+    }
+} 
