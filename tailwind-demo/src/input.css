@@ -2,27 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@layer utilities{
-    body{
+
+@layer utilities {
+    body {
         font-family: 'Roboto', sans-serif;
     }
-    .h-96{
-        height: 726px;
+img{
+    @apply w-[100%];
+}
+    .h-96 {
+        @apply h-[726px];
     }
-    .input-name{
-        background: rgba(255, 255, 255, .15);
-        padding: 7px 0 7px 21px;
-        border-radius: 25px;
+
+    .input-name {
+        background: rgba(255, 255, 255, 0.15);
+        @apply pt-[7px] pr-[0px] pb-[7px] pl-[21px];
+
     }
-    .btn-yellow{
-        padding: 6px 20px 7px 19px;
+
+    .btn-yellow {
+        @apply pt-[6px] pr-[20px] pb-[7px] pl-[19px];
     }
-    .duration-500:hover{
-        box-shadow: -10px 10px #ffb016; 
+
+    .duration-500:hover {
+        box-shadow: -10px 10px #ffb016;
     }
-    .btn--orange{
-        padding: 7px 40px 7px 40px;
+
+    .btn--orange {
+        @apply pt-[7px] pr-[40px] pb-[7px] pl-[40px];
         background-image: linear-gradient(to right, #f57629, #ffb016);
-      
+
     }
-} 
+
+    .gromar {
+        @apply mt-[125px] pb-[50px];
+    }
+
+    .gromar__logo {
+        @apply w-[161px] mr-[50px];
+    }
+
+    .gromar__images {
+        @apply  w-[178px];
+    }
+    .murugappan{
+        @apply  h-[753px];
+    }
+    .chaireman-img{
+        @apply  bottom-[125px] right-[225px];
+    }
+    .protection{
+        @apply h-[695px];
+    }
+    .btn--tranceparent {
+        @apply py-[7px] px-[40px];
+       
+       }
+    .protection__bottom{
+        @apply  w-[392px];      
+    }
+    .bottom-right{@apply w-[297px] pt-[58px] pb-[68px];
+    }
+    .top-right {@apply w-[368px]  h-[349px] pl-[30px] pr-[30px];
+        }
+}

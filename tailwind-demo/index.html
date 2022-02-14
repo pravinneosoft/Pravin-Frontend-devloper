@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-   <title>Document</title>
+    <title>Document</title>
 </head>
+
 <body>
     <main class="relative h-96 mb-20">
         <header class="m-0 z-1">
@@ -25,7 +27,7 @@
                         <a href="#">
                             <span class="sr-only">Workflow</span>
                             <a href="#" class="font-medium text-white">Coromandel</a>
-                            <img class="h-8 w-auto sm:h-10"alt="" src="images/logo.png">
+                            <img class="h-8 w-auto sm:h-10" alt="" src="images/logo.png">
                         </a>
                     </div>
                 </div>
@@ -39,7 +41,7 @@
                 </h1>
                 <h1 class="text-7xl font-extrabold text-white mb-10">First Approach
                 </h1>
-                <a class="btn--orange text-xl font-bold uppercase rounded-3xl text-white" href="">Know More</a>
+                <a class="btn--orange  to-amber-400 text-xl font-bold uppercase rounded-3xl text-white" href="">Know More</a>
             </div>
             <div class=" absolute bottom-40 right-12">
                 <h3 class=" font-bold text-right  text-white">TURNOVER</h3>
@@ -55,8 +57,8 @@
     <section class="bg-whitesmoke pl-16 pr-16">
         <div class="flex justify-between  whatsnew__wrapper">
             <div class="w-11">
-                <img src="images/logo.png" alt="">
-                <h2 class="text-4xl grey font-normal leading-12 mt-8">What's New ?</h2>
+                <img class="w-12" src="images/logo.png" alt="">
+                <h2 class="text-4xl grey font-normal leading-12 mt-5">What's New ?</h2>
                 <a href="#" class="text-lg font-bold text-tahiti">Know More</a>
             </div>
             <div class="flex flex-wrap justify-between w-76">
@@ -138,25 +140,84 @@
             </div>
         </div>
     </section>
-    <section class="bg-[url('../images/plantnutrition-background.png')] relative">
-        <img src="images/plantnutrition-top.png" alt="">
+    <section class="bg-[url('../images/plantnutrition-background.png')] bg-cover bg-no-repeat relative">
+        <img class="absolute -top-20 " src="images/plantnutrition-top.png" alt="">
         <div class="flex flex-wrap pl-16 pr-16">
             <div class="">
-              <img class="-mb-8 pt-24" src="images/farmer.png" alt="">
+                <img class="-mb-8 pt-24" src="images/farmer.png" alt="">
             </div>
             <div class="w-2/9 pt-20">
-              <h2 class="text-white text-4xl">Provider Of Complete</h2>
-              <h1 class="text-white font-bold text-4xl">Plant Nutrition
-                Solution</h1>
-              <p class="text-white text-base mb-7">Coromandel International Limited, India’s second largest Phosphatic
-                fertilizer player, is in the business segments of Fertilizers, Specialty Nutrients, Crop Protection and
-                Retail.
-                The Company manufactures a wide range of fertilizers and markets around 4.5 million tons making it a
-                leader in its addressable markets.</p>
-              <a class="btn--orange text-xl font-bold uppercase rounded-3xl text-white" href="">Know More</a>
+                <h2 class="text-white text-4xl">Provider Of Complete</h2>
+                <h1 class="text-white font-bold text-4xl">Plant Nutrition
+                    Solution</h1>
+                <p class="text-white text-base mb-7">Coromandel International Limited, India’s second largest Phosphatic
+                    fertilizer player, is in the business segments of Fertilizers, Specialty Nutrients, Crop Protection
+                    and
+                    Retail.
+                    The Company manufactures a wide range of fertilizers and markets around 4.5 million tons making it a
+                    leader in its addressable markets.</p>
+                <a class="btn--orange text-xl font-bold uppercase rounded-3xl text-white" href="">Know More</a>
+            </div>
+        </div>
+        <img class="absolute -bottom-24" src="images/plantnutrition-bottom.png" alt="">
+    </section>
+    <section class="bg-[url('../images/crop-protection-background.png')] bg-no-repeat bg-cover relative protection mt-20">
+        <div class="bg-white absolute top-0 left-0 flex items-center h-128 w-256 justify-evenly flex-wrap">
+            <div class="">
+                <h2 class="text-4xl w-125 grey leading-10 mb-8">Awards & Recognitions</h2>
+                <a href="#"
+                    class="btn--tranceparent uppercase text-orange font-bold text-xl rounded-3xl border border-solid border-orange">Know
+                    More</a>
+            </div>
+            <div class="">
+                <img src="images/awards-middle.png" alt="divider">
+            </div>
+            <div class="">
+                <img class="" src="images/awards.png" alt="">
+            </div>
+            <img class="absolute top-0 right-0 h-12 w-12" src="images/logo.png" alt="logo">
+        </div>
+        <div class="protection__bottom text-white absolute bottom-20 left-16 bg-tranceparent">
+            <h1 class="font-bold text-6xl leading-18">Crop Protection</h1>
+            <h3 class="font-bold text-xl mb-8">Insecticides | Fungicides | Herbicides</h3>
+            <a href="#" class="btn--orange font-bold text-lg rounded-3xl">Know More</a>
+        </div>
+        <div class="absolute right-0 bottom-0 bottom-right bg-white flex justify-center">
+            <img class="protection__bottom-image" src="images/gromar.png" alt="">
+          </div>
+          <div class="absolute top-0 right-0 top-right flex item-center text-white bg-amber-400">
+            <div class="protection__top-left-content">
+              <h1 class="font-bold text-9xl">02<sup class="font-bold text-1xl">nd</sup></h1>
+              <p class="font-bold text-sm w-8/12">Largest phosphatic fertiliser player
+                in India</p>
             </div>
           </div>
-          <img src="images/plantnutrition-bottom.png" alt="">
+    </section>
+    <section class="gromar flex justify-center bg-[url('../images/curve.png')] bg-no-repeat pl-16 pr-16">
+        <div class="flex flex-wrap justify-center  overflow-x-scroll">
+            <img class="gromar__logo" src="images/gromar-suraksha.png" alt="">
+            <img class="gromar__images" src="images/gromar-super.png" alt="">
+            <img class="gromar__images" src="images/gromar-superimg.png" alt="">
+            <img class="gromar__images" src="images/gromar-super.png" alt="">
+            <img class="gromar__images" src="images/gromar-20-0.png" alt="">
+            <img class="gromar__images" src="images/gromar-gap.png" alt="">
+        </div>
+    </section>
+    <section class="murugappan bg-[url('../images/murugappan-background.png')] bg-no-repeat bg-cover relative flex justify-center">
+        <div class="w-3/5 absolute top-52">
+            <h1 class=" text-8xl text-white font-bold">Mr. M. M. Murugappan</h1>
+            <h3 class="text-lg text-white font-bold">Chairman</h3>
+            <p class="text-base text-white w-3/5 ">Mr. M. M Murugappan, aged 62 yrs. holds a Master’s degree in Chemical
+                Engineering from the University of Michigan, USA. He has held the position of Managing Director of CUMI
+                in the
+                past. Besides serving as the Chairman of CUMI, Tube Investments of India, Cholamandalam MS General
+                Insurance
+                Company Limited, he is on the Boards of several companies including Mahindra & Mahindra, IIT Madras
+                Research
+                Park, Cyient and TI Financial Holdings Limited.</p>
+        </div>
+        <img class="absolute bottom-0 right-0 w-1/4 chaireman-img" src="images/chaireman.png" alt="">
+
     </section>
     <footer class="bg-amber-400  text-white relative">
         <img class="absolute -top-12" src="images/footer-bottom.png" alt="">
@@ -189,9 +250,12 @@
                 <h2 class="text-xl font-bold">Newsletter </h2>
                 <h2 class="text-xl font-bold">Subscription</h2>
                 <form action="">
-                    <input type="text" class="input-name w-full text-base placeholder:text-white mt-2" placeholder="Name">
-                    <input class="input-name w-full text-base placeholder:text-white mt-2.5" type="text" placeholder="Email id">
-                    <input class="btn-yellow rounded-3xl uppercase rounded-t-3xl border border-white divide-solid text-white texy-base mt-3"
+                    <input type="text" class="input-name rounded-3xl  w-full text-base placeholder:text-white mt-2"
+                        placeholder="Name">
+                    <input class="input-name rounded-3xl w-full  text-base placeholder:text-white mt-2.5" type="text"
+                        placeholder="Email id">
+                    <input
+                        class="btn-yellow rounded-3xl uppercase rounded-t-3xl border border-white divide-solid text-white texy-base mt-3"
                         type="button" value="subscribe">
                 </form>
                 </ol>
