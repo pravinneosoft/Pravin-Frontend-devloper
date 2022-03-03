@@ -19,7 +19,6 @@
     }
     .nav .nav__list li {
     display: inline-block;
-    line-height: 60px;
     }
      .nav__links {
     color: #292727;
@@ -35,3 +34,37 @@
         padding-right: 30px !important;
     }
   
+
+    //footer navbar
+    .navigation{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        margin-top: 86px;
+    }
+    .nav__footerlogo{
+        padding-right: 74px;
+    }
+    .nav__link{
+        font-size: 18px;
+        font-weight: 400;
+        color: $color-lightdark;
+        padding-right: 55px;
+    }
+    .nav__listicon{
+        display: flex;
+       justify-content: space-between;
+        width: 146px;
+    }
+    .nav__icon{
+        height: 32px;
+        width: 32px;
+        background-color: $color-primary;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+    }
