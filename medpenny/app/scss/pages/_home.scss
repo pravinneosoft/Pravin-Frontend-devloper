@@ -1,0 +1,129 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.herobanner {
+    background: $sky-blue;
+    height: 808px;
+    display: flex;
+    align-items: center;
+
+    &__content {
+
+        &-heading {
+            font-size: 47px;
+            font-weight: 700;
+            color: $dark-grey;
+            width: 64%;
+        }
+
+        &-paragraph {
+            color: $light-grey;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 53px;
+            margin-top: 45px;
+        }
+    }
+}
+
+//grow page css
+.grow {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 210px;
+    padding-bottom: 210px;
+}
+
+.grow__content {
+    width: 546px;
+}
+
+.grow__heading {
+    color: $color-black;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.grow__paragraph {
+    margin: 45px 0;
+    color: $color-black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.grow__links {
+    color: $color-red;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.grow__listgroup {
+    display: flex;
+    width: 619px;
+    padding: 12px 0 12px 12px;
+    justify-content: space-between;
+    border: 2px solid $color-light-black;
+
+    &:nth-child(2) {
+        margin-top: 50px;
+    }
+
+    &:nth-child(3) {
+        margin-top: 50px;
+        padding: 12px 0 12px 7px;
+    }
+}
+
+.grow__icon {
+    width: 90px;
+    font-size: 24px;
+    color: $dark-grey;
+    text-align: center;
+}
+
+.grow__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-black;
+    width: 493px;
+}
+
+//security page css
+.security {
+    display: flex;
+    &__content {
+        width: 50%;
+        background-color: $color-dark-black;
+        display: flex;
+        align-items: center;
+
+        &-heading {
+            font-size: 52px;
+            color: $color-white;
+            font-weight: 700;
+        }
+        &-text{
+            font-size: 24px;
+            color: $color-white;
+            font-weight: 400;
+            padding: 43px 0;
+            width: 65%;
+        }
+        &-links{
+            font-size: 20px;
+            color: $color-red;
+            font-weight: 400;
+        }
+    }
+
+    &__info {
+        width: 50%;
+        background: #f5f5f5;
+
+        &-image {
+            height: 640px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+
+    .nav{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .nav__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav__logo {
+    width: fit-content;
+    }
+    .nav .nav__list{
+    float: right;
+    }
+    .nav .nav__list li {
+    display: inline-block;
+    line-height: 60px;
+    }
+     .nav__links {
+    color: #292727;
+    font-size: 18px;
+    padding-right: 48px;
+    font-weight: 400;
+    }
+     .nav__links:hover{
+    color: red;
+    transition: .5s;
+    }
+    .nav__price{
+        padding-right: 30px !important;
+    }
+  

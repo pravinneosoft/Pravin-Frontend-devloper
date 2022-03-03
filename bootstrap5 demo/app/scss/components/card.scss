@@ -1,0 +1,39 @@
+.cardwrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    gap: 30px;
+}
+
+.card ,i{
+    font-size: 50px;
+    padding: 20px;
+    background: #222;
+    color: crimson;
+    &:hover {
+        background: crimson;
+        transition: 0.5s all ease-in;
+        color: #fff;
+    }
+    &:hover i{
+        color:#fff;
+        background: crimson; transition: 0.5s all ease-in ;
+    }
+    &:hover .card-body{
+        transform: scale(1.05); transition: 0.5s all ease-in;
+    }
+}
+
+.card-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.card-text{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.card-body{
+    padding: 0;
+    color: #fff;
+}

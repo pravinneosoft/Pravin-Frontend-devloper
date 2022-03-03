@@ -1,0 +1,84 @@
+.herobanner {
+    position: relative;
+
+    &__banner-img {
+        width: 100%;
+        
+        @include breakpoint(medium-large-desktop-max){
+           height: 100%;
+        }
+        @include breakpoint ( ipad-max){
+            height: auto;}
+    }
+
+    &__content {
+
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        @include breakpoint ( ipad-max){
+            position: absolute;
+            top: 30%;
+            left: 0;
+            right: 0;
+        }
+        @include breakpoint ( mobile-max){
+            position: absolute;
+            top: 20%;
+            left: 0;
+            right: 0;
+        }
+        @include breakpoint ( portrait-mobile-max){
+            position: absolute;
+            top: 10%;
+            left: 0;
+            right: 0;
+        }
+        @include breakpoint(desktop-max){
+            position: absolute;
+            top: 23%;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    &__headings {
+        color: $color-white;
+        font-size: 38px;
+        font-weight: 700;
+        width: 400px;
+       
+    }
+
+    &__paragraph {
+        font-size: 20px;
+        font-weight: 400;
+        color: $color-white;
+        width: 369px;
+        &-span{
+            color:$primary-color;
+        }
+        &:nth-child(1){
+            font-size: 16px;
+        }
+    }
+}
+.services{
+    background: rgba(0, 0, 0, 0.829);
+    &__heading{
+        padding-top: 50px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+
+    }
+    &__subheading{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        color:crimson;
+    }
+}
+// our product page css
