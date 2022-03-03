@@ -28,73 +28,77 @@
     }
 }
 
-//grow page css
+//--------- grow page css start --------------
 .grow {
     display: flex;
     justify-content: space-between;
     padding-top: 210px;
     padding-bottom: 210px;
-}
 
-.grow__content {
-    width: 546px;
-}
 
-.grow__heading {
-    color: $color-black;
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.grow__paragraph {
-    margin: 45px 0;
-    color: $color-black;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.grow__links {
-    color: $color-primary;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.grow__listgroup {
-    display: flex;
-    width: 619px;
-    padding: 12px 0 12px 12px;
-    justify-content: space-between;
-    border: 2px solid $color-light-black;
-
-    &:nth-child(2) {
-        margin-top: 50px;
+    &__content {
+        width: 546px;
     }
 
-    &:nth-child(3) {
-        margin-top: 50px;
-        padding: 12px 0 12px 7px;
+    &__heading {
+        color: $color-black;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    &__paragraph {
+        margin: 45px 0;
+        color: $color-black;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &__links {
+        color: $color-primary;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &__listgroup {
+        display: flex;
+        width: 619px;
+        padding: 12px 0 12px 12px;
+        justify-content: space-between;
+        border: 2px solid $color-light-black;
+
+        &:nth-child(2) {
+            margin-top: 50px;
+        }
+
+        &:nth-child(3) {
+            margin-top: 50px;
+            padding: 12px 0 12px 7px;
+        }
+    }
+
+    &__icon {
+        width: 90px;
+        font-size: 24px;
+        color: $dark-grey;
+        text-align: center;
+    }
+
+    &__iconimg {
+        height: 47px;
+        width: 47px;
+        margin-top: 10px;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        color: $color-black;
+        width: 493px;
     }
 }
+//--------- grow page css end --------------
 
-.grow__icon {
-    width: 90px;
-    font-size: 24px;
-    color: $dark-grey;
-    text-align: center;
-}
-.grow__iconimg{
-    height: 47px;
-    width: 47px;
-    margin-top: 10px;
-}
-.grow__text {
-    font-size: 18px;
-    font-weight: 400;
-    color: $color-black;
-    width: 493px;
-}
-
-//security page css
+//-----------------security page css----------------
 .security {
     display: flex;
     height: 900px;
@@ -104,7 +108,9 @@
         background-color: $color-dark-black;
         display: flex;
         align-items: center;
-             position: relative;
+        position: relative;
+        padding-left: 42px;
+
         &-heading {
             font-size: 52px;
             color: $color-white;
@@ -124,32 +130,35 @@
             color: $color-primary;
             font-weight: 400;
         }
-        &-firstshape{
-          height: 204px;
-          width: 204px;
-          border-radius: 50%;
-          background-color: rgba(255,255,255,0.22);
-          position: absolute;
-          top: -70px;
-         right: 253px;
+
+        &-firstshape {
+            height: 204px;
+            width: 204px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.22);
+            position: absolute;
+            top: -70px;
+            right: 253px;
         }
-        &-secondshape{
+
+        &-secondshape {
             height: 154px;
             width: 154px;
             border-radius: 50%;
-            background-color: rgba(255,255,255,0.22);
+            background-color: rgba(255, 255, 255, 0.22);
             position: absolute;
-          bottom: 45px;
-          left: -80px;
+            bottom: 45px;
+            left: -80px;
         }
-        &-thirdshape{
+
+        &-thirdshape {
             height: 54px;
             width: 54px;
             border-radius: 50%;
-            background-color: rgba(255,255,255,0.22);
+            background-color: rgba(255, 255, 255, 0.22);
             position: absolute;
-          bottom: 68px;
-          right: 59px;
+            bottom: 68px;
+            right: 59px;
         }
     }
 
@@ -162,12 +171,14 @@
         }
     }
 }
+//-----------------security page css end----------------
 
-// smarter page css start
+//--------------------- smarter page css start ----------------------
 .smarter {
     display: flex;
     justify-content: center;
     padding: 100px 0 100px 0;
+
     &__wrapper {
         width: 1160px;
         display: flex;
@@ -179,6 +190,7 @@
         width: 482px;
         text-align: center;
         margin-bottom: 90px;
+
         &-img {
             width: 144px;
         }
@@ -202,7 +214,7 @@
             color: $color-primary;
             font-size: 20px;
             font-weight: 400;
-           
+
         }
     }
 
@@ -227,129 +239,148 @@
     }
 
 }
+
 //-------------- smarter page css end -----------------
 
 //---------- pricing page css start -----------
-.pricing{
+.pricing {
     background-color: $color-sky;
     padding: 100px 0;
-    &__heading{
-       font-size: 47px;
-       font-weight: 700;
-       color: $dark-grey;
-       text-align: center;
-       
+
+    &__heading {
+        font-size: 47px;
+        font-weight: 700;
+        color: $dark-grey;
+        text-align: center;
+        margin-bottom: 30px;
     }
-    &__text{
-     color: $color-black;
-     font-size: 24px;
-     font-weight: 400;
-     text-align: center;
-     margin-bottom: 65px;
-  
+
+    &__text {
+        color: $color-black;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 70px;
+
     }
 }
-.pricingwrapper{
+
+.pricingwrapper {
     display: flex;
     column-gap: 46px;
     justify-content: center;
     align-items: center;
 }
-.pricingcard{
+
+.pricingcard {
     width: 296px;
     height: 428px;
     background-color: $color-wheat;
     padding: 29px 46px 30px 29px;
-    box-shadow: 0 3px 30px rgba(88,104,112,0.9);
+    box-shadow: 0 3px 30px rgba(88, 104, 112, 0.9);
     border-radius: 16px;
     // border-bottom: 1px solid rgba(112,112,112,0.14);
-    
-    &__heading{
+
+    &__heading {
         text-align: center;
         font-size: 36px;
         font-weight: 700;
         color: $color-dark;
-        
+
     }
-    &__subheading{
+
+    &__subheading {
         text-align: center;
-        font-size:21px;
+        font-size: 21px;
         font-weight: 500;
         color: $color-primary;
         margin-top: 16px;
         margin-bottom: 41px;
     }
-    &__text{
+
+    &__text {
         font-size: 14;
         font-weight: 400;
         text-align: center;
         margin-bottom: 30px;
     }
-    &__btn{
+
+    &__btn {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
     }
-    &__bottom{
+
+    &__bottom {
         display: flex;
         justify-content: space-between;
         background-color: $color-wheat;
         padding-top: 31px;
         align-items: center;
-        &-text{
+
+        &-text {
             font-size: 14px;
             font-weight: 700;
             color: $color-dark;
         }
     }
 }
-.pricing-primarycard{
+
+.pricing-primarycard {
     width: 428px;
     height: 500px;
-    background-color:$color-bluish;
+    background-color: $color-bluish;
     padding: 62px 82px 37px 82px;
-    box-shadow: 0 3px 30px rgba(88,104,112,0.9);
+    box-shadow: 0 3px 30px rgba(88, 104, 112, 0.9);
     border-radius: 16px;
-    &__heading{
+
+    &__heading {
         text-align: center;
         font-size: 36px;
         font-weight: 700;
         color: $color-white;
-        
+
     }
-    &__subheading{
+
+    &__subheading {
         text-align: center;
-        font-size:21px;
+        font-size: 21px;
         font-weight: 500;
         color: $color-darkgreen;
         margin-top: 16px;
         margin-bottom: 48px;
     }
-    &__text{
+
+    &__text {
         font-size: 14;
         font-weight: 400;
         text-align: center;
-        margin-bottom:50px;
+        margin-bottom: 50px;
         color: $color-lighten;
     }
-    &__btn{
+
+    &__btn {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
     }
-    &__bottom{
+
+    &__bottom {
         display: flex;
         justify-content: space-between;
-       
+
         padding-top: 31px;
         align-items: center;
-        &-text{
+
+        &-text {
             font-size: 18px;
             font-weight: 700;
             color: $color-white;
         }
     }
-    &__icon{
+
+    &__icon {
         color: $color-white;
     }
 }
+//---------- pricing page css End -----------
