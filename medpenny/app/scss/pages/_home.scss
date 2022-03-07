@@ -1,29 +1,54 @@
 .wrapper {
     display: flex;
     align-items: center;
+
+    @include breakpoint(portrait-mobile-max) {
+        display: block;
+        text-align: center;
+    }
 }
 
 .herobanner {
     background: $sky-blue;
-    height: 808px;
+    height: 576px;
     display: flex;
     align-items: center;
+
+    @include breakpoint (mobile-max) {
+        height: 450px;
+    }
 
     &__content {
 
         &-heading {
-            font-size: 47px;
+            font-size: 33.4px;
             font-weight: 700;
             color: $dark-grey;
             width: 64%;
+
+            @include breakpoint(mobile-max) {
+                width: 100%;
+                margin-top: 35px;
+            }
         }
 
         &-paragraph {
             color: $light-grey;
-            font-size: 24px;
+            font-size: 17px;
             font-weight: 400;
-            margin-bottom: 53px;
-            margin-top: 45px;
+            margin-bottom: 37px;
+            margin-top: 32px;
+
+            @include breakpoint(portrait-mobile-max) {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    &__img {
+        @include breakpoint(portrait-mobile-max) {
+            margin-top: 38px;
+            width: 60%;
         }
     }
 }
@@ -31,134 +56,220 @@
 //--------- grow page css start --------------
 .grow {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 210px;
-    padding-bottom: 210px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 
+    @include breakpoint (mobile-max) {
+        padding-top: 5px;
+        padding-bottom: 60px;
+    }
 
     &__content {
-        width: 546px;
+        width: 388px;
+
+        @include breakpoint (mobile-max) {
+            width: 100%;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            padding: 0 25px;
+        }
     }
 
     &__heading {
         color: $color-black;
-        font-size: 48px;
+        font-size: 34px;
         font-weight: 700;
     }
 
     &__paragraph {
-        margin: 45px 0;
+        margin: 32px 0;
         color: $color-black;
-        font-size: 24px;
+        font-size: 17px;
         font-weight: 400;
+
+        @include breakpoint(mobile-max) {
+            margin: 16px 0;
+        }
     }
 
     &__links {
         color: $color-primary;
-        font-size: 24px;
+        font-size: 17px;
         font-weight: 400;
+
+        @include breakpoint (mobile-max) {
+            margin: 0 auto;
+        }
     }
 
     &__listgroup {
         display: flex;
-        width: 619px;
-        padding: 12px 0 12px 12px;
+        flex-wrap: wrap;
+        width: 440px;
+        padding: 8.5px 0 8.5px 8.5px;
         justify-content: space-between;
-        border: 2px solid $color-light-black;
+        border: 1.4px solid $color-light-black;
+
+        @include breakpoint (mobile-max) {
+            justify-content: center;
+            row-gap: 17px;
+            width: 100%;
+        }
 
         &:nth-child(2) {
-            margin-top: 50px;
+            margin-top: 35.5px;
         }
 
         &:nth-child(3) {
             margin-top: 50px;
-            padding: 12px 0 12px 7px;
+            padding: 8.5px 0 8.5px 4.9px;
         }
     }
 
     &__icon {
-        width: 90px;
-        font-size: 24px;
+        width: 64px;
+        font-size: 17px;
         color: $dark-grey;
         text-align: center;
     }
 
     &__iconimg {
-        height: 47px;
-        width: 47px;
-        margin-top: 10px;
+        height: 33.4px;
+        width: 33.4px;
+        margin-top: 7.1px;
     }
 
     &__text {
-        font-size: 18px;
+        font-size: 12.8px;
         font-weight: 400;
         color: $color-black;
-        width: 493px;
+        width: 350px;
+
+        @include breakpoint (ipad-max) {
+            width: 100%;
+        }
+
+        @include breakpoint (mobile-max) {
+            text-align: center;
+        }
+    }
+
+    &__list {
+        @include breakpoint (mobile-max) {
+            margin: 0 auto;
+        }
     }
 }
+
 //--------- grow page css end --------------
 
 //-----------------security page css----------------
 .security {
     display: flex;
-    height: 900px;
+    flex-wrap: wrap;
+    height: auto;
+
+    @include breakpoint(desktop-max) {
+        width: 100%;
+        height: auto;
+    }
+
+    @include breakpoint(portrait-mobile-max) {
+        display: block;
+    }
 
     &__content {
         width: 50%;
         background-color: $color-dark-black;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         position: relative;
-        padding-left: 42px;
+        padding-left: 29.8px;
+
+        @include breakpoint (mobile-max) {
+            // padding: 50px;
+        }
+
+        @include breakpoint(portrait-mobile-max) {
+            width: 100%;
+            padding: 50px;
+            text-align: center;
+        }
 
         &-heading {
-            font-size: 52px;
+            font-size: 40px;
             color: $color-white;
             font-weight: 700;
+            width: 70%;
+
+            @include breakpoint (mobile-max) {
+                font-size: 30px;
+                width: 100%;
+            }
+
+            @include breakpoint(portrait-mobile-max) {
+                font-size: 25px;
+            }
         }
 
         &-text {
-            font-size: 24px;
+            font-size: 17px;
             color: $color-white;
             font-weight: 400;
-            padding: 43px 0;
+            padding: 30px 0;
             width: 65%;
+
+            @include breakpoint(mobile-max) {
+                width: 100%;
+                font-size: 15px;
+
+            }
+
+            @include breakpoint(portrait-mobile-max) {
+                padding: 15px 0;
+            }
         }
 
         &-links {
-            font-size: 20px;
+            font-size: 14.2px;
             color: $color-primary;
             font-weight: 400;
         }
 
         &-firstshape {
-            height: 204px;
-            width: 204px;
+            height: 145px;
+            width: 145px;
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.22);
             position: absolute;
-            top: -70px;
-            right: 253px;
+            top: -49.8px;
+            right: 180px;
         }
 
         &-secondshape {
-            height: 154px;
-            width: 154px;
+            height: 109px;
+            width: 109px;
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.22);
             position: absolute;
-            bottom: 45px;
-            left: -80px;
+            bottom: 32px;
+            left: -57px;
         }
 
         &-thirdshape {
-            height: 54px;
-            width: 54px;
+            height: 38.4px;
+            width: 38.4px;
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.22);
             position: absolute;
-            bottom: 68px;
-            right: 59px;
+            bottom: 48px;
+            right: 41.9px;
         }
     }
 
@@ -166,76 +277,116 @@
         width: 50%;
         background: #f5f5f5;
 
+        @include breakpoint(portrait-mobile-max) {
+            width: 100%;
+        }
+
         &-image {
-            height: 900px;
+            height: 640px;
+
+            @include breakpoint(desktop-max) {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }
+
 //-----------------security page css end----------------
 
 //--------------------- smarter page css start ----------------------
 .smarter {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 100px 0 100px 0;
+    padding: 71.4px 0 71.4px 0;
 
     &__wrapper {
-        width: 1160px;
+        width: 825px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         position: relative;
+
+        @include breakpoint (ipad-max) {
+            width: 100%;
+        }
+
+        @include breakpoint (mobile-max) {
+            width: 100%;
+        }
     }
 
     &__card {
-        width: 482px;
+        width: 342px;
         text-align: center;
-        margin-bottom: 90px;
+        margin-bottom: 64px;
 
         &-img {
-            width: 144px;
+            width: 102px;
         }
 
         &-heading {
             color: $color-black;
-            font-size: 40px;
+            font-size: 28.4px;
             font-weight: 700;
-            margin-top: 25px;
-            margin-bottom: 35px;
+            margin-top: 17.7px;
+            margin-bottom: 25px;
         }
 
         &-text {
             color: $color-black;
-            font-size: 20px;
+            font-size: 14.2px;
             font-weight: 400;
-            margin-bottom: 30px;
+            margin-bottom: 21.2px;
+
+            @include breakpoint(custom-small-mobile-max) {
+                padding: 0 35px;
+            }
         }
 
         &-links {
             color: $color-primary;
-            font-size: 20px;
+            font-size: 14.2px;
             font-weight: 400;
 
         }
     }
 
     &__firstround {
-        height: 74px;
-        width: 74px;
+        height: 53px;
+        width: 53px;
         border-radius: 50%;
         background-color: rgba(228, 66, 64, 0.6);
         position: absolute;
-        left: 115px;
-        bottom: 90px;
+        left: 81.8px;
+        bottom: 64px;
+
+        @include breakpoint (desktop-max) {
+            left: 10px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            left: 3px;
+        }
     }
 
     &__secondround {
-        height: 112px;
-        width: 112px;
+        height: 80px;
+        width: 80px;
         border-radius: 50%;
         background-color: rgba(228, 66, 64, 0.6);
         position: absolute;
-        right: 60px;
-        top: 72px;
+        right: 42.6px;
+        top: 51.2px;
+
+        @include breakpoint (desktop-max) {
+            right: 12px;
+        }
+
+        @include breakpoint (portrait-mobile-max) {
+            right: 2.6px;
+        }
     }
 
 }
@@ -245,81 +396,96 @@
 //---------- pricing page css start -----------
 .pricing {
     background-color: $color-sky;
-    padding: 100px 0;
+    padding: 71.1px 0;
 
     &__heading {
-        font-size: 47px;
+        font-size: 33.4px;
         font-weight: 700;
         color: $dark-grey;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 21.3px;
     }
 
     &__text {
         color: $color-black;
-        font-size: 24px;
+        font-size: 17px;
         font-weight: 400;
         text-align: center;
-        margin-bottom: 70px;
+        margin-bottom: 49.8px;
 
+        @include breakpoint(portrait-mobile-max) {
+            font-size: 15px;
+        }
     }
 }
 
 .pricingwrapper {
     display: flex;
-    column-gap: 46px;
+    flex-wrap: wrap;
+    column-gap: 32.7px;
     justify-content: center;
     align-items: center;
+
+    @include breakpoint (mobile-max) {
+        display: block;
+    }
 }
 
 .pricingcard {
-    width: 296px;
-    height: 428px;
+    width: 210px;
+    height: 304px;
     background-color: $color-wheat;
-    padding: 29px 46px 30px 29px;
-    box-shadow: 0 3px 30px rgba(88, 104, 112, 0.9);
-    border-radius: 16px;
+    padding: 21px 32.7px 21.3px 21px;
+    box-shadow: 0 2.1px 21.3px rgba(88, 104, 112, 0.9);
+    border-radius: 11.3px;
+
     // border-bottom: 1px solid rgba(112,112,112,0.14);
+    @include breakpoint (mobile-max) {
+        margin: 0 auto;
+    }
 
     &__heading {
         text-align: center;
-        font-size: 36px;
+        font-size: 25.6px;
         font-weight: 700;
         color: $color-dark;
+
 
     }
 
     &__subheading {
         text-align: center;
-        font-size: 21px;
+        font-size: 15px;
         font-weight: 500;
         color: $color-primary;
-        margin-top: 16px;
-        margin-bottom: 41px;
+        margin-top: 11.3px;
+        margin-bottom: 29.1px;
     }
 
     &__text {
-        font-size: 14;
+        font-size: 10px;
         font-weight: 400;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 21.3px;
     }
 
     &__btn {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 14.2px;
     }
 
     &__bottom {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         background-color: $color-wheat;
-        padding-top: 31px;
+        padding-top: 22px;
         align-items: center;
 
         &-text {
-            font-size: 14px;
+            font-size: 10px;
             font-weight: 700;
             color: $color-dark;
         }
@@ -327,16 +493,20 @@
 }
 
 .pricing-primarycard {
-    width: 428px;
-    height: 500px;
+    width: 304px;
+    height: 355.7px;
     background-color: $color-bluish;
-    padding: 62px 82px 37px 82px;
-    box-shadow: 0 3px 30px rgba(88, 104, 112, 0.9);
+    padding: 44.1px 58.2px 26.3px 58.32px;
+    box-shadow: 0 2.1px 21.3px rgba(88, 104, 112, 0.9);
     border-radius: 16px;
+
+    @include breakpoint (mobile-max) {
+        margin: 40px auto;
+    }
 
     &__heading {
         text-align: center;
-        font-size: 36px;
+        font-size: 25.6px;
         font-weight: 700;
         color: $color-white;
 
@@ -344,36 +514,37 @@
 
     &__subheading {
         text-align: center;
-        font-size: 21px;
+        font-size: 15px;
         font-weight: 500;
         color: $color-darkgreen;
-        margin-top: 16px;
-        margin-bottom: 48px;
+        margin-top: 11.3px;
+        margin-bottom: 34px;
     }
 
     &__text {
-        font-size: 14;
+        font-size: 10px;
         font-weight: 400;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 35.5px;
         color: $color-lighten;
     }
 
     &__btn {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 14.2px;
     }
 
     &__bottom {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-
-        padding-top: 31px;
+        padding-top: 32.4px;
         align-items: center;
 
         &-text {
-            font-size: 18px;
+            font-size: 12.8px;
             font-weight: 700;
             color: $color-white;
         }
@@ -383,4 +554,5 @@
         color: $color-white;
     }
 }
+
 //---------- pricing page css End -----------

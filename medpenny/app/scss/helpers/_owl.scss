@@ -1,0 +1,23 @@
+.owl-carousel .owl-item img {
+    @include breakpoint(portrait-mobile-max) {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.owl-theme .owl-nav {
+    display: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 12.8px;
+    height: 12.8px;
+    background: transparent;
+    border: 1.5px solid $color-white;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: $color-white;
+}

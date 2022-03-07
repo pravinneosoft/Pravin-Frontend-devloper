@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <link rel="stylesheet" href="../app/css/style.css">
 </head>
 
@@ -16,23 +18,29 @@
   <header>
     <div class="container">
       <nav class="nav">
-        <img class="nav__logo" src="images/logo.png" alt="">
-        <ul class="nav__list">
-          <li><a class="nav__links" href="#">Home</a></li>
-          <li><a class="nav__links" href="#">How Medpenny Works</a></li>
-          <li><a class="nav__links" href="#">Security</a></li>
-          <li><a class="nav__links" href="#">Privacy Policy</a></li>
-          <li><a class="nav__links" href="#">Term Of Use</a></li>
-          <li><a class="nav__links nav__price" href="#">Pricing</a></li>
-          <li><button class="btn btn--red">Get Started</button></li>
+       <a title="logo" href="#"> <img class="nav__logo" src="images/logo.png" alt=""></a>
+        <ul class="nav__list hide">
+          <li class="nav__menu"><a class="nav__links" href="#">Home</a></li>
+          <li class="nav__menu"><a class="nav__links" href="#">How Medpenny Works</a></li>
+          <li class="nav__menu"><a class="nav__links" href="#">Security</a></li>
+          <li class="nav__menu"><a class="nav__links" href="#">Privacy Policy</a></li>
+          <li class="nav__menu"><a class="nav__links" href="#">Term Of Use</a></li>
+          <li class="nav__menu"><a class="nav__links nav__price" href="#">Pricing</a></li>
+          <li class="nav__menu"><button class="btn btn--red">Get Started</button></li>
         </ul>
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </nav>
     </div>
   </header>
   <!-- herobanner block start -->
   <section class="herobanner">
     <div class="container">
-      <div class="wrapper">
+      <div class="owl-carousel owl-theme">
+      <div class="wrapper item">
         <div class="herobanner__content">
           <h1 class="herobanner__content-heading">Medpenny helps you grow</h1>
           <p class="herobanner__content-paragraph">Take control with all-in-one investment, retirement, checking and
@@ -40,12 +48,34 @@
           <button class="btn--red">Get Started</button>
         </div>
         <div class="herobannerimg">
-          <img src="images/mobile.png" alt="">
+          <img class="herobanner__img" src="images/mobile.png" alt="">
         </div>
+      </div>
+      <div class="wrapper item">
+        <div class="herobanner__content">
+          <h1 class="herobanner__content-heading">Medpenny helps you grow</h1>
+          <p class="herobanner__content-paragraph">Take control with all-in-one investment, retirement, checking and
+            more.</p>
+          <button class="btn--red">Get Started</button>
+        </div>
+        <div class="herobannerimg">
+          <img class="herobanner__img" src="images/mobile.png" alt="">
+        </div>
+      </div>
+      <div class="wrapper item">
+        <div class="herobanner__content">
+          <h1 class="herobanner__content-heading">Medpenny helps you grow</h1>
+          <p class="herobanner__content-paragraph">Take control with all-in-one investment, retirement, checking and
+            more.</p>
+          <button class="btn--red">Get Started</button>
+        </div>
+        <div class="herobannerimg">
+          <img class="herobanner__img" src="images/mobile.png" alt="">
+        </div>
+      </div>
       </div>
     </div>
   </section>
-  <!-- herobanner block End -->
   <!-- grow block Start -->
   <section class="grow container">
     <div class="grow__content">
@@ -60,20 +90,21 @@
       <div class="grow__listgroup">
         <p class="grow__icon">Easy <img class="grow__iconimg" src="images/easy-to-use.png" alt=""></p>
         <p class="grow__text">Invest spare change automatically, set aside money from each paycheck, earn more, and get
-          money tips on the go.</p>
+          money tips on the go..</p>
       </div>
       <div class="grow__listgroup">
         <p class="grow__icon">Smart <img class="grow__iconimg" src="images/smart.png" alt=""></p>
-        <p class="grow__text">Invest spare change automatically, set aside money from each paycheck, earn more, and get
-          money tips on the go.</p>
+        <p class="grow__text">Access smart portfolios designed by experts, that adjust automatically as you and your
+          money grow..</p>
       </div>
       <div class="grow__listgroup">
         <p class="grow__icon">Trusted <img class="grow__iconimg" src="images/trust.png" alt=""></p>
-        <p class="grow__text">Invest spare change automatically, set aside money from each paycheck, earn more, and get
-          money tips on the go.</p>
+        <p class="grow__text">Backed by leading investors and innovators, from Blackrock to CNBC, and chosen by more
+          than 8 million people.</p>
       </div>
     </div>
   </section>
+  <!-- security block Start -->
   <section class="security ">
     <div class="security__content">
       <div>
@@ -90,6 +121,7 @@
       <img class="security__info-image" src="images/infoimg.png" alt="">
     </div>
   </section>
+  <!-- smarter block Start -->
   <section class="smarter container">
     <div class="">
       <div class="smarter__wrapper">
@@ -105,7 +137,7 @@
         <div class="smarter__secondround"></div>
       </div>
       <div class="smarter__video">
-        <video width="1160" height="550" controls>
+        <video width="825" height="391" controls>
           <source src="video/medpennycard.mp4" type="video/mp4">
           <source src="movie.ogg" type="video/ogg">
           Your browser does not support the video tag.
@@ -113,6 +145,7 @@
       </div>
     </div>
   </section>
+  <!-- pricing block Start -->
   <section class="pricing">
     <h3 class="pricing__heading">Our Pricing Options</h3>
     <p class="pricing__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do <br> amet sint. Velit
@@ -160,10 +193,11 @@
       </div>
     </div>
   </section>
+  <!-- footer block Start -->
   <footer class="footer">
     <div class="container">
       <nav class="navigation">
-        <ul class="nav__list">
+        <ul class="nav__item">
           <li>
             <img class="nav__footerlogo" src="images/logo.png" alt=""></li>
           <li><a class="nav__link" href="#">Pricing</a></li>
@@ -238,6 +272,17 @@
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+    dot:true,
+    margin:10,
+    nav:true,
+})
+</script>
 </body>
 
 </html>
