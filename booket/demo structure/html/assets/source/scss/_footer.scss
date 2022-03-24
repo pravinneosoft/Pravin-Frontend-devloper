@@ -1,0 +1,36 @@
+/**
+_footer.scss
+SCSS file for footer
+
+@file _footer.scss
+@path /assets/scss/_footer.scss
+@version 2019-10-09
+*/
+
+.footer {    
+background-color: $primary-color;
+padding: 80px 0 113px 0;
+&__logo{
+    margin-bottom: 26px;
+}
+&__title{
+    font-size: 16px;
+    font-weight: 600;
+}
+&__list{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+    list-style-type: none;
+    line-height: 24px;
+    margin-top: 23px;
+}
+&__social{
+    margin: 12px 0 36px 0;
+}
+&__icon{
+    color: $secondary-color;
+}
+}
+
+/* Footer css end */

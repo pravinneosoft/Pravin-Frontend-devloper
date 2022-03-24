@@ -1,0 +1,64 @@
+.header {
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+}
+
+.logo {
+
+    a {
+        display: block;
+        @include focus {
+            /* outline-color: $light-navy;*/
+        }
+    }
+}
+
+.nav-links {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: $color-dark;
+}
+
+.header {
+    background-color: $primary-color;
+    height: 112px;
+    margin-bottom: 37px;
+
+    &__left {
+        width: 744px;
+    }
+
+    &__list {
+        padding: 4px 8px 0 14px;
+        width: 672px;
+        height: 64px;
+    }
+
+    &__text {
+        color: $color-lightdark;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__icon {
+        width: 56px;
+        height: 56px;
+        background: $secondary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-search {
+            font-size: 22px;
+        }
+
+    }
+}

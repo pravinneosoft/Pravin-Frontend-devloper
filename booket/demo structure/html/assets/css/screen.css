@@ -1,0 +1,542 @@
+*,
+* * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat";
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+    transition: color .4s ease 0s,box-shadow .4s ease 0s;
+    outline-offset: 1px;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px dashed transparent;
+}
+
+a[href^="tel:"],
+a[href^="fax:"] {
+    cursor: text;
+}
+
+a[href^="tel:"]:hover,
+a[href^="tel:"]:focus,
+a[href^="fax:"]:hover,
+a[href^="fax:"]:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+a[href^="mailto:"] {
+    text-decoration: underline;
+}
+
+a[href^="mailto:"]:hover,
+a[href^="mailto:"]:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover,
+a:not([href]):not([tabindex]):focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+    outline: 0;
+}
+
+img {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    border: 0;
+}
+
+.icon {
+    display: inline-block;
+    line-height: 0;
+}
+
+svg {
+    max-width: 100%;
+    height: initial;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+svg .fill {
+    transition: fill .4s ease 0s;
+}
+
+svg .fill-stroke {
+    transition: fill .4s ease 0s,stroke .4s ease 0s;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo a:focus {
+    outline: 2px dashed transparent;
+}
+
+.nav-links {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2f242c;
+}
+
+.header {
+    background-color: #502274;
+    height: 112px;
+    margin-bottom: 37px;
+}
+
+.header__left {
+    width: 744px;
+}
+
+.header__list {
+    padding: 4px 8px 0 14px;
+    width: 672px;
+    height: 64px;
+}
+
+.header__text {
+    color: #96969b;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header__icon {
+    width: 56px;
+    height: 56px;
+    background: #fe7700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__icon-search {
+    font-size: 22px;
+}
+
+.footer {
+    background-color: #502274;
+    padding: 80px 0 113px 0;
+}
+
+.footer__logo {
+    margin-bottom: 26px;
+}
+
+.footer__title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer__list {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+    list-style-type: none;
+    line-height: 24px;
+    margin-top: 23px;
+}
+
+.footer__social {
+    margin: 12px 0 36px 0;
+}
+
+.footer__icon {
+    color: #fe7700;
+}
+
+.owl-dots {
+    position: absolute;
+    left: 47%;
+    bottom: 16px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #707070;
+    width: 8px;
+    height: 8px;
+    margin: 6px 4px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #fff;
+}
+
+.owl-nav button.owl-next {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+
+.owl-nav button.owl-prev {
+    border: red;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+
+.owl-icon {
+    color: #fff;
+}
+
+.owl-theme .owl-nav {
+    margin: 0;
+}
+
+.eventcardwrapper {
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.eventcard {
+    width: 232px;
+    height: 176px;
+    padding: 28px 0 0 24px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #502274;
+}
+
+.eventcard__title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.eventcard__text {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.eventcard__iconbg {
+    width: 32px;
+    height: 32px;
+}
+
+.eventcard__icon {
+    color: #fe7700;
+}
+
+.eventcard__img {
+    position: absolute;
+    bottom: 14px;
+    right: 16px;
+}
+
+.popular {
+    margin-top: 15px;
+    gap: 21px;
+}
+
+.popularcard {
+    width: 292px;
+    border: none;
+}
+
+.popularcard__time {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fe7700;
+    margin: 12px 0 4px 0;
+}
+
+.popularcard__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #231000;
+    margin-bottom: 4px;
+    width: 204px;
+}
+
+.popularcard__text {
+    font-size: 12px;
+    font-weight: 600;
+    color: #989898;
+}
+
+.popularcard__iconbg {
+    width: 40px;
+    height: 40px;
+    bottom: 95px;
+    right: 12px;
+}
+
+.popularcard__icon {
+    margin-right: 20px;
+}
+
+.featurecard__iconbg {
+    width: 40px;
+    height: 40px;
+    bottom: 75px;
+    right: 12px;
+}
+
+.book {
+    background-color: #fe7700;
+}
+
+.book__title {
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.book__text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+	src: url("/assets/font//montserrat/Montserrat-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+	src: url("/assets/font/montserrat/Montserrat-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+	src: url("/assets/font/montserrat/Montserrat-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+	src: url("/assets/font/montserrat/Montserrat-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: "icomoon";
+	src: url("/assets/font/icomoon/icomoon.eot?nh4fta");
+	src: url("/assets/font/icomoon/icomoon.eot?nh4fta#iefix") format("embedded-opentype"),url("/assets/font/icomoon/icomoon.ttf?nh4fta") format("truetype"),url("/assets/font/icomoon/icomoon.woff?nh4fta") format("woff"),url("/assets/font/icomoon/icomoon.svg?nh4fta#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^=icon-],
+[class*=" icon-"] {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-apple:before {
+    content: "";
+}
+
+.icon-call:before {
+    content: "";
+}
+
+.icon-close:before {
+    content: "";
+}
+
+.icon-downarrow:before {
+    content: "";
+}
+
+.icon-dropdown:before {
+    content: "";
+}
+
+.icon-envelope:before {
+    content: "";
+}
+
+.icon-event:before {
+    content: "";
+}
+
+.icon-facebook:before {
+    content: "";
+}
+
+.icon-google:before {
+    content: "";
+}
+
+.icon-gridview:before {
+    content: "";
+}
+
+.icon-instagram:before {
+    content: "";
+}
+
+.icon-leftarrow:before {
+    content: "";
+}
+
+.icon-like:before {
+    content: "";
+}
+
+.icon-listview:before {
+    content: "";
+}
+
+.icon-location:before {
+    content: "";
+}
+
+.icon-logo:before {
+    content: "";
+}
+
+.icon-notification:before {
+    content: "";
+}
+
+.icon-padlock:before {
+    content: "";
+}
+
+.icon-rightarrow:before {
+    content: "";
+}
+
+.icon-search:before {
+    content: "";
+}
+
+.icon-share:before {
+    content: "";
+}
+
+.icon-star:before {
+    content: "";
+}
+
+.icon-twitter:before {
+    content: "";
+}
+
+.btn {
+    width: 160px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn--primary {
+    background-color: #fe7700;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn--tranceparent {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn--joinus {
+    background-color: #fe7700;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 28px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1252px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.topheading {
+    margin-top: 60px;
+    position: relative;
+}
+
+.topheading__text {
+    color: #2f242c;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.topheading__view {
+    color: #fe7700;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.topheading::after {
+    content: "";
+    height: 4px;
+    width: 48px;
+    border-radius: 4px;
+    background-color: #fe7700;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.button {
+    background-color: #141415;
+}
+
+.button__title {
+    font-size: 18px;
+    font-weight: 650;
+    color: #fff;
+}
+
+.button__text {
+    font-size: 8px;
+    font-weight: 450;
+    color: #fff;
+}
+

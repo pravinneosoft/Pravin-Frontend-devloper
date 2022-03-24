@@ -1,0 +1,136 @@
+.owl-dots {
+    position: absolute;
+    left: 47%;
+    bottom: 16px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: $color-grey;
+    width: 8px;
+    height: 8px;
+    margin: 6px 4px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: $color-white;
+}
+
+.owl-nav button.owl-next {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+
+.owl-nav button.owl-prev {
+    border: red;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+
+.owl-icon {
+    color: $color-white;
+}
+
+.owl-theme .owl-nav {
+    margin: 0;
+}
+
+// event block css
+
+.eventcardwrapper {
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.eventcard {
+    width: 232px;
+    height: 176px;
+    padding: 28px 0 0 24px;
+    position: relative;
+    border-radius: 5px;
+    background-color: $primary-color;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 2px;
+    }
+
+    &__text {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    &__iconbg {
+        width: 32px;
+        height: 32px;
+    }
+
+    &__icon {
+        color: $secondary-color;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 14px;
+        right: 16px;
+    }
+}
+
+// popular evevent css
+.popular{
+    margin-top: 15px;
+    gap: 21px;
+}
+.popularcard{
+    width:292px;
+    border: none;
+}
+.popularcard__time{
+    font-size: 12px;
+    font-weight: 600;
+    color:$secondary-color;
+    margin: 12px 0 4px 0;
+}
+.popularcard__title{
+    font-size: 16px;
+    font-weight: 600;
+    color: $color-light-black;
+    margin-bottom: 4px;
+    width: 204px;
+}
+.popularcard__text{
+    font-size: 12px;
+    font-weight: 600;
+    color: $color-lightgrey;
+}
+.popularcard__iconbg{
+    width: 40px;
+    height: 40px;
+    bottom: 95px;
+    right: 12px;
+}
+.popularcard__icon{
+    margin-right: 20px;
+}
+// feature event card css
+.featurecard__iconbg{
+    width: 40px;
+    height: 40px;
+    bottom: 75px;
+    right: 12px;
+}
+// book block css
+.book{
+    background-color: $secondary-color;
+}
+.book__title{
+    font-size: 56px;
+    font-weight: 400;
+}
+.book__text{
+    font-size: 16px;
+    font-weight: 600;
+}
