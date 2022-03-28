@@ -135,16 +135,16 @@
         <div class="d-flex flex-wrap popular">
             <div class="card popularcard">
                 <img src="assets/images/foodevent.png" class="card-img-top position-relative" alt="food">
-                <div
-                    class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle popularcard__iconbg">
-                    <span class="icon-like"></span></div>
+                <div class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle popularcard__iconbg">
+                   <a title="like" href="#"> <span class="icon-like"></span></a>
+                </div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
                         <p class="card-text popularcard__time">Sun, Nov 15, 11:00 AM</p>
                         <h5 class="card-title popularcard__title">Great Qatar Food Festival</h5>
                         <p class="card-text"><small class="popularcard__text">Mosman Park, Sydney</small></p>
                     </div>
-                    <span class="icon-share popularcard__icon"></span>
+                   <a title="share" href="#"> <span class="icon-share popularcard__icon"></span></a>
                 </div>
             </div>
             <div class="card popularcard">
@@ -160,7 +160,7 @@
                             Show 2021</h5>
                         <p class="card-text"><small class="popularcard__text">Mosman Park, Sydney</small></p>
                     </div>
-                    <span class="icon-share popularcard__icon"></span>
+                   <a title="share" href="#"> <span class="icon-share popularcard__icon"></span></a>
                 </div>
             </div>
             <div class="card popularcard">
@@ -176,13 +176,12 @@
                             Longines</h5>
                         <p class="card-text"><small class="popularcard__text">Mosman Park, Sydney</small></p>
                     </div>
-                    <span class="icon-share popularcard__icon"></span>
+                   <a title="share" href="#"> <span class="icon-share popularcard__icon"></span></a>
                 </div>
             </div>
             <div class="card popularcard">
                 <img src="assets/images/culturalevent.png" class="card-img-top position-relative" alt="food">
-                <div
-                    class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle popularcard__iconbg">
+                <div class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle popularcard__iconbg">
                     <span class="icon-like"></span></div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
@@ -191,7 +190,7 @@
                             Katara Cultural Village</h5>
                         <p class="card-text"><small class="popularcard__text">Mosman Park, Sydney</small></p>
                     </div>
-                    <span class="icon-share popularcard__icon"></span>
+                   <a title="share" href="#"> <span class="icon-share popularcard__icon"></span></a>
                 </div>
             </div>
         </div>
@@ -204,8 +203,7 @@
         <div class="d-flex flex-wrap popular">
             <div class="card popularcard">
                 <img src="assets/images/mussiumevent.png" class="card-img-top position-relative" alt="food">
-                <div
-                    class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle featurecard__iconbg">
+                <div  class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle featurecard__iconbg">
                     <span class="icon-like"></span></div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
@@ -218,8 +216,7 @@
             </div>
             <div class="card popularcard">
                 <img src="assets/images/tourevent.png" class="card-img-top position-relative" alt="food">
-                <div
-                    class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle featurecard__iconbg">
+                <div  class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle featurecard__iconbg">
                     <span class="icon-like"></span></div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
@@ -270,6 +267,18 @@
                     <div>
                         <h2 class="book__title">Book your events now</h2>
                         <p class="book__text">The perfect event booking app for you.</p>
+                        <div class="row mt-2 mx-auto footer__apps gap-2">
+                            <button class="col-md-6 p-0 d-flex align-items-center justify-content-evenly button"> <img
+                                    src="assets/images/apple.png" alt="">
+                                <span class="d-inline-block   button__title">
+                                    <small class=" d-block button__text">Download on the</small> App Store </span>
+                            </button>
+                            <button class="col-md-6 p-0 d-flex align-items-center justify-content-evenly button"> <img
+                                    src="assets/images/playstore.png" alt="">
+                                <span class="d-inline-block text-left button__title">
+                                    <small class="d-block button__text">Get it on the</small> Google Play </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -280,32 +289,34 @@
     </section>
     <footer class="footer">
         <div class="container">
-            <div class="d-flex justify-content-between  gap-2 text-white">
-                <div class="">
+            <div class="row text-white mx-auto">
+                <div class="col-md-4 col-lg-4 col-xl-4  mx-auto footer__column">
                     <img class="footer__logo" src="assets/images/footer_logo.png" alt="footer logo">
                     <p class="footer__title">Are you an event company? </p>
-                    <a href="#" class="btn btn--joinus rounded-pill">Join Us</a>
+                    <div class="footer__btn">
+                        <a href="#" class="btn btn--joinus rounded-pill">Join Us</a></div>
                 </div>
-                <div class="">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto footer__column">
                     <h2 class="footer__title">Quick Link</h2>
                     <ul class="footer__list">
-                        <li>About us</li>
-                        <li>Partener</li>
-                        <li>Contact us</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of service</li>
-                        <li>Warranty policy</li>
+
+                        <li> About us</li>
+                        <li> Partener</li>
+                        <li> Contact us</li>
+                        <li> Privacy Policy</li>
+                        <li> Terms of service</li>
+                        <li> Warranty policy</li>
                     </ul>
                 </div>
-                <div class="">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto footer__column">
                     <h2 class="footer__title">Get in Touch</h2>
                     <ul class="footer__list">
-                        <li><span class="icon-location footer__icon"></span>&nbsp;&nbsp;Sherin Tower 857, Sydney </li>
-                        <li><span class="icon-envelope footer__icon"></span>&nbsp;&nbsp;info@booket.com</li>
-                        <li><span class="icon-call footer__icon"></span>&nbsp;&nbsp;+91-9876543210</li>
+                        <li> <span class="icon-location footer__icon"></span>Sherin Tower 857, Sydney </li>
+                        <li> <span class="icon-envelope footer__icon"></span>info@booket.com</li>
+                        <li> <span class="icon-call footer__icon"></span>+91-9876543210</li>
                     </ul>
                 </div>
-                <div class="">
+                <div class="col-md-3 col-lg-3 col-xl-3 p-0 mx-auto footer__column">
                     <h2 class="footer__title">Follow Us</h2>
                     <div class="footer__social d-flex gap-4">
                         <span class="icon-instagram"></span>
@@ -314,16 +325,18 @@
                     </div>
                     <h2 class="footer__title mb-3">Download App</h2>
 
-                    <div class=" d-flex justify-content-between mt-2">
-                        <button class="button"> <img src="assets/images/apple.png" alt="">
+                    <div class="row mt-2 mx-auto footer__apps gap-2">
+                        <button class="col-md-6 p-0 d-flex align-items-center justify-content-evenly button"> <img
+                                src="assets/images/apple.png" alt="">
                             <span class="d-inline-block   button__title">
-                                <small class=" d-block button__text">Available on the</small> App Store </span>
+                                <small class=" d-block button__text">Download on the</small> App Store </span>
                         </button>
-                        <button class="button"> <img src="assets/images/playstore.png"
-                                alt="">
+                        <button class="col-md-6 p-0 d-flex align-items-center justify-content-evenly button"> <img
+                                src="assets/images/playstore.png" alt="">
                             <span class="d-inline-block text-left button__title">
                                 <small class="d-block button__text">Get it on the</small> Google Play </span>
-                        </button> </div>
+                        </button>
+                    </div>
 
                 </div>
             </div>

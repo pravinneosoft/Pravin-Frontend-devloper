@@ -28,11 +28,15 @@
 }
 .button{
   background-color: $color-dark-black;
+  width: 144px;
+  height: 41px;
+  border: none;
 }
 .button__title{
     font-size: 18px;
     font-weight: 650;
     color: $color-white;
+    text-align: initial;
 }
 .button__text{
     font-size: 8px;

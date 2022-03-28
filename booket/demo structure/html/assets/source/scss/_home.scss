@@ -83,6 +83,9 @@
 .popular{
     margin-top: 15px;
     gap: 21px;
+    @include media-breakpoint-up(sm){
+        justify-content: center;
+    }
 }
 .popularcard{
     width:292px;
@@ -125,6 +128,7 @@
 // book block css
 .book{
     background-color: $secondary-color;
+    margin-top: 47px;
 }
 .book__title{
     font-size: 56px;

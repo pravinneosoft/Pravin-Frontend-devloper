@@ -147,10 +147,6 @@ svg .fill-stroke {
     padding: 80px 0 113px 0;
 }
 
-.footer__logo {
-    margin-bottom: 26px;
-}
-
 .footer__title {
     font-size: 16px;
     font-weight: 600;
@@ -162,7 +158,8 @@ svg .fill-stroke {
     padding: 0;
     list-style-type: none;
     line-height: 24px;
-    margin-top: 23px;
+    display: inline-block;
+    text-align: left;
 }
 
 .footer__social {
@@ -171,6 +168,10 @@ svg .fill-stroke {
 
 .footer__icon {
     color: #fe7700;
+}
+
+.footer__column {
+    text-align: center;
 }
 
 .owl-dots {
@@ -303,6 +304,7 @@ svg .fill-stroke {
 
 .book {
     background-color: #fe7700;
+    margin-top: 47px;
 }
 
 .book__title {
@@ -485,7 +487,6 @@ svg .fill-stroke {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 28px;
 }
 
 .container {
@@ -526,17 +527,95 @@ svg .fill-stroke {
 
 .button {
     background-color: #141415;
+    width: 144px;
+    height: 41px;
+    border: none;
 }
 
 .button__title {
     font-size: 18px;
     font-weight: 650;
     color: #fff;
+    text-align: initial;
 }
 
 .button__text {
     font-size: 8px;
     font-weight: 450;
     color: #fff;
+}
+
+@media (min-width: 576px) {
+
+    .footer__logo {
+        margin-bottom: 16px;
+    }
+
+    .footer__title {
+        margin-bottom: 0;
+        margin-top: 16px;
+        font-size: 22px;
+    }
+
+    .footer__list {
+        margin-top: 13px;
+    }
+
+    .footer__social {
+        justify-content: center;
+    }
+
+    .footer__btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__apps {
+        justify-content: center;
+    }
+
+    .popular {
+        justify-content: center;
+    }
+
+    .btn--joinus {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .footer__logo {
+        margin-bottom: 26px;
+    }
+
+    .footer__title {
+        margin-bottom: 4px;
+    }
+
+    .footer__list {
+        margin-top: 23px;
+    }
+
+    .footer__social {
+        justify-content: start;
+    }
+
+    .footer__column {
+        text-align: start;
+    }
+
+    .footer__btn {
+        display: flex;
+        display: block;
+    }
+
+    .footer__apps {
+        justify-content: start;
+    }
+
+    .btn--joinus {
+        margin-top: 28px;
+    }
 }
 

@@ -54,3 +54,25 @@ SCSS file for all mixin elements.
 
 
 /* hover, focus, active css property end*/
+
+
+// $breakpoints: (
+//       "xs": (min-width:0),
+//         "sm": (min-width:576px),
+//         "md": (min-width:768px),
+//         "lg": (min-width:992px),
+//         "xl": (min-width:1200px),
+//         "xxl": (min-width:1400px),
+// );
+
+// @mixin breakpoint($name) {
+//     @if map-has-key($breakpoints, $name) {
+//       @media #{inspect(map-get($breakpoints, $name))} {
+//       @content;
+//     }
+//   }
+//   @else {
+//     @warn "Couldn't find a breakpoint named `#{$name}`.";
+//   }
+// }	
+
