@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+    color: $color-white;
+}
 .topheading {
     margin-top: 60px;
     position: relative;
@@ -23,7 +27,7 @@
         background-color: $secondary-color;
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 15px;
     }
 }
 .button{

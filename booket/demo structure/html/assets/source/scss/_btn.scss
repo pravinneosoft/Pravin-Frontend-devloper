@@ -26,3 +26,15 @@
     margin-top: 15px;
     }
 }
+.btn--signup{
+    background-color: $color-blue;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 344px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(14px);
+}

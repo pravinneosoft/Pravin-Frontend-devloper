@@ -168,6 +168,7 @@ svg .fill-stroke {
 
 .footer__icon {
     color: #fe7700;
+    margin-right: 8px;
 }
 
 .footer__column {
@@ -236,6 +237,7 @@ svg .fill-stroke {
 .eventcard__text {
     font-size: 10px;
     font-weight: 400;
+    margin-bottom: 19px;
 }
 
 .eventcard__iconbg {
@@ -255,7 +257,7 @@ svg .fill-stroke {
 
 .popular {
     margin-top: 15px;
-    gap: 21px;
+    gap: 30px;
 }
 
 .popularcard {
@@ -293,6 +295,11 @@ svg .fill-stroke {
 
 .popularcard__icon {
     margin-right: 20px;
+    color: #707070;
+}
+
+.popularcard__icon-like {
+    color: #707070;
 }
 
 .featurecard__iconbg {
@@ -300,6 +307,12 @@ svg .fill-stroke {
     height: 40px;
     bottom: 75px;
     right: 12px;
+}
+
+.card-img-top {
+    background-image: url("../../images/foodevent.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .book {
@@ -315,6 +328,46 @@ svg .fill-stroke {
 .book__text {
     font-size: 16px;
     font-weight: 600;
+}
+
+.popularcard__foodevent {
+    background-image: url("../images/foodevent.png");
+    height: 184px;
+}
+
+.popularcard__boatevent {
+    background-image: url("../images/boatevent.png");
+    height: 184px;
+}
+
+.popularcard__aievent {
+    background-image: url("../images/aievent.png");
+    height: 184px;
+}
+
+.popularcard__culturalevent {
+    background-image: url("../images/culturalevent.png");
+    height: 184px;
+}
+
+.popularcard__mussiumevent {
+    background-image: url("../images/mussiumevent.png");
+    height: 184px;
+}
+
+.popularcard__tourevent {
+    background-image: url("../images/tourevent.png");
+    height: 184px;
+}
+
+.popularcard__educationevent {
+    background-image: url("../images/educationevent.png");
+    height: 184px;
+}
+
+.popularcard__race-event {
+    background-image: url("../images/race-event.png");
+    height: 184px;
 }
 
 @font-face {
@@ -489,11 +542,29 @@ svg .fill-stroke {
     font-weight: 600;
 }
 
+.btn--signup {
+    background-color: #4285f4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    width: 344px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(14px);
+}
+
 .container {
     width: 100%;
     max-width: 1252px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .topheading {
@@ -522,7 +593,7 @@ svg .fill-stroke {
     background-color: #fe7700;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 15px;
 }
 
 .button {
@@ -543,6 +614,191 @@ svg .fill-stroke {
     font-size: 8px;
     font-weight: 450;
     color: #fff;
+}
+
+.signup {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.signup__left {
+    width: 38.6%;
+    background-color: purple;
+    position: relative;
+    height: 100%;
+}
+
+.signup__left .signup__images div {
+    position: absolute;
+}
+
+.signup__left .signup__images div:first-child {
+    bottom: 0;
+}
+
+.signup__left .signup__images div:nth-child(2) {
+    bottom: 0;
+    left: 0;
+}
+
+.signup__left .signup__images div:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+.signup__left .signup__images div:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+.signup__content {
+    width: 443px;
+    padding: 56px 0 0 160px;
+}
+
+.signup__content-logo {
+    width: 109px;
+}
+
+.signup__content-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ececec;
+    margin-top: 43px;
+}
+
+.signup__right {
+    width: 61.6%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.signupform {
+    width: 416px;
+    height: auto;
+    margin-top: 115px;
+}
+
+.signupform__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #231000;
+    position: absolute;
+    top: 62px;
+    right: 162px;
+    margin-bottom: 35px;
+}
+
+.signupform__link {
+    color: #fe7700;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.signupform__facebook {
+    width: 56px;
+    height: 56px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.signupform__facebook-icon {
+    color: #707070;
+    font-size: 22px;
+}
+
+.signupform__heading {
+    color: #2f242c;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 21px;
+}
+
+.signupform__hr {
+    color: #96969b;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    margin: 31px 0;
+}
+
+.signupform__hr::before {
+    content: "";
+    width: 183px;
+    border: .5px solid #c8c7cc;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+}
+
+.signupform__hr::after {
+    content: "";
+    width: 183px;
+    border: .5px solid #c8c7cc;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-select {
+    height: calc(3.1rem + 0px);
+}
+
+.form-floating>label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #c8c7cc;
+}
+
+.signupform__input {
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    position: relative;
+    padding: 25px 0 21px 50px !important;
+    color: #2f242c;
+    font-size: 16px;
+    font-size: 600;
+}
+
+.signupform__input:focus {
+    border: 1px solid #fe7700;
+}
+
+.signupform__label {
+    position: absolute;
+    left: 50px !important;
+}
+
+.signupform__icon {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    color: #c8c7cc;
+    font-size: 16px;
+}
+
+.signupform__input-name {
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    position: relative;
+    color: #2f242c;
+    font-size: 16px;
+    font-size: 600;
+}
+
+.signupform__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 344px;
+    height: 56px;
 }
 
 @media (min-width: 576px) {
@@ -575,7 +831,7 @@ svg .fill-stroke {
     }
 
     .popular {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .btn--joinus {

@@ -61,6 +61,7 @@
     &__text {
         font-size: 10px;
         font-weight: 400;
+        margin-bottom: 19px;
     }
 
     &__iconbg {
@@ -82,9 +83,10 @@
 // popular evevent css
 .popular{
     margin-top: 15px;
-    gap: 21px;
+    gap: 30px;
     @include media-breakpoint-up(sm){
-        justify-content: center;
+        justify-content: space-between;
+   
     }
 }
 .popularcard{
@@ -117,6 +119,10 @@
 }
 .popularcard__icon{
     margin-right: 20px;
+    color: $color-grey;
+}
+.popularcard__icon-like{
+    color: $color-grey ;
 }
 // feature event card css
 .featurecard__iconbg{
@@ -125,7 +131,12 @@
     bottom: 75px;
     right: 12px;
 }
-// book block css
+.card-img-top{
+    background-image: url("../../images/foodevent.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}// book block css
 .book{
     background-color: $secondary-color;
     margin-top: 47px;
@@ -137,4 +148,36 @@
 .book__text{
     font-size: 16px;
     font-weight: 600;
+}
+.popularcard__foodevent{
+    background-image: url('../images/foodevent.png');
+   height: 184px;
+}
+.popularcard__boatevent{
+    background-image: url('../images/boatevent.png');
+    height: 184px;
+}
+.popularcard__aievent{
+    background-image: url('../images/aievent.png');
+    height: 184px;
+}
+.popularcard__culturalevent{
+    background-image: url('../images/culturalevent.png');
+    height: 184px;
+}
+.popularcard__mussiumevent{
+    background-image: url('../images/mussiumevent.png');
+    height: 184px;
+}
+.popularcard__tourevent{
+    background-image: url('../images/tourevent.png');
+    height: 184px;
+}
+.popularcard__educationevent{
+    background-image: url('../images/educationevent.png');
+    height: 184px;
+}
+.popularcard__race-event{
+    background-image: url('../images/race-event.png');
+    height: 184px;
 }

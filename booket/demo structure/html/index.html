@@ -24,14 +24,15 @@
 <body>
     <header class="d-flex align-items-center justify-content-center header">
         <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#"><img src="assets/images/booket-logo.png" alt=""></a>
             <div class="container">
                 <div class="header__left d-flex justify-content-between">
-                    <a class="navbar-brand" title="Link"><img src="assets/images/logo.png" alt=""></a>
                     <div class="header__list bg-white rounded-pill" id="navbarSupportedContent">
+                        <form action="">
                         <ul class="navbar-nav align-items-center justify-content-between me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-links active" aria-current="page" href="#">Date</a>
-                                <span class="header__text">I Want to go out</span>
+                                <input type="text" name="datefilter" class="form-control" id="datetimepicker5" placeholder="Date" readonly="">
+                                <label class="header__text">I Want to go out</label>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-links" href="#">Location</a>
@@ -43,7 +44,7 @@
                             </li>
                             <li class="nav-item header__icon rounded-circle"><span
                                     class="icon-search header__icon-search text-white"></span></li>
-                        </ul>
+                        </ul></form>
                     </div>
                 </div>
                 <div class="d-flex">
@@ -69,74 +70,82 @@
         </div>
     </section>
     <section class="container">
-        <div class="topheading d-flex justify-content-between">
-            <h2 class="topheading__text">Event Category</h2>
-            <a class="topheading__view" href="#">View All</a>
+        <div class="topheading row">
+            <h2 class="topheading__text col-md-6 col-sm-6 col">Event Category</h2>
+            <a class="topheading__view col-md-6 col-sm-6 col text-end" href="#">View All</a>
         </div>
-        <div class="d-flex flex-wrap eventcardwrapper">
-            <div class="card eventcard">
+        <div class="row ps-3 flex-wrap eventcardwrapper">
+            <div class="card col-md-2 col-sm-2 eventcard">
+                <a title="card" href="#">
                 <div class="card-body p-0 text-white">
                     <h5 class="card-title eventcard__title">Music</h5>
-                    <p class="card-text eventcard__text">24 Events Nearby.</p>
-                    <div
-                        class="rounded-circle d-flex align-items-center justify-content-center bg-white eventcard__iconbg ">
-                        <span class="icon-rightarrow eventcard__icon"></span></div>
+                    <p class="eventcard__text">24 Events Nearby.</p>
+                    <a href="#">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center bg-white eventcard__iconbg">
+                        <span class="icon-rightarrow eventcard__icon"></span></div></a>
                     <img class="eventcard__img" src="assets/images/music.png" alt="">
-                </div>
+                </div></a>
             </div>
-            <div class="card eventcard">
+            <div class="card col-md-2 col-sm-2 eventcard">
+                <a title="card" href="#">
                 <div class="card-body p-0 text-white">
                     <h5 class="card-title eventcard__title">Business &
                         Startups</h5>
-                    <p class="card-text eventcard__text">36 Events Nearby.</p>
-                    <div
+                    <p class="eventcard__text">36 Events Nearby.</p>
+                    <a href="#"><div
                         class="rounded-circle d-flex align-items-center justify-content-center bg-white eventcard__iconbg ">
-                        <span class="icon-rightarrow eventcard__icon"></span></div>
+                        <span class="icon-rightarrow eventcard__icon"></span></div></a>
                     <img class="eventcard__img" src="assets/images/business_deal.png" alt="">
-                </div>
+                </div></a>
+                </a>
             </div>
-            <div class="card eventcard">
+            <div class="card col-md-2 col-sm-2 eventcard">
+                <a title="card" href="#">
                 <div class="card-body p-0 text-white">
                     <h5 class="card-title eventcard__title">Arts & Culture</h5>
-                    <p class="card-text eventcard__text">24 Events Nearby.</p>
-                    <div
+                    <p class="eventcard__text">24 Events Nearby.</p>
+                    <a href="#"><div
                         class="rounded-circle d-flex align-items-center justify-content-center bg-white eventcard__iconbg ">
-                        <span class="icon-rightarrow eventcard__icon"></span></div>
+                        <span class="icon-rightarrow eventcard__icon"></span></div></a>
                     <img class="eventcard__img" src="assets/images/arts.png" alt="">
-                </div>
+                </div></a>
+                </a>
             </div>
-            <div class="card eventcard">
+            <div class="card col-md-2 col-sm-2 eventcard">
+                <a title="card" href="#">
                 <div class="card-body p-0 text-white">
                     <h5 class="card-title eventcard__title">Film & Media</h5>
-                    <p class="card-text eventcard__text">36 Events Nearby.</p>
-                    <div
+                    <p class="eventcard__text">36 Events Nearby.</p>
+                   <a href="#"> <div
                         class="rounded-circle d-flex align-items-center justify-content-center bg-white eventcard__iconbg ">
-                        <span class="icon-rightarrow eventcard__icon"></span></div>
+                        <span class="icon-rightarrow eventcard__icon"></span></div></a>
                     <img class="eventcard__img" src="assets/images/film.png" alt="">
                 </div>
+                </a>
             </div>
-            <div class="card eventcard">
+            <div class="card col-md-2 col-sm-2 eventcard">
+                <a title="card" href="#">
                 <div class="card-body p-0 text-white">
-                    <h5 class="card-title eventcard__title">Food & Drink</h5>
-                    <p class="card-text eventcard__text">24 Events Nearby.</p>
-                    <div
+                    <h5 class="eventcard__title">Food & Drink</h5>
+                    <p class="eventcard__text">24 Events Nearby.</p>
+                    <a href=""><div
                         class="rounded-circle d-flex align-items-center justify-content-center bg-white eventcard__iconbg ">
-                        <span class="icon-rightarrow eventcard__icon"></span></div>
+                        <span class="icon-rightarrow eventcard__icon"></span></div></a>
                     <img class="eventcard__img" src="assets/images/food&drink.png" alt="">
-                </div>
+                </div></a>
             </div>
         </div>
     </section>
     <section class="container">
-        <div class="topheading d-flex justify-content-between">
-            <h2 class="topheading__text">Popular Event</h2>
-            <a class="topheading__view" href="#">View All</a>
+        <div class="topheading row">
+            <h2 class="topheading__text col-md-6 col-sm-6 col">Popular Event</h2>
+            <a class="topheading__view col-md-6 col-sm-6 col text-end" href="#">View All</a>
         </div>
-        <div class="d-flex flex-wrap popular">
-            <div class="card popularcard">
-                <img src="assets/images/foodevent.png" class="card-img-top position-relative" alt="food">
+        <div class="row flex-wrap popular">
+            <div class="card col-md-3 popularcard">
+                <div class="card-img-top popularcard__foodevent position-relative"></div>
                 <div class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle popularcard__iconbg">
-                   <a title="like" href="#"> <span class="icon-like"></span></a>
+                   <a title="like"class="popularcard__icon-like" href="#"> <span class="icon-like"></span></a>
                 </div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
@@ -144,14 +153,14 @@
                         <h5 class="card-title popularcard__title">Great Qatar Food Festival</h5>
                         <p class="card-text"><small class="popularcard__text">Mosman Park, Sydney</small></p>
                     </div>
-                   <a title="share" href="#"> <span class="icon-share popularcard__icon"></span></a>
+                   <a title="share"class="popularcard__icon" href="#"> <span class="icon-share "></span></a>
                 </div>
             </div>
-            <div class="card popularcard">
-                <img src="assets/images/boatevent.png" class="card-img-top position-relative" alt="food">
+            <div class="card col-md-3  popularcard">
+                <div class="card-img-top popularcard__boatevent position-relative"></div>
                 <div
                     class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle popularcard__iconbg">
-                    <span class="icon-like"></span></div>
+                    <a title="like"class="popularcard__icon-like" href="#"> <span class="icon-like"></span></a></div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
                         <p class="card-text popularcard__time">Sun, Nov 15, 11:00 AM</p>
@@ -160,14 +169,14 @@
                             Show 2021</h5>
                         <p class="card-text"><small class="popularcard__text">Mosman Park, Sydney</small></p>
                     </div>
-                   <a title="share" href="#"> <span class="icon-share popularcard__icon"></span></a>
+                    <a title="share"class="popularcard__icon" href="#"> <span class="icon-share "></span></a>
                 </div>
             </div>
-            <div class="card popularcard">
-                <img src="assets/images/aievent.png" class="card-img-top position-relative" alt="food">
+            <div class="card col-md-3 popularcard">
+                <div  class="card-img-top popularcard__aievent position-relative"></div>
                 <div
                     class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle popularcard__iconbg">
-                    <span class="icon-like"></span></div>
+                    <a title="like"class="popularcard__icon-like" href="#"> <span class="icon-like"></span></a></div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
                         <p class="card-text popularcard__time">Sun, Nov 15, 11:00 AM</p>
@@ -176,13 +185,13 @@
                             Longines</h5>
                         <p class="card-text"><small class="popularcard__text">Mosman Park, Sydney</small></p>
                     </div>
-                   <a title="share" href="#"> <span class="icon-share popularcard__icon"></span></a>
+                    <a title="share"class="popularcard__icon" href="#"> <span class="icon-share "></span></a>
                 </div>
             </div>
-            <div class="card popularcard">
-                <img src="assets/images/culturalevent.png" class="card-img-top position-relative" alt="food">
+            <div class="card col-md-3 popularcard">
+                <div class="card-img-top popularcard__culturalevent position-relative"></div>
                 <div class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle popularcard__iconbg">
-                    <span class="icon-like"></span></div>
+                    <a title="like"class="popularcard__icon-like" href="#"> <span class="icon-like"></span></a></div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
                         <p class="card-text popularcard__time">Sun, Nov 15, 11:00 AM</p>
@@ -190,34 +199,34 @@
                             Katara Cultural Village</h5>
                         <p class="card-text"><small class="popularcard__text">Mosman Park, Sydney</small></p>
                     </div>
-                   <a title="share" href="#"> <span class="icon-share popularcard__icon"></span></a>
+                    <a title="share"class="popularcard__icon" href="#"> <span class="icon-share "></span></a>
                 </div>
             </div>
         </div>
     </section>
     <section class="container">
-        <div class="topheading d-flex justify-content-between">
-            <h2 class="topheading__text">Featured Events</h2>
-            <a class="topheading__view" href="#">View All</a>
+        <div class="topheading row">
+            <h2 class="topheading__text col-md-6 col-sm-6 col">Featured Events</h2>
+            <a class="topheading__view col-md-6 col-sm-6 col text-end" href="#">View All</a>
         </div>
-        <div class="d-flex flex-wrap popular">
-            <div class="card popularcard">
-                <img src="assets/images/mussiumevent.png" class="card-img-top position-relative" alt="food">
+        <div class="row flex-wrap popular">
+            <div class="card col-md-3 popularcard">
+                <div  class="card-img-top popularcard__mussiumevent position-relative" ></div>
                 <div  class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle featurecard__iconbg">
-                    <span class="icon-like"></span></div>
+                    <a title="like"class="popularcard__icon-like" href="#"> <span class="icon-like"></span></a></div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
                         <p class="card-text popularcard__time">Sun, Nov 15, 11:00 AM</p>
                         <h5 class="card-title popularcard__title">Qatar Museum Tour</h5>
                         <p class="card-text"><small class="popularcard__text"> Doha, Qatar</small></p>
                     </div>
-                    <span class="icon-share popularcard__icon"></span>
+                    <a title="share"class="popularcard__icon" href="#"> <span class="icon-share "></span></a>
                 </div>
             </div>
-            <div class="card popularcard">
-                <img src="assets/images/tourevent.png" class="card-img-top position-relative" alt="food">
+            <div class="card col-md-3 popularcard">
+                <div src="assets/images/tourevent.png" class="card-img-top popularcard__tourevent position-relative"></div>
                 <div  class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle featurecard__iconbg">
-                    <span class="icon-like"></span></div>
+                    <a title="like"class="popularcard__icon-like" href="#"> <span class="icon-like"></span></a></div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
                         <p class="card-text popularcard__time">Sun, Nov 15, 11:00 AM</p>
@@ -225,14 +234,14 @@
                             Champions Tour - Doha</h5>
                         <p class="card-text"><small class="popularcard__text">Blue Mountains, NSW</small></p>
                     </div>
-                    <span class="icon-share popularcard__icon"></span>
+                    <a title="share"class="popularcard__icon" href="#"> <span class="icon-share "></span></a>
                 </div>
             </div>
-            <div class="card popularcard">
-                <img src="assets/images/educationevent.png" class="card-img-top position-relative" alt="food">
+            <div class="card col-md-3 popularcard">
+                <div src="assets/images/educationevent.png" class="card-img-top popularcard__educationevent position-relative"></div>
                 <div
                     class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle featurecard__iconbg">
-                    <span class="icon-like"></span></div>
+                    <a title="like"class="popularcard__icon-like" href="#"> <span class="icon-like"></span></a></div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
                         <p class="card-text popularcard__time">Sun, Nov 15, 11:00 AM</p>
@@ -240,14 +249,14 @@
                             Educational Tour</h5>
                         <p class="card-text"><small class="popularcard__text">Mosman Park, Sydney</small></p>
                     </div>
-                    <span class="icon-share popularcard__icon"></span>
+                    <a title="share"class="popularcard__icon" href="#"> <span class="icon-share "></span></a>
                 </div>
             </div>
-            <div class="card popularcard">
-                <img src="assets/images/race-event.png" class="card-img-top position-relative" alt="food">
+            <div class="card col-md-3 popularcard">
+                <div src="assets/images/race-event.png" class="card-img-top popularcard__race-event position-relative"></div>
                 <div
                     class="d-flex align-items-center justify-content-center position-absolute bg-white rounded-circle featurecard__iconbg">
-                    <span class="icon-like"></span></div>
+                    <a title="like"class="popularcard__icon-like" href="#"> <span class="icon-like"></span></a></div>
                 <div class="d-flex  align-items-center">
                     <div class="card-body p-0">
                         <p class="card-text popularcard__time">Sun, Nov 15, 11:00 AM</p>
@@ -255,7 +264,7 @@
                             Race track</h5>
                         <p class="card-text"><small class="popularcard__text">Mosman Park, Sydney</small></p>
                     </div>
-                    <span class="icon-share popularcard__icon"></span>
+                    <a title="share"class="popularcard__icon" href="#"> <span class="icon-share "></span></a>
                 </div>
             </div>
         </div>
@@ -291,7 +300,7 @@
         <div class="container">
             <div class="row text-white mx-auto">
                 <div class="col-md-4 col-lg-4 col-xl-4  mx-auto footer__column">
-                    <img class="footer__logo" src="assets/images/footer_logo.png" alt="footer logo">
+                    <a href="footer__logo"><img class="footer__logo" src="assets/images/footer_logo.png" alt="footer logo"></a>
                     <p class="footer__title">Are you an event company? </p>
                     <div class="footer__btn">
                         <a href="#" class="btn btn--joinus rounded-pill">Join Us</a></div>
@@ -300,28 +309,28 @@
                     <h2 class="footer__title">Quick Link</h2>
                     <ul class="footer__list">
 
-                        <li> About us</li>
-                        <li> Partener</li>
-                        <li> Contact us</li>
-                        <li> Privacy Policy</li>
-                        <li> Terms of service</li>
-                        <li> Warranty policy</li>
+                        <li><a href="#"> About us</a></li>
+                        <li><a href="#"> Partener</a></li>
+                        <li><a href="#"> Contact us</a></li>
+                        <li><a href="#"> Privacy Policy</a></li>
+                        <li><a href="#"> Terms of service</a></li>
+                        <li><a href="#"> Warranty policy</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto footer__column">
                     <h2 class="footer__title">Get in Touch</h2>
                     <ul class="footer__list">
-                        <li> <span class="icon-location footer__icon"></span>Sherin Tower 857, Sydney </li>
-                        <li> <span class="icon-envelope footer__icon"></span>info@booket.com</li>
-                        <li> <span class="icon-call footer__icon"></span>+91-9876543210</li>
+                        <li><a href="#"> <span class="icon-location footer__icon"></span>Sherin Tower 857, Sydney </a></li>
+                        <li><a href="#"> <span class="icon-envelope footer__icon"></span>info@booket.com</a></li>
+                        <li><a href="#"> <span class="icon-call footer__icon"></span>+91-9876543210</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-lg-3 col-xl-3 p-0 mx-auto footer__column">
                     <h2 class="footer__title">Follow Us</h2>
                     <div class="footer__social d-flex gap-4">
-                        <span class="icon-instagram"></span>
-                        <span class="icon-twitter"></span>
-                        <span class="icon-facebook"></span>
+                        <a title="@" href="#"><span class="icon-instagram"></span></a>
+                        <a title="@" href="#"><span class="icon-twitter"></span></a>
+                        <a title="@" href="#"><span class="icon-facebook"></span></a>
                     </div>
                     <h2 class="footer__title mb-3">Download App</h2>
 
@@ -355,7 +364,7 @@
 
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS --> <script src="assets/js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"
         referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -369,7 +378,7 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="scripts.js"></script>
+       
     <script>
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
@@ -383,6 +392,7 @@
             $(".owl-next").html('<span class="owl-icon  icon-rightarrow"></span>');
         });
     </script>
+    
 </body>
 
 </html>
