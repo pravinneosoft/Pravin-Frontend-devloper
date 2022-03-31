@@ -1,60 +1,157 @@
 .signup {
-    max-width: 100%;
-    height: 100vh;
-    display: flex;
+    
+  
+    @include media-breakpoint-up(lg) {
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
 }
-
+.signup__images{
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+    @include media-breakpoint-up(sm) {
+       display: none;
+      }
+      @include media-breakpoint-up(xs) {
+        display: none;
+       }
+}
 .signup__left {
     width: 38.6%;
     background-color: purple;
     position: relative;
     height: 100%;
+    @include media-breakpoint-up(lg) {
+        width: 38.6%;
+    }
+    @include media-breakpoint-up(sm) {
+       width: 100%;
+      }
+      @include media-breakpoint-up(xs) {
+        width: 100%; 
+       }
 }
 
 .signup__left .signup__images div {
     position: absolute;
     &:first-child{
-        bottom: 0;
+        transform: rotate(24deg);
+        left: -179px;
     }
     &:nth-child(2){
-        bottom: 0;
-        left: 0;
+        bottom: -32px;
+        left: -50px;
+        z-index: 1;
     }
     &:nth-child(3){
-        bottom: 0;
-        left: 0;
+        left: -149px;
+        top: 126px;
+        transform: rotate(50deg);
     }
     &:nth-child(4){
+        bottom: -95px;
+        transform: rotate(37deg);
+    }
+    &:nth-child(5){
         bottom: 0;
-        right: 0;
+        left:-48px;
+    }
+    &:nth-child(6){
+        top: 132px;
+        right: o;
+        left: 135px;
+        transform: rotate(180deg);
+    }
+    &:nth-child(7){
+        bottom: 0;
+        right: 28px;
     }
 }
 .signup__content{
-    width: 443px;
+    
+
     padding: 56px 0 0 160px;
+    @include media-breakpoint-up(lg) {
+        padding: 56px 0 0 160px;
+        width:80%;
+    }
+    @include media-breakpoint-up(sm) {
+        padding: 18px;
+       
+        width: 100%;
+       
+    }
+    @include media-breakpoint-up(xs) {
+        width: 100%; 
+        padding: 15px;
+       }
 }
 .signup__content-logo{
     width: 109px;
+    @include media-breakpoint-up(lg) {
+        width: 109px;
+    }
+    @include media-breakpoint-up(sm) {
+        width: 190px;
+    }
+    @include media-breakpoint-up(xs) {
+        width: 150px;
+    }
 }
 .signup__content-heading{
     font-size: 24px;
     font-weight: 700;
     color: $color-light;
     margin-top: 43px;
-   
+    @include media-breakpoint-up(lg) {
+        margin-top: 43px;
+    }
+    @include media-breakpoint-up(sm) {
+        margin-top: 15px;
+    }
+    @include media-breakpoint-up(xs) {
+        margin-top: 10px;
+       }
 }
 .signup__right{
 width: 61.6%;
 display: flex;
 justify-content: center;
-
 position: relative;
+@include media-breakpoint-up(lg) {
+    width: 61.6%;
+}
+@include media-breakpoint-up(sm) {
+   width: 100%;
+  }
+  @include media-breakpoint-up(xs) {
+    width: 100%;
+   }
 }
 // form css start 
 .signupform{
-    width: 416px;
    height: auto;
    margin-top: 115px;
+   @include media-breakpoint-up(lg) {
+    width: 476px;
+}
+@include media-breakpoint-up(md) {
+    width: 700px;
+   
+}
+@include media-breakpoint-up(sm) {
+    width: 525px;
+   
+}
+@include media-breakpoint-up(xs) {
+    width: 100%;
+   padding: 0 30px;
+}
 }
 .signupform__title{
 font-size: 16px;
@@ -77,8 +174,13 @@ font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
-
+    margin-left: 16px;
+    @include media-breakpoint-up(sm){
+        margin-top: 0;
+    }
+@include media-breakpoint-up(xs){
+    margin-top: 25px;
+}
 }
 .signupform__facebook-icon{
     color: $color-grey;
@@ -104,6 +206,17 @@ font-weight: 600;
         position: absolute;
         top: 8px;
     left: 12px;
+    @include media-breakpoint-up(lg) {
+        width: 183px;
+    }
+    @include media-breakpoint-up(md) {
+        width: 300px; 
+    }
+    @include media-breakpoint-up(sm) {
+        width: 183px;
+    }@include media-breakpoint-up(sm) {
+        width: 150px;
+    }
     }
     &::after{
         content: '';
@@ -112,6 +225,17 @@ font-weight: 600;
         position: absolute;
         top: 8px;
         right: 12px;
+        @include media-breakpoint-up(lg) {
+            width: 183px;
+        }
+        @include media-breakpoint-up(md) {
+            width: 300px; 
+        }
+        @include media-breakpoint-up(sm) {
+            width: 183px;
+        }@include media-breakpoint-up(sm) {
+            width: 150px;
+        }
     }
 }
 .form-floating>.form-control, .form-floating>.form-select {
@@ -152,6 +276,9 @@ font-size: 600;
 color: $color-black;
 font-size: 16px;
 font-size: 600;
+}
+.signupform__input-name:focus{
+    border: 1px solid $secondary-color;
 }
 .signupform__btn{
     display: flex;
