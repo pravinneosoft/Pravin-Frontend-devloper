@@ -1,32 +1,56 @@
-.btn{
+.btn {
     width: 160px;
     height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.btn--primary{
+
+.btn--primary {
     background-color: $secondary-color;
     font-size: 16px;
     font-weight: 600;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
+    }
 }
-.btn--tranceparent{
+
+.btn--tranceparent {
     font-size: 16px;
     font-weight: 600;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
+        border-radius: 50px;
+    }
 }
-.btn--joinus{
+
+.btn--joinus {
     background-color: $secondary-color;
     color: $color-white;
     font-size: 16px;
     font-weight: 600;
+
     @include media-breakpoint-up(md) {
         margin-top: 28px;
-        }
-        @include media-breakpoint-up(sm) {
-    margin-top: 15px;
+    }
+
+    @include media-breakpoint-up(sm) {
+        margin-top: 15px;
+    }
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
     }
 }
-.btn--signup{
+
+.btn--signup {
     background-color: $color-blue;
     color: $color-white;
     font-size: 16px;
@@ -38,3 +62,5 @@
     justify-content: center;
     transform: translateX(14px);
 }
+
+

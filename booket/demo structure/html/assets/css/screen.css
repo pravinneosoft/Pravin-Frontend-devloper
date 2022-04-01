@@ -118,7 +118,7 @@ svg .fill-stroke {
 }
 
 .header__list {
-    padding: 4px 8px 0 14px;
+    padding: 0 8px 0 14px;
     width: 672px;
     height: 64px;
 }
@@ -155,7 +155,6 @@ svg .fill-stroke {
 .footer__list {
     font-size: 14px;
     font-weight: 400;
-    padding: 0;
     list-style-type: none;
     line-height: 24px;
     display: inline-block;
@@ -175,10 +174,17 @@ svg .fill-stroke {
     text-align: center;
 }
 
-.owl-dots {
-    position: absolute;
-    left: 47%;
-    bottom: 16px;
+.footer__socialicon {
+    transition: .7s;
+    z-index: 3;
+}
+
+.footer__socialicon:hover {
+    transform: rotateY(360deg);
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    background-color: transparent;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -206,11 +212,40 @@ svg .fill-stroke {
     left: 0;
 }
 
-.owl-icon {
-    color: #fff;
+.herobaner .owl-carousel {
+    min-height: 296px;
+    max-width: 100%;
+    position: relative;
 }
 
-.owl-theme .owl-nav {
+.herobaner .owl-item img {
+    min-height: 296px;
+}
+
+.herobaner .owl-nav button.owl-next,
+.herobaner .owl-nav button.owl-prev {
+    background: transparent;
+    height: 56px;
+    width: 56px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 46%;
+    margin-inline: 20px;
+}
+
+.herobaner .owl-dots {
+    position: absolute;
+    left: 47%;
+    bottom: 16px;
+}
+
+.herobaner .owl-icon {
+    color: #fff;
+    background-color: transparent;
+}
+
+.herobaner .owl-theme .herobaner .owl-nav {
     margin: 0;
 }
 
@@ -220,12 +255,15 @@ svg .fill-stroke {
 }
 
 .eventcard {
-    width: 232px;
     height: 176px;
     padding: 28px 0 0 24px;
     position: relative;
     border-radius: 5px;
     background-color: #502274;
+}
+
+.eventcard__hover:hover {
+    color: #fff;
 }
 
 .eventcard__title {
@@ -243,10 +281,13 @@ svg .fill-stroke {
 .eventcard__iconbg {
     width: 32px;
     height: 32px;
+    background-color: #fff;
+    color: #fe7700;
 }
 
-.eventcard__icon {
-    color: #fe7700;
+.eventcard__iconbg:hover {
+    background-color: #fe7700;
+    color: #fff;
 }
 
 .eventcard__img {
@@ -257,11 +298,10 @@ svg .fill-stroke {
 
 .popular {
     margin-top: 15px;
-    gap: 30px;
+    gap: 28px;
 }
 
 .popularcard {
-    width: 292px;
     border: none;
 }
 
@@ -290,7 +330,14 @@ svg .fill-stroke {
     width: 40px;
     height: 40px;
     bottom: 95px;
-    right: 12px;
+    right: 25px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+
+.popularcard__iconbg:hover {
+    background-color: #fe7700;
+    color: #fff;
 }
 
 .popularcard__icon {
@@ -300,13 +347,26 @@ svg .fill-stroke {
 
 .popularcard__icon-like {
     color: #707070;
+    align-self: center;
+    line-height: 0;
+}
+
+.popularcard__icon-like:hover {
+    color: #fff;
 }
 
 .featurecard__iconbg {
     width: 40px;
     height: 40px;
     bottom: 75px;
-    right: 12px;
+    right: 25px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+
+.featurecard__iconbg:hover {
+    background-color: #fe7700;
+    color: #fff;
 }
 
 .card-img-top {
@@ -318,6 +378,10 @@ svg .fill-stroke {
 .book {
     background-color: #fe7700;
     margin-top: 47px;
+    min-height: 435px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .book__title {
@@ -328,6 +392,12 @@ svg .fill-stroke {
 .book__text {
     font-size: 16px;
     font-weight: 600;
+}
+
+.book__iphone {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .popularcard__foodevent {
@@ -528,11 +598,24 @@ svg .fill-stroke {
     background-color: #fe7700;
     font-size: 16px;
     font-weight: 600;
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: #fff;
+    color: #2f242c;
 }
 
 .btn--tranceparent {
     font-size: 16px;
     font-weight: 600;
+    color: #fff;
+}
+
+.btn--tranceparent:hover {
+    background-color: #fff;
+    color: #2f242c;
+    border-radius: 50px;
 }
 
 .btn--joinus {
@@ -540,6 +623,11 @@ svg .fill-stroke {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
+}
+
+.btn--joinus:hover {
+    background-color: #fff;
+    color: #2f242c;
 }
 
 .btn--signup {
@@ -565,6 +653,11 @@ svg .fill-stroke {
 a {
     text-decoration: none;
     color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fe7700;
 }
 
 .topheading {
@@ -771,17 +864,6 @@ a {
     right: 12px;
 }
 
-.form-floating>.form-control,
-.form-floating>.form-select {
-    height: calc(3.1rem + 0px);
-}
-
-.form-floating>label {
-    font-size: 16px;
-    font-weight: 600;
-    color: #c8c7cc;
-}
-
 .signupform__input {
     border-radius: 10px;
     border: 1px solid #eaeaea;
@@ -792,8 +874,13 @@ a {
     font-size: 600;
 }
 
-.signupform__input:focus {
-    border: 1px solid #fe7700;
+.signupform__input-name {
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    position: relative;
+    color: #2f242c;
+    font-size: 16px;
+    font-size: 600;
 }
 
 .signupform__label {
@@ -809,19 +896,6 @@ a {
     font-size: 16px;
 }
 
-.signupform__input-name {
-    border-radius: 10px;
-    border: 1px solid #eaeaea;
-    position: relative;
-    color: #2f242c;
-    font-size: 16px;
-    font-size: 600;
-}
-
-.signupform__input-name:focus {
-    border: 1px solid #fe7700;
-}
-
 .signupform__btn {
     display: flex;
     justify-content: center;
@@ -830,16 +904,26 @@ a {
     height: 56px;
 }
 
+.form-floating>.form-control,
+.form-floating>.form-select {
+    height: calc(3.1rem + 0px);
+}
+
+.form-floating>label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #c8c7cc;
+}
+
+.form-control:focus {
+    border: 1px solid #fe7700;
+    box-shadow: none;
+}
+
 .signupform__subheading {
     font-size: 14px;
     font-weight: 400;
     color: #96969b;
-}
-
-.signupform__prev {
-    font-size: 16px;
-    font-weight: 600;
-    color: #231000;
 }
 
 .signupform__prev-icon {
@@ -847,6 +931,77 @@ a {
     font-weight: 600;
     color: #231000;
     margin-right: 12px;
+}
+
+.signupform__showhide {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fe7700;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 20px;
+    right: 16px;
+}
+
+.signupform__prev {
+    font-size: 16px;
+    font-weight: 600;
+    color: #231000;
+    margin-bottom: 60px;
+}
+
+.signupform__prev .icon-leftarrow {
+    margin-right: 16px;
+}
+
+.signupform__prev span {
+    transition: all .5s;
+}
+
+.signupform__prev span:nth-child(0) {
+    transition-delay: 0s;
+}
+
+.signupform__prev span:nth-child(2) {
+    transition-delay: .1s;
+}
+
+.signupform__prev span:nth-child(3) {
+    transition-delay: .2s;
+}
+
+.signupform__prev span:nth-child(4) {
+    transition-delay: .3s;
+}
+
+.signupform__prev span:nth-child(4) {
+    transition-delay: .4s;
+}
+
+.signupform__prev:hover span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.signupform__prev:hover span:nth-child(5) {
+    transition-delay: 0s;
+}
+
+.signupform__prev:hover span:nth-child(4) {
+    transition-delay: .1s;
+}
+
+.signupform__prev:hover span:nth-child(3) {
+    transition-delay: .2s;
+}
+
+.signupform__prev:hover span:nth-child(2) {
+    transition-delay: .3s;
+}
+
+.signupform__prev:hover span:nth-child(1) {
+    transition-delay: .4s;
 }
 
 .activateform__title {
@@ -859,17 +1014,6 @@ a {
     color: #fe7700;
     font-size: 16px;
     font-weight: 600;
-}
-
-.signupform__showhide {
-    font-size: 14px;
-    font-weight: 600;
-    color: #fe7700;
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    top: 20px;
-    right: 16px;
 }
 
 @media (min-width: 576px) {
@@ -901,8 +1045,12 @@ a {
         justify-content: center;
     }
 
-    .popular {
-        justify-content: space-between;
+    .eventcard {
+        width: 47.8%;
+    }
+
+    .popularcard {
+        width: 46.8%;
     }
 
     .btn--joinus {
@@ -990,6 +1138,14 @@ a {
         justify-content: start;
     }
 
+    .eventcard {
+        width: 47.8%;
+    }
+
+    .popularcard {
+        width: 47.8%;
+    }
+
     .btn--joinus {
         margin-top: 28px;
     }
@@ -1012,6 +1168,14 @@ a {
 }
 
 @media (min-width: 992px) {
+
+    .eventcard {
+        width: 48.8%;
+    }
+
+    .popularcard {
+        width: 47.8%;
+    }
 
     .signup {
         max-width: 100%;
@@ -1054,6 +1218,17 @@ a {
 
     .signupform__hr::after {
         width: 183px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .eventcard {
+        width: 18.8%;
+    }
+
+    .popularcard {
+        width: 23.3%;
     }
 }
 

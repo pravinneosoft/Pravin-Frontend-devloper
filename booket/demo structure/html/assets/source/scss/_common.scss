@@ -1,6 +1,10 @@
 a{
     text-decoration: none;
     color: $color-white;
+    &:hover{
+        text-decoration: none;
+        color: $secondary-color;
+    }
 }
 .topheading {
     margin-top: 60px;
@@ -35,15 +39,16 @@ a{
   width: 144px;
   height: 41px;
   border: none;
-}
-.button__title{
+
+&__title{
     font-size: 18px;
     font-weight: 650;
     color: $color-white;
     text-align: initial;
 }
-.button__text{
+&__text{
     font-size: 8px;
     font-weight: 450;
     color: $color-white;
+}
 }

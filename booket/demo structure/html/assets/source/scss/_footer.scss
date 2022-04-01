@@ -24,6 +24,7 @@ SCSS file for footer
     &__title {
         font-size: 16px;
         font-weight: 600;
+
         @include media-breakpoint-up(md) {
             margin-bottom: 4px;
         }
@@ -38,12 +39,11 @@ SCSS file for footer
     &__list {
         font-size: 14px;
         font-weight: 400;
-        padding: 0;
         list-style-type: none;
         line-height: 24px;
         display: inline-block;
         text-align: left;
-        
+
         @include media-breakpoint-up(md) {
             margin-top: 23px;
         }
@@ -77,23 +77,35 @@ SCSS file for footer
             text-align: start;
         }
     }
-    &__btn{
+
+    &__btn {
         @include media-breakpoint-up(md) {
             display: flex;
             display: block;
-            }
+        }
+
         @include media-breakpoint-up(sm) {
-        display: flex;
-        justify-content: center;
+            display: flex;
+            justify-content: center;
         }
-}
-&__apps{
-    @include media-breakpoint-up(md) {
-      justify-content: start;
+    }
+
+    &__apps {
+        @include media-breakpoint-up(md) {
+            justify-content: start;
         }
-    @include media-breakpoint-up(sm) {
-    justify-content: center;
+
+        @include media-breakpoint-up(sm) {
+            justify-content: center;
+        }
+    }
+    &__socialicon{
+        transition: .7s;
+        z-index: 3;
+        &:hover{
+            transform: rotateY(360deg);
+        }
     }
 }
-}
+
 /* Footer css end */
