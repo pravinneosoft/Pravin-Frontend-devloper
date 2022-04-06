@@ -34,6 +34,10 @@ SCSS file for footer
             margin-top: 16px;
             font-size: 22px;
         }
+        @include media-breakpoint-up(xs) {
+            margin-top: 16px;
+            font-size: 22px;
+        }
     }
 
     &__list {
@@ -43,14 +47,35 @@ SCSS file for footer
         line-height: 24px;
         display: inline-block;
         text-align: left;
-
+        padding-left: 0; 
         @include media-breakpoint-up(md) {
             margin-top: 23px;
+            text-align: left;
         }
 
         @include media-breakpoint-up(sm) {
             margin-top: 13px;
+            text-align: center;
         }
+        @include media-breakpoint-up(xs) {
+            margin-top: 13px;
+            text-align: center;
+        }
+       &-addres{
+         
+           @include media-breakpoint-up(md) {
+           padding-left: 0;
+        }
+        @include media-breakpoint-up(sm) {
+            margin-top: 13px;
+            text-align: left;
+        }
+        @include media-breakpoint-up(xs) {
+            margin-top: 13px;
+            padding-left: 22px;
+            text-align: left;
+        }
+       }
     }
 
     &__social {
@@ -61,6 +86,9 @@ SCSS file for footer
         }
 
         @include media-breakpoint-up(sm) {
+            justify-content: center;
+        }
+        @include media-breakpoint-up(xs) {
             justify-content: center;
         }
     }
@@ -88,6 +116,10 @@ SCSS file for footer
             display: flex;
             justify-content: center;
         }
+        @include media-breakpoint-up(xs) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__apps {
@@ -98,6 +130,9 @@ SCSS file for footer
         @include media-breakpoint-up(sm) {
             justify-content: center;
         }
+        @include media-breakpoint-up(xs) {
+            justify-content: center;
+        }
     }
     &__socialicon{
         transition: .7s;
@@ -106,6 +141,7 @@ SCSS file for footer
             transform: rotateY(360deg);
         }
     }
+    
 }
 
 /* Footer css end */

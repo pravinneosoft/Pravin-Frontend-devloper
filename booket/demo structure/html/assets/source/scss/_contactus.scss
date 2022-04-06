@@ -93,11 +93,12 @@
         @include media-breakpoint-up(lg) {
             padding: 56px 0 0 160px;
             width: 80%;
+            text-align: unset;
         }
 
         @include media-breakpoint-up(sm) {
             padding: 18px;
-
+            text-align: center;
             width: 100%;
 
         }
@@ -105,6 +106,7 @@
         @include media-breakpoint-up(xs) {
             width: 100%;
             padding: 15px;
+            text-align: center;
         }
 
         &-logo {

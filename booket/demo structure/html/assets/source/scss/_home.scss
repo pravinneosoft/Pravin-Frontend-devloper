@@ -80,6 +80,8 @@
 .eventcardwrapper {
     gap: 18px;
     margin-top: 12px;
+    padding: 0 15px;
+   
 }
 
 .eventcard {
@@ -183,6 +185,10 @@
         color: $color-light-black;
         margin-bottom: 4px;
         width: 204px;
+        &:hover{
+            color: $secondary-color;
+            transition: 0.4s  ease-in-out all;
+        }
     }
 
     &__text {
@@ -208,6 +214,9 @@
     &__icon {
         margin-right: 20px;
         color: $color-grey;
+        &:hover{
+            color: $secondary-color;
+        }
 
     }
 
@@ -252,10 +261,36 @@
     position: relative;
     display: flex;
     align-items: center;
-
+    &__content{
+        @include media-breakpoint-up(sm) {
+            justify-content: center;
+            text-align:center;
+        }
+        @include media-breakpoint-up(xs) {
+            justify-content: center;
+            text-align:center;
+        } 
+        @include media-breakpoint-up(md) {
+            justify-content: unset;
+            text-align:start;
+            padding-left: 48px;
+        } 
+    }
     &__title {
-        font-size: 56px;
-        font-weight: 400;
+        @include media-breakpoint-up(sm) {
+            font-size: 35px;
+            font-weight: 500;
+            padding-top: 35px;
+        }
+        @include media-breakpoint-up(xs) {
+            font-size: 35px;
+            font-weight: 500;
+            padding-top: 35px;
+        } 
+        @include media-breakpoint-up(md) {
+            font-size: 56px;
+            font-weight: 400;
+        } 
     }
 
     &__text {
@@ -263,10 +298,21 @@
         font-weight: 600;
     }
 
-    &__iphone {
-        position: absolute;
-        right: 0;
-        bottom: 0;
+    &__iphone{
+        @include media-breakpoint-up(sm) {
+            text-align:center;
+        }
+        @include media-breakpoint-up(xs) {
+            text-align:center;
+        }
+        &-image{
+            @include media-breakpoint-up(md) {
+                position: absolute;
+                bottom: 0;
+                right: 150px;
+                z-index: 3;
+            }
+        }
     }
 }
 

@@ -109,37 +109,73 @@ svg .fill-stroke {
 
 .header {
     background-color: #502274;
-    height: 112px;
     margin-bottom: 37px;
-}
-
-.header__left {
-    width: 744px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: auto;
 }
 
 .header__list {
-    padding: 0 8px 0 14px;
-    width: 672px;
-    height: 64px;
+    height: auto;
+    margin-top: 40px;
+}
+
+.header__humbergurg {
+    color: #fff;
+    font-size: 30px;
+}
+
+.header__input {
+    border: none;
+    width: 100px;
+    font-size: 25px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px;
 }
 
 .header__text {
-    color: #96969b;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.header__icon {
-    width: 56px;
-    height: 56px;
-    background: #fe7700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #fafaff;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 10px;
 }
 
 .header__icon-search {
     font-size: 22px;
+}
+
+.header__links {
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.triger_search {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    background: #fe7700;
+    border: 0;
+    color: #fff;
+}
+
+.input {
+    width: 0;
+    border-radius: 20px;
+    border: 0;
+    position: absolute;
+    left: 50px;
+}
+
+.input-open {
+    width: 86%;
+    position: absolute;
+    padding: 14px;
+    bottom: 110px;
+    border-radius: 25px;
+    left: 70px;
+    transition: .4s ease-in-out all;
 }
 
 .footer {
@@ -150,6 +186,8 @@ svg .fill-stroke {
 .footer__title {
     font-size: 16px;
     font-weight: 600;
+    margin-top: 16px;
+    font-size: 22px;
 }
 
 .footer__list {
@@ -159,10 +197,20 @@ svg .fill-stroke {
     line-height: 24px;
     display: inline-block;
     text-align: left;
+    padding-left: 0;
+    margin-top: 13px;
+    text-align: center;
+}
+
+.footer__list-addres {
+    margin-top: 13px;
+    padding-left: 22px;
+    text-align: left;
 }
 
 .footer__social {
     margin: 12px 0 36px 0;
+    justify-content: center;
 }
 
 .footer__icon {
@@ -172,6 +220,15 @@ svg .fill-stroke {
 
 .footer__column {
     text-align: center;
+}
+
+.footer__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__apps {
+    justify-content: center;
 }
 
 .footer__socialicon {
@@ -252,6 +309,7 @@ svg .fill-stroke {
 .eventcardwrapper {
     gap: 18px;
     margin-top: 12px;
+    padding: 0 15px;
 }
 
 .eventcard {
@@ -320,6 +378,11 @@ svg .fill-stroke {
     width: 204px;
 }
 
+.popularcard__title:hover {
+    color: #fe7700;
+    transition: .4s ease-in-out all;
+}
+
 .popularcard__text {
     font-size: 12px;
     font-weight: 600;
@@ -343,6 +406,10 @@ svg .fill-stroke {
 .popularcard__icon {
     margin-right: 20px;
     color: #707070;
+}
+
+.popularcard__icon:hover {
+    color: #fe7700;
 }
 
 .popularcard__icon-like {
@@ -384,9 +451,15 @@ svg .fill-stroke {
     align-items: center;
 }
 
+.book__content {
+    justify-content: center;
+    text-align: center;
+}
+
 .book__title {
-    font-size: 56px;
-    font-weight: 400;
+    font-size: 35px;
+    font-weight: 500;
+    padding-top: 35px;
 }
 
 .book__text {
@@ -395,9 +468,7 @@ svg .fill-stroke {
 }
 
 .book__iphone {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    text-align: center;
 }
 
 .popularcard__foodevent {
@@ -650,6 +721,10 @@ svg .fill-stroke {
     margin: 0 auto;
 }
 
+address {
+    margin-bottom: 0;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -694,6 +769,8 @@ a:hover {
     width: 144px;
     height: 41px;
     border: none;
+    border-radius: 6px;
+    padding: 6px;
 }
 
 .button__title {
@@ -768,6 +845,7 @@ a:hover {
     padding: 56px 0 0 160px;
     width: 100%;
     padding: 15px;
+    text-align: center;
 }
 
 .signup__content-logo {
@@ -1016,7 +1094,60 @@ a:hover {
     font-weight: 600;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-toggle {
+    color: #fff;
+}
+
 @media (min-width: 576px) {
+
+    .header {
+        height: auto;
+    }
+
+    .header__list {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .header__input {
+        font-size: 25px;
+        width: 100%;
+        border-radius: 25px;
+        padding: 15px;
+    }
+
+    .header__text {
+        color: #fafaff;
+        font-size: 25px;
+        font-weight: 500;
+        margin: 20px 10px;
+    }
+
+    .header__links {
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+    }
+
+    .input {
+        width: 0;
+        position: absolute;
+        left: 50px;
+    }
+
+    .input-open {
+        width: 86%;
+        position: absolute;
+        padding: 14px;
+        bottom: 110px;
+        border-radius: 25px;
+        left: 70px;
+        transition: .4s ease-in-out all;
+    }
 
     .footer__logo {
         margin-bottom: 16px;
@@ -1030,6 +1161,12 @@ a:hover {
 
     .footer__list {
         margin-top: 13px;
+        text-align: center;
+    }
+
+    .footer__list-addres {
+        margin-top: 13px;
+        text-align: left;
     }
 
     .footer__social {
@@ -1053,6 +1190,21 @@ a:hover {
         width: 46.8%;
     }
 
+    .book__content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .book__title {
+        font-size: 35px;
+        font-weight: 500;
+        padding-top: 35px;
+    }
+
+    .book__iphone {
+        text-align: center;
+    }
+
     .btn--joinus {
         margin-top: 15px;
     }
@@ -1067,6 +1219,7 @@ a:hover {
 
     .signup__content {
         padding: 18px;
+        text-align: center;
         width: 100%;
     }
 
@@ -1109,6 +1262,47 @@ a:hover {
 
 @media (min-width: 768px) {
 
+    .header__list {
+        border-radius: 30px;
+        background: #fff;
+        padding: 0 8px 0 14px;
+        width: 672px;
+        height: 64px;
+        align-items: center;
+        margin-left: auto;
+        margin-top: 5px;
+    }
+
+    .header__input {
+        height: auto;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    .header__text {
+        margin: 0;
+        color: #96969b;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .header__links {
+        margin: 20px 0px;
+    }
+
+    .navbar-nav {
+        flex-direction: unset;
+    }
+
+    .input-open {
+        width: 49%;
+        position: absolute;
+        bottom: 8px;
+        left: 49px;
+        transition: .4s ease-in-out all;
+    }
+
     .footer__logo {
         margin-bottom: 26px;
     }
@@ -1119,6 +1313,11 @@ a:hover {
 
     .footer__list {
         margin-top: 23px;
+        text-align: left;
+    }
+
+    .footer__list-addres {
+        padding-left: 0;
     }
 
     .footer__social {
@@ -1146,6 +1345,24 @@ a:hover {
         width: 47.8%;
     }
 
+    .book__content {
+        justify-content: unset;
+        text-align: start;
+        padding-left: 48px;
+    }
+
+    .book__title {
+        font-size: 56px;
+        font-weight: 400;
+    }
+
+    .book__iphone-image {
+        position: absolute;
+        bottom: 0;
+        right: 150px;
+        z-index: 3;
+    }
+
     .btn--joinus {
         margin-top: 28px;
     }
@@ -1168,6 +1385,23 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+
+    .header {
+        height: 112px;
+    }
+
+    .header__list {
+        margin-left: 0;
+    }
+
+    .header__links {
+        justify-content: unset;
+        margin: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
 
     .eventcard {
         width: 48.8%;
@@ -1194,6 +1428,7 @@ a:hover {
     .signup__content {
         padding: 56px 0 0 160px;
         width: 80%;
+        text-align: unset;
     }
 
     .signup__content-logo {
