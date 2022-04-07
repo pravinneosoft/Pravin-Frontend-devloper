@@ -48,7 +48,6 @@
     }
 
     &__list {
-
         @include media-breakpoint-up(lg) {
             margin-left: 0;
         }
@@ -66,12 +65,12 @@
 
         @include media-breakpoint-up(xs) {
             height: auto;
-            margin-top: 40px;
+            margin-top: 5px;
         }
 
         @include media-breakpoint-up(sm) {
             height: auto;
-            margin-top: 40px;
+            margin-top: 5px;
         }
     }
 
@@ -89,6 +88,7 @@
             font-size: 14px;
             font-weight: 600;
             padding: 0;
+            margin-top: 0;
         }
 
         @include media-breakpoint-up(sm) {
@@ -96,6 +96,7 @@
             width: 100%;
             border-radius: 25px;
             padding: 15px;
+            margin-top: 70px;
         }
 
         @include media-breakpoint-up(xs) {
@@ -103,6 +104,7 @@
             width: 100%;
             border-radius: 25px;
             padding: 15px;
+            margin-top: 70px;
         }
 
     }
@@ -114,30 +116,46 @@
             color: $color-lightdark;
             font-size: 14px;
             font-weight: 400;
+            position: unset;
         }
 
         @include media-breakpoint-up(sm) {
             color: #fafaff;
             font-size: 25px;
             font-weight: 500;
-            margin: 20px 10px;
-
+            margin: 20px 0;
+            position: absolute;
+            left: 0;
+            bottom: 55px;
         }
 
         @include media-breakpoint-up(xs) {
             color: #fafaff;
             font-size: 25px;
             font-weight: 500;
-            margin: 20px 10px;
-
+            margin: 20px 0;
+            position: absolute;
+            left: 0;
+            bottom: 55px;
         }
     }
 
     &__icon {
+        position: unset !important;
         &-search {
             font-size: 22px;
         }
+        @include media-breakpoint-up(md) {
+            margin: 0;
+        }
 
+        @include media-breakpoint-up(sm) {
+            margin-top: 20px;
+        }
+
+        @include media-breakpoint-up(xs) {
+            margin-top: 20px;
+        }
     }
 
     &__links {
@@ -208,8 +226,7 @@
         width: 49%;
         position: absolute;
         bottom: 8px;
-        /* right: 158px; */
-        left: 49px;
+        left: 75px;
         transition: .4s ease-in-out all;
     }
 
@@ -217,9 +234,9 @@
         width: 86%;
         position: absolute;
         padding: 14px;
-        bottom: 110px;
+        bottom:109px;
         border-radius: 25px;
-        left: 70px;
+        left: 84px;
         transition: 0.4s ease-in-out all;
     }
 
@@ -227,9 +244,9 @@
         width: 86%;
         position: absolute;
         padding: 14px;
-        bottom: 110px;
+        bottom: 109px;
         border-radius: 25px;
-        left: 70px;
+        left: 84px;
         transition: 0.4s ease-in-out all;
     }
 }

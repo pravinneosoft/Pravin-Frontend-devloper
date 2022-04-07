@@ -118,7 +118,7 @@ svg .fill-stroke {
 
 .header__list {
     height: auto;
-    margin-top: 40px;
+    margin-top: 5px;
 }
 
 .header__humbergurg {
@@ -133,13 +133,22 @@ svg .fill-stroke {
     width: 100%;
     border-radius: 25px;
     padding: 15px;
+    margin-top: 70px;
 }
 
 .header__text {
     color: #fafaff;
     font-size: 25px;
     font-weight: 500;
-    margin: 20px 10px;
+    margin: 20px 0;
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+}
+
+.header__icon {
+    position: unset !important;
+    margin-top: 20px;
 }
 
 .header__icon-search {
@@ -172,9 +181,9 @@ svg .fill-stroke {
     width: 86%;
     position: absolute;
     padding: 14px;
-    bottom: 110px;
+    bottom: 109px;
     border-radius: 25px;
-    left: 70px;
+    left: 84px;
     transition: .4s ease-in-out all;
 }
 
@@ -356,11 +365,12 @@ svg .fill-stroke {
 
 .popular {
     margin-top: 15px;
-    gap: 28px;
+    justify-content: space-between;
 }
 
 .popularcard {
     border: none;
+    margin-bottom: 40px;
 }
 
 .popularcard__time {
@@ -425,10 +435,13 @@ svg .fill-stroke {
 .featurecard__iconbg {
     width: 40px;
     height: 40px;
-    bottom: 75px;
+    bottom: 80px;
     right: 25px;
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    color: #707070;
+    align-self: center;
+    line-height: 0;
 }
 
 .featurecard__iconbg:hover {
@@ -465,6 +478,7 @@ svg .fill-stroke {
 .book__text {
     font-size: 16px;
     font-weight: 600;
+    margin-bottom: 44px;
 }
 
 .book__iphone {
@@ -509,6 +523,10 @@ svg .fill-stroke {
 .popularcard__race-event {
     background-image: url("../images/race-event.png");
     height: 184px;
+}
+
+#popularcard {
+    display: none;
 }
 
 @font-face {
@@ -666,15 +684,15 @@ svg .fill-stroke {
 }
 
 .btn--primary {
-    background-color: #fe7700;
+    background-color: transparent;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
 }
 
 .btn--primary:hover {
-    background-color: #fff;
-    color: #2f242c;
+    background-color: #fe7700;
+    color: #fff;
 }
 
 .btn--tranceparent {
@@ -684,8 +702,8 @@ svg .fill-stroke {
 }
 
 .btn--tranceparent:hover {
-    background-color: #fff;
-    color: #2f242c;
+    background-color: #fe7700;
+    color: #fff;
     border-radius: 50px;
 }
 
@@ -715,9 +733,8 @@ svg .fill-stroke {
 }
 
 .container {
-    width: 100%;
     max-width: 1252px;
-    padding: 0 10px;
+    padding: 0 40px;
     margin: 0 auto;
 }
 
@@ -768,7 +785,7 @@ a:hover {
     background-color: #141415;
     width: 144px;
     height: 41px;
-    border: none;
+    border: 1px solid #fff;
     border-radius: 6px;
     padding: 6px;
 }
@@ -1103,6 +1120,14 @@ a:hover {
     color: #fff;
 }
 
+.nav-item {
+    position: relative;
+}
+
+.navbar-brand {
+    margin-right: 40px;
+}
+
 @media (min-width: 576px) {
 
     .header {
@@ -1111,7 +1136,7 @@ a:hover {
 
     .header__list {
         height: auto;
-        margin-top: 40px;
+        margin-top: 5px;
     }
 
     .header__input {
@@ -1119,13 +1144,21 @@ a:hover {
         width: 100%;
         border-radius: 25px;
         padding: 15px;
+        margin-top: 70px;
     }
 
     .header__text {
         color: #fafaff;
         font-size: 25px;
         font-weight: 500;
-        margin: 20px 10px;
+        margin: 20px 0;
+        position: absolute;
+        left: 0;
+        bottom: 55px;
+    }
+
+    .header__icon {
+        margin-top: 20px;
     }
 
     .header__links {
@@ -1143,9 +1176,9 @@ a:hover {
         width: 86%;
         position: absolute;
         padding: 14px;
-        bottom: 110px;
+        bottom: 109px;
         border-radius: 25px;
-        left: 70px;
+        left: 84px;
         transition: .4s ease-in-out all;
     }
 
@@ -1182,12 +1215,17 @@ a:hover {
         justify-content: center;
     }
 
+    .eventcardwrapper {
+        justify-content: space-between;
+    }
+
     .eventcard {
         width: 47.8%;
     }
 
     .popularcard {
         width: 46.8%;
+        margin-bottom: 30px;
     }
 
     .book__content {
@@ -1207,6 +1245,12 @@ a:hover {
 
     .btn--joinus {
         margin-top: 15px;
+    }
+
+    .container {
+        max-width: 1252px;
+        padding: 0 30px;
+        margin: 0 auto;
     }
 
     .signup__images {
@@ -1278,6 +1322,7 @@ a:hover {
         font-size: 14px;
         font-weight: 600;
         padding: 0;
+        margin-top: 0;
     }
 
     .header__text {
@@ -1285,6 +1330,11 @@ a:hover {
         color: #96969b;
         font-size: 14px;
         font-weight: 400;
+        position: unset;
+    }
+
+    .header__icon {
+        margin: 0;
     }
 
     .header__links {
@@ -1299,7 +1349,7 @@ a:hover {
         width: 49%;
         position: absolute;
         bottom: 8px;
-        left: 49px;
+        left: 75px;
         transition: .4s ease-in-out all;
     }
 
@@ -1309,6 +1359,7 @@ a:hover {
 
     .footer__title {
         margin-bottom: 4px;
+        margin-top: 0;
     }
 
     .footer__list {
@@ -1343,6 +1394,7 @@ a:hover {
 
     .popularcard {
         width: 47.8%;
+        margin-bottom: 5px;
     }
 
     .book__content {
@@ -1364,7 +1416,14 @@ a:hover {
     }
 
     .btn--joinus {
-        margin-top: 28px;
+        margin-top: 21px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1252px;
+        padding: 0 10px;
+        margin: 0 auto;
     }
 
     .signup {
@@ -1457,6 +1516,10 @@ a:hover {
 }
 
 @media (min-width: 1200px) {
+
+    .eventcardwrapper {
+        justify-content: unset;
+    }
 
     .eventcard {
         width: 18.8%;
