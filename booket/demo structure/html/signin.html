@@ -60,10 +60,10 @@
             <div>
                 <h2 class="signupform__title">Already a member? <a href="activate.html" class="signupform__link">Sign up Now</a>
                 </h2>
-                <form class="signupform" action="">
+                <form class="signupform" method="post" action="activate.html" id="registrationForm" novalidate>
                     <div class="row">
                         <h2 class="signupform__heading">Sign Up to BookET</h2>
-                        <div class="col-md-10 col-sm-10 p-0">
+                        <div class="col-md-10 col-sm-10  p-0">
                             <a href="#" class="btn btn--signup rounded-pill m-0 ">Sign up with google</a></div>
                         <div class="col-md-2 col-sm-2 signupform__facebook rounded-pill">
                             <a title="@" href="#"><span class="icon-facebook signupform__facebook-icon"></span></a>
@@ -73,39 +73,37 @@
                        
                         <div class="col-md-12 mb-3">
                             <div class="form-floating">
-                                <input type="email" class="form-control signupform__input" id="floatingInput"
+                                <input type="email" class="form-control signupform__input" id="emailAddress"
                                     placeholder="name@example.com"required>
                                 <label for="floatingInput" class="signupform__label">Email address</label>
                                 <span class="icon-envelope signupform__icon"></span>
+                                <div id="email-err"></div>
                             </div>
                         </div>
                         <div class="col-md-12 mb-3">
                             <div class="form-floating">
-                                <input type="password" class="form-control signupform__input active2" id="pass3 floatingInput"
-                                    placeholder="name@example.com"required>
+                                <input type="password" class="form-control signupform__input active2" id="password" placeholder="name@example.com"required>
                                 <label for="floatingInput" class="signupform__label">Password</label>
                                 <span class="icon-padlock signupform__icon"></span>
+                                <div id="password-err"></div>
                               <button type="button"class="signupform__showhide">show</button>
                             </div>
                         </div>
                         <div class="col-md-12 mb-3 text-end">
-                            <h2 class="activateform__title text-start"><a href="#" class="activateform__link ">Forgot
+                            <h2 class="activateform__title text-start"><a href="contact.html" class="activateform__link ">Forgot
                                     password?</a>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group footer__btn">
-                                <a href="#"type="submit" class="btn btn--joinus rounded-pill m-0 float-end">Sign In</a></div>
+                                <input type="submit" class="btn btn--joinus rounded-pill m-0 float-end" value="Sign In" /></div>
                         </div>
                     </div>
                 </form>
             </div>
         </section>
     </section>
-    <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
@@ -113,10 +111,63 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <!-- Custome js  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script>
+         
+        // Email Address Validation
+        var emailAddress = document.getElementById("emailAddress");;
+        var emailAddressValidation = function () {
+            emailAddressValue = emailAddress.value.trim();
+            validEmailAddress = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            emailAddressErr = document.getElementById('email-err');
+
+            if (emailAddressValue == "") {
+                emailAddressErr.innerHTML = "Email Address is required";
+
+            } else if (!validEmailAddress.test(emailAddressValue)) {
+                emailAddressErr.innerHTML = "Email Addre must be in valid formate with @ symbol";
+            } else {
+                emailAddressErr.innerHTML = "";
+                return true;
+            }
+        }
+        emailAddress.oninput = function () {
+            emailAddressValidation();
+        }
+
+        // Password Validation
+        var password = document.getElementById("password");;
+        var passwordValidation = function () {
+            passwordValue = password.value.trim();
+            validPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+            passwordErr = document.getElementById('password-err');
+            if (passwordValue == "") {
+                passwordErr.innerHTML = "Password is required";
+            } else if (!validPassword.test(passwordValue)) {
+                passwordErr.innerHTML =
+                    "Password must have at least one Uppercase, lowercase, digit, special characters & 8 characters";
+            } else {
+                passwordErr.innerHTML = "";
+                return true;
+            }
+        }
+        password.oninput = function () {
+            passwordValidation();
+
+        }
+        // validation on submit
+        document.getElementById("registrationForm").onsubmit = function (e) {
+            emailAddressValidation();
+            passwordValidation();
+           if (
+                emailAddressValidation() == true &&
+                passwordValidation() == true) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>

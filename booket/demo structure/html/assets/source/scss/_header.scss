@@ -92,7 +92,7 @@
         }
 
         @include media-breakpoint-up(sm) {
-            font-size: 25px;
+            font-size: 22px;
             width: 100%;
             border-radius: 25px;
             padding: 15px;
@@ -100,7 +100,7 @@
         }
 
         @include media-breakpoint-up(xs) {
-            font-size: 25px;
+            font-size: 20px;
             width: 100%;
             border-radius: 25px;
             padding: 15px;
@@ -121,7 +121,7 @@
 
         @include media-breakpoint-up(sm) {
             color: #fafaff;
-            font-size: 25px;
+            font-size: 22px;
             font-weight: 500;
             margin: 20px 0;
             position: absolute;
@@ -131,7 +131,7 @@
 
         @include media-breakpoint-up(xs) {
             color: #fafaff;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 500;
             margin: 20px 0;
             position: absolute;
@@ -178,6 +178,18 @@
             margin: 0;
         }
     }
+    &__logo{
+        @include media-breakpoint-up(xs) {
+            width: 44px;
+        }
+        @include media-breakpoint-up(sm) {
+            width: 40px;
+        }
+
+        @include media-breakpoint-up(md) {
+           width: unset;
+        }
+    }
 }
 
 .navbar-nav {
@@ -197,9 +209,6 @@
     background: $secondary-color;
     border: 0;
     color: $color-white;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 }
 
 .input {
@@ -222,16 +231,24 @@
 }
 
 .input-open {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg){
         width: 49%;
         position: absolute;
         bottom: 8px;
         left: 75px;
+    }
+    @include media-breakpoint-up(md) {
+        
         transition: .4s ease-in-out all;
+        width: 72%;
+        position: absolute;
+        bottom: 102px;
+        /* top: 75px; */
+        left: 78px;
     }
 
     @include media-breakpoint-up(sm) {
-        width: 86%;
+        width: 64%;
         position: absolute;
         padding: 14px;
         bottom:109px;
@@ -241,7 +258,7 @@
     }
 
     @include media-breakpoint-up(xs) {
-        width: 86%;
+        width: 64%;
         position: absolute;
         padding: 14px;
         bottom: 109px;

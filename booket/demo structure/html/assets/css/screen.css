@@ -129,7 +129,7 @@ svg .fill-stroke {
 .header__input {
     border: none;
     width: 100px;
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
     border-radius: 25px;
     padding: 15px;
@@ -138,7 +138,7 @@ svg .fill-stroke {
 
 .header__text {
     color: #fafaff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin: 20px 0;
     position: absolute;
@@ -160,6 +160,10 @@ svg .fill-stroke {
     margin-bottom: 40px;
 }
 
+.header__logo {
+    width: 44px;
+}
+
 .triger_search {
     width: 56px;
     height: 56px;
@@ -178,7 +182,7 @@ svg .fill-stroke {
 }
 
 .input-open {
-    width: 86%;
+    width: 64%;
     position: absolute;
     padding: 14px;
     bottom: 109px;
@@ -279,31 +283,31 @@ svg .fill-stroke {
 }
 
 .herobaner .owl-carousel {
-    min-height: 296px;
     max-width: 100%;
     position: relative;
 }
 
 .herobaner .owl-item img {
-    min-height: 296px;
+    min-height: 200px;
 }
 
 .herobaner .owl-nav button.owl-next,
 .herobaner .owl-nav button.owl-prev {
     background: transparent;
-    height: 56px;
-    width: 56px;
     border-radius: 30px;
     border: 1px solid #fff;
     position: absolute;
-    top: 46%;
     margin-inline: 20px;
+    top: 37%;
+    height: 44px;
+    width: 44px;
 }
 
 .herobaner .owl-dots {
     position: absolute;
     left: 47%;
     bottom: 16px;
+    bottom: 7px;
 }
 
 .herobaner .owl-icon {
@@ -406,6 +410,7 @@ svg .fill-stroke {
     right: 25px;
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    color: #707070;
 }
 
 .popularcard__iconbg:hover {
@@ -688,6 +693,7 @@ svg .fill-stroke {
     font-size: 16px;
     font-weight: 600;
     color: #fff;
+    font-size: 24px;
 }
 
 .btn--primary:hover {
@@ -696,9 +702,9 @@ svg .fill-stroke {
 }
 
 .btn--tranceparent {
-    font-size: 16px;
     font-weight: 600;
     color: #fff;
+    font-size: 24px;
 }
 
 .btn--tranceparent:hover {
@@ -801,6 +807,16 @@ a:hover {
     font-size: 8px;
     font-weight: 450;
     color: #fff;
+}
+
+#first-name-err,
+#last-name-err,
+#email-err,
+#mobile-number-err,
+#password-err,
+#confirm-password-err {
+    color: red;
+    font-size: 13px;
 }
 
 .signup__images {
@@ -966,7 +982,7 @@ a:hover {
     padding: 25px 0 21px 50px !important;
     color: #2f242c;
     font-size: 16px;
-    font-size: 600;
+    font-weight: 600;
 }
 
 .signupform__input-name {
@@ -975,7 +991,7 @@ a:hover {
     position: relative;
     color: #2f242c;
     font-size: 16px;
-    font-size: 600;
+    font-weight: 600;
 }
 
 .signupform__label {
@@ -1140,7 +1156,7 @@ a:hover {
     }
 
     .header__input {
-        font-size: 25px;
+        font-size: 22px;
         width: 100%;
         border-radius: 25px;
         padding: 15px;
@@ -1149,7 +1165,7 @@ a:hover {
 
     .header__text {
         color: #fafaff;
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 500;
         margin: 20px 0;
         position: absolute;
@@ -1166,6 +1182,10 @@ a:hover {
         margin-bottom: 40px;
     }
 
+    .header__logo {
+        width: 40px;
+    }
+
     .input {
         width: 0;
         position: absolute;
@@ -1173,7 +1193,7 @@ a:hover {
     }
 
     .input-open {
-        width: 86%;
+        width: 64%;
         position: absolute;
         padding: 14px;
         bottom: 109px;
@@ -1215,6 +1235,17 @@ a:hover {
         justify-content: center;
     }
 
+    .herobaner .owl-item img {
+        min-height: 230px;
+    }
+
+    .herobaner .owl-nav button.owl-next,
+.herobaner .owl-nav button.owl-prev {
+        top: 40%;
+        height: 56px;
+        width: 56px;
+    }
+
     .eventcardwrapper {
         justify-content: space-between;
     }
@@ -1241,6 +1272,14 @@ a:hover {
 
     .book__iphone {
         text-align: center;
+    }
+
+    .btn--primary {
+        font-size: 24px;
+    }
+
+    .btn--tranceparent {
+        font-size: 24px;
     }
 
     .btn--joinus {
@@ -1341,16 +1380,20 @@ a:hover {
         margin: 20px 0px;
     }
 
+    .header__logo {
+        width: unset;
+    }
+
     .navbar-nav {
         flex-direction: unset;
     }
 
     .input-open {
-        width: 49%;
-        position: absolute;
-        bottom: 8px;
-        left: 75px;
         transition: .4s ease-in-out all;
+        width: 72%;
+        position: absolute;
+        bottom: 102px;
+        left: 78px;
     }
 
     .footer__logo {
@@ -1388,6 +1431,15 @@ a:hover {
         justify-content: start;
     }
 
+    .herobaner .owl-item img {
+        min-height: 296px;
+    }
+
+    .herobaner .owl-nav button.owl-next,
+.herobaner .owl-nav button.owl-prev {
+        top: 46%;
+    }
+
     .eventcard {
         width: 47.8%;
     }
@@ -1413,6 +1465,14 @@ a:hover {
         bottom: 0;
         right: 150px;
         z-index: 3;
+    }
+
+    .btn--primary {
+        font-size: 16px;
+    }
+
+    .btn--tranceparent {
+        font-size: 16px;
     }
 
     .btn--joinus {
@@ -1460,6 +1520,13 @@ a:hover {
 
     .navbar-nav {
         flex-direction: column;
+    }
+
+    .input-open {
+        width: 49%;
+        position: absolute;
+        bottom: 8px;
+        left: 75px;
     }
 
     .eventcard {

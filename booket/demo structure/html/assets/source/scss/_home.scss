@@ -34,12 +34,20 @@
 .herobaner {
     .owl {
         &-carousel {
-            min-height: 296px;
+           
             max-width: 100%;
             position: relative;
         }
 &-item img{
+    @include media-breakpoint-up(xs) {
+        min-height:200px;
+            }
+    @include media-breakpoint-up(sm) {
+min-height:230px;
+    }
+    @include media-breakpoint-up(md) {
     min-height: 296px;
+    }
 }
         &-nav {
             button {
@@ -47,13 +55,24 @@
                 &.owl-next,
                 &.owl-prev {
                     background: transparent;
-                    height: 56px;
-                    width: 56px;
+                    
                     border-radius: 30px;
                     border: 1px solid $color-white;
                     position: absolute;
-                    top: 46%;
                     margin-inline: 20px;
+                    @include media-breakpoint-up(xs) {
+                        top: 37%;
+                        height: 44px;
+                    width: 44px;
+                            }
+                    @include media-breakpoint-up(sm) {
+                        top: 40%;
+                        height: 56px;
+                    width: 56px;
+                            }
+                            @include media-breakpoint-up(md) {
+                                top: 46%;
+                            }
                 }
 
             }
@@ -64,6 +83,9 @@
             position: absolute;
             left: 47%;
             bottom: 16px;
+            @include media-breakpoint-up(xs) {
+              bottom: 7px;
+                          }
         }
 
         &-icon {
@@ -214,7 +236,7 @@
         right: 25px;
         background-color: $color-white;
         box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
-
+        color: $color-grey;
         &:hover {
             background-color: $secondary-color;
             color: $color-white;
