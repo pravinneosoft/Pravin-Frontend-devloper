@@ -1,0 +1,50 @@
+.header {
+  height: 956px;
+}
+.bg-video {
+  position: absolute;
+  right: 0;
+  min-width: 100%;
+  min-height: 956px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  // clip-path: circle(85% at top);
+  // padding-top:300px;
+}
+.herobanner {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.herobanner-content {
+  width: 631px;
+}
+.herobanner-heading {
+  font-size: 55px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.herobanner-subheading {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+//   -----------------herobanner css end --------------
+
+.slider-heading {
+    margin-top: 70px;
+  font-weight: 500;
+  font-size: 45px;
+  color: $color-green;
+  text-align: center;
+}

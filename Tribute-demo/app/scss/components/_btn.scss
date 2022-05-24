@@ -1,0 +1,15 @@
+.btn{
+    background-image: linear-gradient($color-red, $color-light-red);
+    color: $color-white;
+    &:focus{
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+.btn--tribute{
+    width: 233px;
+    height: 54px;
+    font-weight: 400;
+    border-radius: 3px;
+    outline: 0;
+}
