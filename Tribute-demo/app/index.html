@@ -4,17 +4,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>xd practical</title>
-  
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous" />  <link rel="stylesheet" href="css/style.css" />
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-   
-    
     <header class="header">
       <video muted loop id="myVideo"class="bg-video">
         <source src="scss/vendors/herobanner-background.mp4" type="video/mp4" />
@@ -54,10 +69,283 @@
     <button class="btn btn--tribute" id="myBtn" onclick="myFunction()">START A TRIBUTE</button></div>
     </section>
     <section class="slider">
-<h2 class="slider-heading">“This gift is sure to be a keepsake
-  for years to come.”</h2>
-
+      <div class="container">
+        <h2 class="slider-heading">“This gift is sure to be a keepsake”</h2>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <a href="javascript:void(0)" class="slider-links"
+              ><img src="images/New Yorker Logo.png" alt="logo"
+            /></a>
+          </div>
+          <div class="item">
+            <a href="javascript:void(0)" class="slider-links"
+              ><img src="images/Mashable_Logo.png" alt="logo"
+            /></a>
+          </div>
+          <div class="item">
+            <a href="javascript:void(0)" class="slider-links"
+              ><img src="images/CNN Logo.png" alt="logo"
+            /></a></div><div>
+            <a href="javascript:void(0)" class="slider-links"
+              ><img src="images/Today Logo.png" alt="logo"
+            /></a>
+          </div>
+          <div class="item">
+            <a href="javascript:void(0)" class="slider-links"
+              ><img src="images/Good Housekeeping Logo.png" alt="logo"
+            /></a>
+          </div>
+          <div class="item">
+            <a href="javascript:void(0)" class="slider-links"
+              ><img src="images/USA Today Log.png" alt="logo"
+            /></a>
+          </div>
+        </div>
+      </div>
     </section>
+    <section class="works">
+      <div class=" container">
+<h2 class="works-heading">HOW IT WORKS</h2>
+<h4 class="works-subheading">Creating a Tribute is quick, easy and meaningful. See how easy below.</h4>
+
+<div class="row">
+  <div class="col-md-4 col-sm-4">
+    <a href="javascriptvoid(0)" class="card">
+      <img src="images/invite.png" class="card-img-top works-cardimg" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Invite Friends</h5>
+        <p class="card-text">Invite friends and family to join the celebration.</p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <a href="javascriptvoid(0)" class="card">
+      <img src="images/collect.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Collect Videos</h5>
+        <p class="card-text">Everyone gets a prompt, makes a video and uploads it.</p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <a href="javascriptvoid(0)" class="card">
+      <img src="images/compile.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Compile Tribute</h5>
+        <p class="card-text">Drag and drop the videos in the order you like and share!</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6 col-sm-6 works-howstart">
+    <button class="btn btn--howwork"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+    </svg>&nbsp;&nbsp;HOW IT WORKS</button></div>
+  
+  <div class="col-md-6 col-sm-6 works-start">
+    <button class="btn btn--secondary">START A TRIBUTE</button></div>
+  </div>
+
+</div>
+    </section>
+    <section class="occasion">
+      <div class="container">
+      <h2 class="occasion-heading">USE TRIBUTE FOR ALL OCCASIONS</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="javascript:void(0)" class="card occasion-card">
+            <img src="images/Birthday Hover.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title occasion-cardtitle">Birthday</p>
+              <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="javascript:void(0)" class="card occasion-card">
+            <img src="images/Wedding Icon.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title occasion-cardtitle">Wedding</p>
+              <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="javascript:void(0)" class="card occasion-card">
+            <img src="images/Graduation Icon.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title occasion-cardtitle">Graduation</p>
+              <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="javascript:void(0)" class="card occasion-card">
+            <img src="images/Get Well Soon Icon.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title occasion-cardtitle">Get Well Soon</p>
+              <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="javascript:void(0)" class="card occasion-card">
+            <img src="images/Work Icon.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title occasion-cardtitle">Work</p>
+              <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="javascript:void(0)" class="card occasion-card">
+            <img src="images/Anniversary.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title occasion-cardtitle">Aniversary</p>
+              <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="javascript:void(0)" class="card occasion-card">
+            <img src="images/Thank You Icon.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title occasion-cardtitle">Thank you</p>
+              <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="javascript:void(0)" class="card occasion-card">
+            <img src="images/Candle Icon.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title occasion-cardtitle">In Memory Of</p>
+              <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="credit">
+      <div class="container">
+<h2 class="credit-heading">WE DO THE WORK YOU TAKE THE CREDIT</h2>
+<h4 class="credit-subheading">Premium upgrade options to make your experience as seamless and meaningful as possible. </h4>
+   
+<div class="row px-2">
+  <div class="col-md-6 col-sm-12 mb-5 credit-wrapper">
+    <a href="javascript:void(0)" class="card credit-card h-100">
+      <img src="images/Group 72.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-title credit-cardtitle">Concierge and Pro Service</p>
+        <p class="card-text credit-cardtext">Sit back, relax and let one of our concierge editors manage your campaign and compile the final Tribute for you! Or, have one of our pro editors create a dynamic highlight reel.
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-6 col-sm-12 mb-5">
+    <a href="javascript:void(0)" class="card credit-card h-100">
+      <img src="images/video-card.gif" class="card-img-top credit-cardimg" alt="...">
+      <div class="card-body">
+        <p class="card-title credit-cardtitle">Video Card & Bamboo USB</p>
+        <p class="card-text credit-cardtext">Deliver your Tribute in an 4" or 7" LCD card or on a personal keepsake sustainably made from Bamboo. </p>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+</section>
+<section class="soul">
+  <div class="container">
+  <h2 class="soul-heading">KIND WORDS FROM BEAUTIFUL SOULS</h2>
+  <h4 class="soul-subheading">Testimonials from happy Tribute recipients aroung the world.</h4>
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <div class="card soul-tooltip">
+        <p class="card-text soul-text" >Well, I’m crying so I guess that means it’s perfect. Thank you for all of your work and quick turnaround. This has been my fourth Tribute I've either hosted or participated in, and I’ll keep coming back.
+        </p>
+        <a class="soul-links" href="javascript:void(0)">Divya</a>
+      </div>
+  </div>
+  <div class="col-md-4 col-sm-6">
+    <div class="card soul-tooltip">
+<p class="card-text soul-text" >I wanted to share this note I got from my mom for the tribute video I made her for her birthday. "Thank you so much for this awesome video.  BEST BIRTHDAY PRESENT IN MY 55 years of existence.   I will cherish this til my last breath on this planet.
+</p>
+<a class="soul-links" href="javascript:void(0)">Alana Podrix</a>
+    </div>
+</div>
+<div class="col-md-4 col-sm-6">
+  <div class="card soul-tooltip">
+    <p class="card-text soul-text" >Hi there, so I finally watched the full Tribute with my wife (who it was for) and it was SO GREAT! She was so moved, and I can’t thank you enough for putting together such a nice keepsake for us. THANK YOU, THANK YOU, THANK YOU!!!</p>
+    <a class="soul-links" href="javascript:void(0)">Jay Marril</a>
+  </div>
+</div>
+ 
+    <div class="col-md-4 col-sm-6">
+      <div class="card soul-tooltip">
+        <p class="card-text soul-text" >“I’ve never received such a meaningful gift in my life, seriously. I couldn’t stop crying during my entire Tribute. I never knew that people felt that way about me… Absolutely incredible, I am SO grateful for my friends and family and the entire Tribute team for making this all possible”        </p>
+        <a class="soul-links" href="javascript:void(0)">Divya</a>
+      </div>
+  </div>
+  <div class="col-md-4 col-sm-6">
+    <div class=" soul-tooltip">
+<p class="card-text soul-text" >You have built such an inspiring product that has brought so much joy to our lives. Thank you for your courage, compassion and big heart.</p>
+<a class="soul-links" href="javascript:void(0)">Alana Podrix</a>
+    </div>
+</div>
+<div class="col-md-4 col-sm-6">
+  <div class="card soul-tooltip">
+    <p class="card-text soul-text" >Wow, Sergio, it’s PERFECT!! I’m SO SO happy!!  The birthday boy will be blown away!! It’s really the best gift ever and you’ve done an amazing job editing it! Now we need one for a graduation and one for a wedding. 
+    </p>
+    <a class="soul-links" href="javascript:void(0)">Jay Marril</a>
+  </div>
+</div>
+  </div>
+  </div>
+</section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        items: 1,
+        dot: true,
+        margin: 10,
+        nav: true,
+        responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
