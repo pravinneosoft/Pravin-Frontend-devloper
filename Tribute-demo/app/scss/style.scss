@@ -1,7 +1,7 @@
 
 @charset 'utf-8';
 
-
+@import "../../node_modules/bootstrap/scss/bootstrap";
 //Helpers
 @import "helpers/__helpers-dir";
 
@@ -19,4 +19,6 @@
 
 //Pages
 @import "pages/__pages-dir";
+
+
 

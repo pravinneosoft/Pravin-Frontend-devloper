@@ -1,0 +1,11 @@
+.form{
+display: flex;
+column-gap: 10px;
+flex-wrap: wrap;
+&-email{
+    @include media-breakpoint-up(sm) {     width: 67%; }
+    @include media-breakpoint-up(md) {     width: 30%;}
+
+}
+
+}

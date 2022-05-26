@@ -1,41 +1,79 @@
-.nav-link{
-    color: $color-white !important;
-    font-size: 14px;
-    font-weight: 700;
-        padding: 0 !important;
+.nav-link {
+  color: $color-white !important;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 !important;
 }
-.card-img-top{
+.card-img-top {
   width: unset;
 }
-.card{
-    width: 212px;
-    border: transparent;
-    display: block;
-    color: $color-darkblue;
+.card {
+  width: 212px;
+  border: transparent;
+  display: block;
+  color: $color-darkblue;
 }
-.col-md-4,.col-md-6{
-    display: flex;
-    justify-content: center;
+.col-md-4,
+.col-md-6 {
+  display: flex;
+  justify-content: center;
 }
-.card-body{
-    padding-top: 40px;
+.card-body {
+  padding-top: 40px;
 }
-.card-title{
-    margin-bottom: 25px;
-   
-    font-size: 24px;
-    font-weight: 800;
+.card-title {
+  margin-bottom: 25px;
+
+  font-size: 24px;
+  font-weight: 800;
 }
-.card-text{
-    font-family: $secondary-font;
-    font-weight: 400;
-    font-size: 14px;
+.card-text {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 14px;
 }
-.bi-play-circle{
-    position: absolute;
-    left: 15px;
+.bi-play-circle {
+  position: absolute;
+  left: 15px;
 }
-.col-sm-6{
-    display: flex;
-    justify-content: center;
+.col-sm-6 {
+  display: flex;
+  justify-content: center;
+}
+.item {
+  @include media-breakpoint-only(xs) {
+    text-align: center;
+  }
+}
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  position: relative;
+}
+.owl-prev {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.owl-next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  &:active{
+    background-color: transparent;
+}
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot span {
+    @include media-breakpoint-only(xs) {
+        font-size: 55px;
+        background-color: transparent;
+        background-size: contain;
+        &:active{
+            background-color: transparent;
+        }
+      }
+@include media-breakpoint-up(sm){
+    display: none;
+}
 }
