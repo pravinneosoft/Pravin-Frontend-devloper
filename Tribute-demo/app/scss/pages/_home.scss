@@ -1,5 +1,5 @@
 .header {
-  height: 956px;
+  height: 880px;
   background-color: $color-light-green;
 }
 .bg-video {
@@ -10,7 +10,7 @@
   /* left: 0; */
   /* bottom: -82px; */
   /* min-width: 45%; */
-  min-height: 956px;
+ height: auto;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -50,9 +50,8 @@
   display: flex;
   justify-content: center;
   background-color: $color-light-green;
-
+height: 281px;
   &-heading {
-    margin-top: 70px;
     font-weight: 500;
     font-size: 45px;
     color: $color-green;
@@ -66,12 +65,11 @@
       content: '';
       width: 0;
       height: 3px;
-
       background: black;
       transition: all 0.5s ease;
     }
     &:hover::after {
-      width: 80%;
+      width: 70%;
       background: $color-green;
       display: block;
     }
@@ -138,23 +136,27 @@
     font-size: 14px;
     font-family: $secondary-font;
     font-weight: 400;
+    display: none;
+  margin: 30px 30px;
   }
-  &-card {
+  &-card  {
     background-color: transparent;
     text-align: center;
     padding-top: 20px;
     width: 260px;
     position: relative;
-    overflow: hidden;
+    height: 302px;
 
     &:hover {
       border-radius: 30px;
       background-color: $color-white;
       color: $color-lightblack;
       text-align: center;
-      visibility: visible;
       border-bottom: 13px solid $color-green;
-  
+      display: block;
+      .occasion-cardtext{
+        display: block;
+      } 
     }
   }
 
@@ -167,8 +169,10 @@
 }
 
 .credit {
+  padding-top: 200px;
+  padding-bottom: 100px;
   background-color: $color-darkgreen;
-  padding: 100px 0;
+  position: relative;
   &-heading {
     font-size: 55px;
     font-weight: 800;
@@ -202,6 +206,11 @@
   &-cardimg {
     width: 299px;
     height: 235px;
+    @include media-breakpoint-only(xs) {
+      width: 179px;
+   } 
+
+
   }
   &-wrapper {
     @include media-breakpoint-up(md) {
@@ -210,10 +219,60 @@
     }
   }
 }
+.humans{
+  background-color: $color-light-green;
+  position: relative;
+  &-heading{
+font-size: 55px;
+font-weight: 800;
+text-align: center;
+  }
+
+  &-heading span{
+    color: $color-tomato;
+      }
+  &-subheading{
+    font-size: 18px;
+    font-family: $secondary-font;
+    font-weight: 500;
+    text-align: center;
+  }
+  // &-clippath{
+  //   clip-path: circle(50% at 50% 50%);
+  //   width: 100%;
+  //   height: 300px;
+  //   position: absolute;
+  //   bottom: -300px;
+  //   background-color: $color-light-green;
+  // }
+  &-video{
+    @include media-breakpoint-up(md){
+    width: 930px;
+    }
+    @include media-breakpoint-up(sm){
+      width: 500px;
+      }
+@include media-breakpoint-only(xs){
+  width: 100%;
+}
+  }
+}
+.bottom {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 85%;
+  height: 85%;
+  border-radius: 0 0 85% 85%;
+  background-color: #c4c4c4;
+  
+}
+
 
 .soul {
   background-color: $color-darkgreen;
   text-align: center;
+
   &-heading {
     color: $color-blue;
     font-size: 55px;
@@ -227,6 +286,7 @@
     margin-bottom: 50px;
   }
   &-tooltip {
+    position: relative;
     width: 329px;
     display: inline-block;
     border: 5px solid $color-blue;
@@ -247,5 +307,32 @@
     font-size: 22px;
     font-weight: 800;
     color: $color-light;
+  }
+  &-shape{
+
+    position: absolute;
+    right: 50%;
+    transform: rotate(188deg);
+    bottom: -48px;
+
+  }
+}
+.soul-triangle {
+  border-left: 15px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 45px solid #23354f;
+  display: flex;
+  position: relative;
+  width: 25px;
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 55px solid #8FD6C6;
+    position: absolute;
+    top: 15px;
+    left: -13px;
   }
 }

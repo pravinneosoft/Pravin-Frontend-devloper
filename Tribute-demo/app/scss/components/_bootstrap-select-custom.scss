@@ -4,76 +4,130 @@
   font-weight: 700;
   padding: 0 !important;
 }
+
 .card-img-top {
   width: unset;
 }
+
 .card {
   width: 212px;
   border: transparent;
   display: block;
   color: $color-darkblue;
 }
+
 .col-md-4,
 .col-md-6 {
   display: flex;
   justify-content: center;
 }
+
 .card-body {
   padding-top: 40px;
 }
+
 .card-title {
   margin-bottom: 25px;
 
   font-size: 24px;
   font-weight: 800;
 }
+
 .card-text {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 14px;
 }
+
 .bi-play-circle {
   position: absolute;
   left: 15px;
 }
+
 .col-sm-6 {
   display: flex;
   justify-content: center;
 }
+
 .item {
   @include media-breakpoint-only(xs) {
     text-align: center;
   }
 }
+
 .no-js .owl-carousel,
 .owl-carousel.owl-loaded {
   position: relative;
 }
+
 .owl-prev {
   position: absolute;
   bottom: 0;
   left: 0;
 }
+
 .owl-next {
   position: absolute;
   bottom: 0;
   right: 0;
-  &:active{
+
+  &:active {
     background-color: transparent;
+  }
 }
-}
+
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot span {
-    @include media-breakpoint-only(xs) {
-        font-size: 55px;
-        background-color: transparent;
-        background-size: contain;
-        &:active{
-            background-color: transparent;
-        }
-      }
-@include media-breakpoint-up(sm){
+  @include media-breakpoint-only(xs) {
+    font-size: 55px;
+    background-color: transparent;
+    background-size: contain;
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
     display: none;
+  }
 }
+
+.navbar-nav {
+
+
+
+  @include media-breakpoint-up(md) {
+    flex-direction: column;
+
+  }
+
+  @include media-breakpoint-only(xs) {
+    justify-content: center;
+  }
+
+  @include media-breakpoint-up(sm) {
+    justify-content: center;
+    flex-direction: row;
+    font-size: 44px;
+  }
+}
+
+.nav-link {
+  // @include media-breakpoint-only(xs) {
+  //   font-size: 29px;
+  // }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 29px;
+  }
+
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+    font-weight: 800;
+
+  }
+
 }
