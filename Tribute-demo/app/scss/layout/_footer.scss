@@ -1,62 +1,86 @@
 .footer {
   background-color: $color-blue;
-  padding: 80px 30px 70px 30px;
-  &-logo{
+  padding: 80px 30px 15px 30px;
+
+  &-logo {
+
     @include media-breakpoint-only(xs) {
-       text-align: center;
-       margin-bottom: 35px;
-    } 
-  }
-  &-list {
-    @include media-breakpoint-only(xs) {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
+      text-align: center;
+      margin-bottom: 35px;
     }
- 
+  }
+
+  &-list {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+
     @include media-breakpoint-up(sm) {
       line-height: 40px;
       margin-bottom: 0;
+      display: block;
     }
+
     @include media-breakpoint-up(md) {
-        line-height: 40px;
-        margin-bottom: 0;
-      }
+      line-height: 40px;
+      margin-bottom: 0;
+      display: block;
+    }
   }
+
   &-links {
     font-weight: 800;
     font-family: $secondary-font;
     font-size: 14px;
     color: $color-white;
   }
+
   &-signup {
     align-self: flex-end;
   }
+
   &-heading {
     font-weight: 800;
     font-size: 23px;
     color: $color-green;
     margin-bottom: 27px;
-    @include media-breakpoint-only(xs) {
-     text-align:center ;
+    margin-top: 36px;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: start;
     }
   }
+
   &-copyright {
 
     font-family: $secondary-font;
     font-weight: 500;
     color: $color-white;
     font-size: 11px;
-    @include media-breakpoint-only(xs) {
-   text-align: center;
-       } 
+    margin: 0;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: start;
+    }
   }
+
   &-icons {
-      padding: 0;
-    @include media-breakpoint-only(xs) {
-      display: flex;
-      justify-content: space-evenly;
-     } 
+    margin: 0 -8px;
+    padding: 0;
+
+    li {
+      padding: 0 8px;
+    }
+
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
     @include media-breakpoint-up(sm) {
       text-align: end;
       display: flex;
@@ -64,6 +88,7 @@
       column-gap: 18px;
       color: $color-white;
     }
+
     @include media-breakpoint-up(md) {
       text-align: end;
       display: flex;
@@ -75,13 +100,22 @@
 
   &-icons li a span {
     color: $color-white;
+
     &:hover {
       color: $color-green;
     }
   }
- &-order{
-    @include media-breakpoint-only(xs) {
-      order: 2;
-       } 
- }
+
+  &-order {
+    order: 2;
+
+    @include media-breakpoint-up(sm) {
+      order: initial;
+    }
+  }
+
+
+  &-logoimg {
+    width: 143px;
+  }
 }

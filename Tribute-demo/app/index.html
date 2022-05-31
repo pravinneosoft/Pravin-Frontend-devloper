@@ -20,23 +20,15 @@
 </head>
 
 <body>
+  <div class="toplinear-bg">
   <header class="header">
-    <video muted loop id="myVideo" class="bg-video" width="100%" height="100%">
-      <source src="scss/vendors/herobanner-background.mp4" type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-tranceparent ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="images/Logo.png" alt="brand logo" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="scroll">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/Logo.png" alt="brand logo" />
+            </a>
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active me-4" aria-current="page" href="#">Sign In
@@ -47,12 +39,19 @@
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
   <!-- ----------------------  herobanner block code ------------------------- -->
   <section class="herobanner">
+    <div class="videodiv">
+      <div class="video-wrapper">
+        <video muted loop autoplay id="myVideo" class="bg-video">
+          <source src="scss/vendors/herobanner-background.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video></div>
+    </div>
     <div class="herobanner-content">
       <h2 class="herobanner-heading">THE MOST MEANINGFUL
         GIFT ON EARTH</h2>
@@ -64,36 +63,68 @@
   <!-- ----------------------  slider block code ------------------------- -->
   <section class="slider">
     <div class="container">
-      <h2 class="slider-heading">“This gift is sure to be a keepsake”</h2>
+      <div id="Section1"class="slider-content">
+        <h2 class="slider-heading">“This gift is sure to be a keepsake NewYork”</h2>
+      </div>
+      <div id="Section2"class="slider-content" style="display: none;">
+        <h2 class="slider-heading">“This gift is sure to be a keepsake Mashale”</h2>
+      </div>
+      <div id="Section3"class="slider-content" style="display: none;">
+        <h2 class="slider-heading">“This gift is sure to be a keepsake Cnn”</h2>
+      </div>
+      <div id="Section4"class="slider-content" style="display: none;">
+        <h2 class="slider-heading">“This gift is sure to be a keepsake Today”</h2>
+      </div>
+      <div id="Section5"class="slider-content" style="display: none;">
+        <h2 class="slider-heading">“This gift is sure to be a keepsake House”</h2>
+      </div>
+      <div id="Section6"class="slider-content" style="display: none;">
+        <h2 class="slider-heading">“This gift is sure to be a keepsake66”</h2>
+      </div>
       <div class="owl-carousel owl-theme">
         <div class="item">
-          <a href="javascript:void(0)" class="slider-links"><img src="images/New Yorker Logo.png" alt="logo" /></a>
+          <h2 class="slider-text">“This gift is sure to be a keepsake NewYork”</h2>
+          <a href="javascript:void(0)" onclick="show('Section1');" class="slider-links"><img
+              src="images/New Yorker Logo.png" alt="logo" /></a>
         </div>
         <div class="item">
-          <a href="javascript:void(0)" class="slider-links"><img src="images/Mashable_Logo.png" alt="logo" /></a>
+          <h2 class="slider-text">“This gift is sure to be a keepsake Mashale”</h2>
+          <a href="javascript:void(0)" onclick="show('Section2');" class="slider-links"><img
+              src="images/Mashable_Logo.png" alt="logo" /></a>
         </div>
         <div class="item">
-          <a href="javascript:void(0)" class="slider-links"><img src="images/CNN Logo.png" alt="logo" /></a></div>
-        <div class="item">
-          <a href="javascript:void(0)" class="slider-links"><img src="images/Today Logo.png" alt="logo" /></a>
-        </div>
-        <div class="item">
-          <a href="javascript:void(0)" class="slider-links"><img src="images/Good Housekeeping Logo.png"
+          <h2 class="slider-text">“This gift is sure to be a keepsake Cnn”</h2>
+          <a href="javascript:void(0)" onclick="show('Section3');" class="slider-links"><img src="images/CNN Logo.png"
               alt="logo" /></a>
         </div>
         <div class="item">
-          <a href="javascript:void(0)" class="slider-links"><img src="images/USA Today Log.png" alt="logo" /></a>
+          <h2 class="slider-text">“This gift is sure to be a keepsake Today”</h2>
+          <a href="javascript:void(0)" onclick="show('Section4');" class="slider-links"><img src="images/Today Logo.png"
+              alt="logo" /></a>
+        </div>
+        <div class="item">
+          <h2 class="slider-text">“This gift is sure to be a keepsake House”</h2>
+
+          <a href="javascript:void(0)" onclick="show('Section5');" class="slider-links"><img
+              src="images/Good Housekeeping Logo.png" alt="logo" /></a>
+        </div>
+        <div class="item">
+          <h2 class="slider-text">“This gift is sure to be a keepsake66”</h2>
+          <a href="javascript:void(0)" onclick="show('Section6');" class="slider-links"><img
+              src="images/USA Today Log.png" alt="logo" /></a>
         </div>
       </div>
     </div>
+    <div class="slider-bottom"></div>
   </section>
   <!-- ----------------------  works block code ------------------------- -->
   <section class="works">
+  
     <div class=" container">
       <h2 class="works-heading">HOW IT WORKS</h2>
       <h4 class="works-subheading">Creating a Tribute is quick, easy and meaningful. See how easy below.</h4>
       <div class="row">
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4 col-sm-4 works-card">
           <a href="javascriptvoid(0)" class="card">
             <img src="images/invite.png" class="card-img-top works-cardimg" alt="...">
             <div class="card-body">
@@ -102,7 +133,7 @@
             </div>
           </a>
         </div>
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4 col-sm-4 works-card">
           <a href="javascriptvoid(0)" class="card">
             <img src="images/collect.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -111,7 +142,7 @@
             </div>
           </a>
         </div>
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4 col-sm-4 works-card">
           <a href="javascriptvoid(0)" class="card">
             <img src="images/compile.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -150,13 +181,15 @@
           <button class="btn btn--secondary">START A TRIBUTE</button></div>
       </div>
     </div>
+   
   </section>
   <!-- ----------------------  occasion block code ------------------------- -->
   <section class="occasion">
+    <div class="occasion-top"></div>
     <div class="container">
       <h2 class="occasion-heading">USE TRIBUTE FOR ALL OCCASIONS</h2>
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
+      <div class="row mb-5">
+        <div class="col-lg-3 col-sm-6">
           <a href="javascript:void(0)" class="card occasion-card">
             <img src="images/Birthday Hover.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -165,7 +198,7 @@
             </div>
           </a>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a href="javascript:void(0)" class="card occasion-card">
             <img src="images/Wedding Icon.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -174,7 +207,7 @@
             </div>
           </a>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a href="javascript:void(0)" class="card occasion-card">
             <img src="images/Graduation Icon.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -183,7 +216,7 @@
             </div>
           </a>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a href="javascript:void(0)" class="card occasion-card">
             <img src="images/Get Well Soon Icon.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -193,10 +226,8 @@
           </a>
         </div>
       </div>
-
-
       <div class="row">
-        <div class="col-md-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a href="javascript:void(0)" class="card occasion-card">
             <img src="images/Work Icon.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -205,7 +236,7 @@
             </div>
           </a>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a href="javascript:void(0)" class="card occasion-card">
             <img src="images/Anniversary.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -214,7 +245,7 @@
             </div>
           </a>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a href="javascript:void(0)" class="card occasion-card">
             <img src="images/Thank You Icon.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -223,7 +254,7 @@
             </div>
           </a>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a href="javascript:void(0)" class="card occasion-card">
             <img src="images/Candle Icon.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -235,31 +266,34 @@
       </div>
     </div>
   </section>
-<section class="humans">
+  <section class="humans">
     <h2 class="humans-heading mb-5">AWESOME HUMANS USE AND LOVE <span>TRIBUTE</span></h2>
     <h5 class="humans-subheading mb-5">how people around the globe are using Tribute to celebrate the people they care
       about.</h5>
-    <div class=" d-flex justify-content-center">
-      <video muted controls loop class="humans-video">
-        <source src="scss/vendors/herobanner-background.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </video></div>
-
-    
+    <div class=" d-flex justify-content-center humans-videowrapper">
+      <video class="humans-video">
+        <source src="scss/vendors/human-video.mp4" type="video/mp4" />
+      </video>
+      <div class="humans-playvideo"></div>
+    </div>
+    <div class="humans-animatewrapper">
+      <div class="humans-animate">
+        <img src="images/Video Section.png" alt="">
+      </div>
+    </div>
 
   </section>
+  </div>
   <!-- ----------------------  credit block code ------------------------- -->
+  <div class="bottomlinear-bg">
   <section class="credit">
-    <div class="bottom">
-      <img src="images/animation-bg.png" alt="">
-    </div>
-    <div class="container">
+<div class="container">
       <h2 class="credit-heading">WE DO THE WORK YOU TAKE THE CREDIT</h2>
       <h4 class="credit-subheading">Premium upgrade options to make your experience as seamless and meaningful as
         possible. </h4>
 
       <div class="row px-2">
-        <div class="col-md-6 col-sm-12 mb-5 credit-wrapper">
+        <div class="col-md-6 col-sm-12 credit-wrapper">
           <a href="javascript:void(0)" class="card credit-card h-100">
             <img src="images/Group 72.png" class="card-img-top credit-cardimg" alt="...">
             <div class="card-body">
@@ -287,10 +321,12 @@
   <!-- ----------------------  soul block code ------------------------- -->
   <section class="soul">
     <div class="container">
-      <h2 class="soul-heading">KIND WORDS FROM BEAUTIFUL SOULS</h2>
-      <h4 class="soul-subheading">Testimonials from happy Tribute recipients aroung the world.</h4>
+      <div class="soul-content">
+        <h2 class="soul-heading">KIND WORDS FROM BEAUTIFUL SOULS</h2>
+        <h4 class="soul-subheading">Testimonials from happy Tribute recipients aroung the world.</h4>
+      </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 mb-5">
+        <div class="col-lg-4 col-sm-6 mb-5">
           <div class="card soul-tooltip">
             <p class="card-text soul-text">Well, I’m crying so I guess that means it’s perfect. Thank you for all of
               your work and quick turnaround. This has been my fourth Tribute I've either hosted or participated in, and
@@ -301,7 +337,7 @@
               <span class="soul-triangle"></span></div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 mb-5">
+        <div class="col-lg-4 col-sm-6 mb-5">
           <div class="card soul-tooltip">
             <p class="card-text soul-text">I wanted to share this note I got from my mom for the tribute video I made
               her for her birthday. "Thank you so much for this awesome video. BEST BIRTHDAY PRESENT IN MY 55 years of
@@ -312,7 +348,7 @@
               <span class="soul-triangle"></span></div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 mb-5">
+        <div class="col-lg-4 col-sm-6 mb-5">
           <div class="card soul-tooltip">
             <p class="card-text soul-text">Hi there, so I finally watched the full Tribute with my wife (who it was for)
               and it was SO GREAT! She was so moved, and I can’t thank you enough for putting together such a nice
@@ -323,7 +359,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-6 mb-5">
+        <div class="col-lg-4 col-sm-6 mb-5">
           <div class="card soul-tooltip">
             <p class="card-text soul-text">“I’ve never received such a meaningful gift in my life, seriously. I couldn’t
               stop crying during my entire Tribute. I never knew that people felt that way about me… Absolutely
@@ -331,19 +367,19 @@
               possible” </p>
             <a class="soul-links" href="javascript:void(0)">Divya</a>
             <div class="soul-shape">
-              <span class="soul-triangle"></span></div>
+              <span class="soul-triangle soul-angle"></span></div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 mb-5">
+        <div class="col-lg-4 col-sm-6 mb-5">
           <div class=" soul-tooltip">
             <p class="card-text soul-text">You have built such an inspiring product that has brought so much joy to our
               lives. Thank you for your courage, compassion and big heart.</p>
             <a class="soul-links" href="javascript:void(0)">Alana Podrix</a>
             <div class="soul-shape">
-              <span class="soul-triangle"></span></div>
+              <span class="soul-triangle soul-angle"></span></div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 mb-5">
+        <div class="col-lg-4 col-sm-6 mb-5">
           <div class="card soul-tooltip">
             <p class="card-text soul-text">Wow, Sergio, it’s PERFECT!! I’m SO SO happy!! The birthday boy will be blown
               away!! It’s really the best gift ever and you’ve done an amazing job editing it! Now we need one for a
@@ -351,12 +387,22 @@
             </p>
             <a class="soul-links" href="javascript:void(0)">Jay Marril</a>
             <div class="soul-shape">
-              <span class="soul-triangle"></span></div>
+              <span class="soul-triangle soul-angle"></span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- ----------------------  earth block code ------------------------- -->
+
+  <section class="earth">
+    <div class="container">
+      <div class="earth-bottom">
+        <img src="images/earth-bg.png" alt="bgimage">
+      </div>
+    </div>
+  </section>
+</div>
   <!-- ----------------------  footer block code ------------------------- -->
   <footer class="footer">
     <div class="fluid-contaner">
@@ -382,11 +428,9 @@
       <div class="row mt-5">
         <div class="col-md-3 col-sm-4">
           <li class="footer-logo"><a class="navbar-brand" href="javascript:void(0)">
-              <img src="images/Logo.png" alt="brand logo" /></li>
-
+              <img src="images/Logo.png" class="footer-logoimg" alt="brand logo" /></li>
           </a>
         </div>
-
         <div class="col-md-4 col-sm-4 footer-order">
           <p class="footer-copyright">Terms of Service & Privacy Policy © Tribute 2020. Made with love in Brooklyn, NY.
           </p>

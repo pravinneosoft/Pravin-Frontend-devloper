@@ -42,17 +42,64 @@ window.document.onkeydown = function(e) {
   }
 }
 
-function lightbox_open() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  window.scrollTo(0, 0);
-  document.getElementById('light').style.display = 'block';
-  document.getElementById('fade').style.display = 'block';
-  lightBoxVideo.play();
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $(".scroll").css("background" , "#23354f");
+	  }
+
+	  else{
+		  $(".scroll").css("background" , "transparent");  	
+	  }
+  })
+})
+
+
+
+
+
+
+
+
+
+var divs = ["Section1", "Section2", "Section3", "Section4","Section5","Section66"];
+var visibleId = null;
+function show(id) {
+  if(visibleId !== id) {
+    visibleId = id;
+  } 
+  hide();
+}
+function hide() {
+  var div, i, id;
+  for(i = 0; i < divs.length; i++) {
+    id = divs[i];
+    div = document.getElementById(id);
+    if(visibleId === id) {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+  }
+} 
+
+
+
+
+
+
+function toggleVideo({ currentTarget: wrapper }) {
+  let video = wrapper.querySelector('.humans-video');
+  let playpause = wrapper.querySelector('.humans-playvideo');
+  if (video.paused) {
+    video.play();
+    playpause.setAttribute('hidden', '');
+  } else {
+    video.pause();
+    playpause.removeAttribute('hidden');
+  }
 }
 
-function lightbox_close() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  document.getElementById('light').style.display = 'none';
-  document.getElementById('fade').style.display = 'none';
-  lightBoxVideo.pause();
-}
+document.querySelectorAll('.humans-videowrapper')
+  .forEach(wrapper => wrapper.addEventListener('click', toggleVideo));
