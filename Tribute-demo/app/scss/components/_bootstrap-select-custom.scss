@@ -3,116 +3,15 @@
   font-size: 14px;
   font-weight: 700;
   padding: 0 !important;
-}
-
-.card-img-top {
-  width: unset;
-}
-
-.card {
-  width: 212px;
-  border: transparent;
-  display: block;
-  color: $color-darkblue;
-}
-
-.col-md-4,
-.col-md-6 {
-  display: flex;
-  justify-content: center;
-}
-
-.card-body {
-  padding-top: 40px;
-}
-
-.card-title {
-  margin-bottom: 25px;
-
-  font-size: 24px;
-  font-weight: 800;
-}
-
-.card-text {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.bi-play-circle {
-  position: absolute;
-  left: 15px;
-}
-
-.col-sm-6 {
-  display: flex;
-  justify-content: center;
-}
-
-.item {
-  @include media-breakpoint-only(xs) {
-    text-align: center;
-  }
-}
-
-.no-js .owl-carousel,
-.owl-carousel.owl-loaded {
-  position: relative;
-}
-
-.owl-prev {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  @include media-breakpoint-only(xs) {
-    margin-bottom: 24px !important;
-  }
-}
-
-.owl-next {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
-  @include media-breakpoint-only(xs) {
-    margin-bottom: 24px !important;
-  }
-
-  &:active {
-    background-color: transparent;
-  }
-}
-
-.owl-carousel .owl-nav button.owl-next:active,
-.owl-carousel .owl-nav button.owl-prev:active,
-.owl-carousel button.owl-dot span:active {
-  @include media-breakpoint-only(xs) {
-    background-color: $color-light-green !important;
-  }
-}
-
-.owl-theme .owl-nav [class*=owl-]:hover {
-  @include media-breakpoint-only(xs) {
-    background-color: $color-light-green !important;
-  }
-}
-
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot span {
-  @include media-breakpoint-only(xs) {
-    font-size: 55px;
-    background-color: transparent;
-    background-size: contain;
-
-    &:active {
-      background-color: transparent;
-    }
-  }
 
   @include media-breakpoint-up(sm) {
-    display: none;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+    font-weight: 800;
   }
 }
 
@@ -127,33 +26,55 @@
     font-size: 44px;
   }
 
-
   @include media-breakpoint-up(md) {
     flex-direction: row;
-
   }
-
-
-
-
 }
 
-.nav-link {
-  // @include media-breakpoint-only(xs) {
-  //   font-size: 29px;
-  // }
 
-  @include media-breakpoint-up(sm) {
-    font-size: 14px;
-    font-weight: 800;
+.card {
+  width: 212px;
+  border: transparent;
+  display: block;
+  color: $color-darkblue;
 
+  &-img-top {
+    width: unset;
   }
 
 
-  @include media-breakpoint-up(md) {
-    font-size: 14px;
-    font-weight: 800;
-
+  &-body {
+    padding-top: 40px;
   }
 
+  &-title {
+    margin-bottom: 25px;
+
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  &-text {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.bi-play-circle {
+  position: absolute;
+  left: 15px;
+}
+
+.col-md-4,
+.col-md-6,
+.col-sm-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  @include media-breakpoint-only(xs) {
+    text-align: center;
+  }
 }

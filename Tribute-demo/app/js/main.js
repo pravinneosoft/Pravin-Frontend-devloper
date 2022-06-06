@@ -21,27 +21,6 @@ function normalImg(x) {
   x.style.display = "none";
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-window.document.onkeydown = function(e) {
-  if (!e) {
-    e = event;
-  }
-  if (e.keyCode == 27) {
-    lightbox_close();
-  }
-}
-
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
@@ -54,15 +33,6 @@ $(document).ready(function(){
 	  }
   })
 })
-
-
-
-
-
-
-
-
-
 var divs = ["Section1", "Section2", "Section3", "Section4","Section5","Section66"];
 var visibleId = null;
 function show(id) {
@@ -84,11 +54,29 @@ function hide() {
   }
 } 
 
-
-
-
-
-
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  items: 1,
+  dot: true,
+  margin: 10,
+  nav: true,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    576: {
+      items: 3,
+      nav: false
+    },
+    1000: {
+      items: 6,
+      nav: true,
+      loop: false
+    }
+  }
+});
 function toggleVideo({ currentTarget: wrapper }) {
   let video = wrapper.querySelector('.humans-video');
   let playpause = wrapper.querySelector('.humans-playvideo');
