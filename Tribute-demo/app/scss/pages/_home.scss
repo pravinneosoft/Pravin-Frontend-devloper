@@ -401,7 +401,7 @@
     width: 100%;
     margin-bottom: 10px;
     padding: 0 20px;
-
+z-index: 30;
     @include media-breakpoint-up(md) {
       width: 79%;
       font-size: 55px;
@@ -423,13 +423,14 @@
     font-family: $secondary-font;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px;z-index: 30;
   }
 
   &-videowrapper {
     display: table;
     width: auto;
     position: relative;
+    z-index: 50;
   }
 
   &-video {
@@ -475,12 +476,12 @@
       z-index: 6;
       position: absolute;
       right: 0;
-      top: -90;
-      animation: earth-rightcloud 10s linear 0.5s 1;
+      top: 200px;
+      animation: human-rightcloud 10s linear 0.5s 1;
       animation-direction: normal;
     }
 
-    @keyframes earth-rightcloud {
+    @keyframes human-rightcloud {
       0% {
         transform: translate(-138%);
       }
@@ -501,6 +502,9 @@
         transform: translate(0%);
       }
     }
+    &-shape{
+      width: 324px;
+    }
   }
 
   &-leftcloud {
@@ -509,13 +513,13 @@
     @include media-breakpoint-up(xl) {
       display: block;
       z-index: 6;
-      animation: earth-leftcloud 10s linear 0.5s 1;
+      animation:human-leftcloud 10s linear 0.5s 1;
       position: absolute;
       left: 0;
-      top: 0;
+      top:200px;
     }
 
-    @keyframes earth-leftcloud {
+    @keyframes human-leftcloud {
       0% {
         transform: translate(-331%);
       }
@@ -536,6 +540,9 @@
         transform: translate(-4%);
       }
     }
+    &-shape{
+      width: 321px;
+    }
   }
 
   &-plane {
@@ -544,36 +551,39 @@
     @include media-breakpoint-up(xl) {
       display: block;
       position: absolute;
-      bottom: 49%;
-      left: 129px;
-
-      @keyframes earth-plane {
+      bottom:0%;
+      left: 170px;
+      animation:human-plane 10s linear 0.5s 1;
+      transform: rotateY(133deg);
+      z-index: 1;
+      @keyframes human-plane {
         0% {
-          right: 0px;
-          bottom: 0px;
+          bottom:-27%;
+          left: 207px;
         }
 
         25% {
-          right: 40px;
-          bottom: 50px;
+          bottom:-20%;
+          left: 200px;
         }
 
         50% {
-          right: 80px;
-          bottom: 90px;
+          bottom:-16%;
+          left: 190px;
         }
 
         75% {
-          right: 160px;
-          bottom: 170px;
+          bottom:-8%;
+      left: 180px;
         }
 
         100% {
-          right: 210px;
-          bottom: 270px;
+          bottom:0%;
+          left: 170px;
         }
       }
     }
+  
   }
 
   &-sun {
@@ -582,19 +592,20 @@
     @include media-breakpoint-up(xl) {
       display: block;
       position: absolute;
-      top: 0;
+      top: -120px;;
       right: 0;
     }
   }
 
   &-ballon {
+
     display: none;
 
     @include media-breakpoint-up(xl) {
       display: block;
       position: absolute;
-      top: 50%;
-      right: 0;
+      top: 35%;
+      right: 34px;
       animation: human-ballon 10s linear 0.5s 1;
 
       @keyframes human-ballon {
@@ -604,25 +615,29 @@
         }
 
         25% {
-          top: 70%;
-          right: 0px;
+          top: 60%;
+          right: 60px;
         }
 
         50% {
-          top: 65%;
-          right: 0px;
+          top: 45%;
+          right: 50px;
         }
 
         75% {
-          top: 60%;
-          right: 0px;
+          top: 40%;
+          right: 40px;
         }
 
         100% {
-          top: 50%;
-          right: 0px;
+          top: 35%;
+          right: 34px;
         }
       }
+    }
+  
+    &-shape{
+      width: 350px;
     }
   }
 }
